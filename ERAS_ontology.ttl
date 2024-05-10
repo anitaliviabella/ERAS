@@ -12,14 +12,18 @@
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/ERAS-ontology#belongsToLabel
-:belongsToLabel rdf:type owl:ObjectProperty .
-
-
 ###  http://www.semanticweb.org/ERAS-ontology/belongsToAlbum
 :belongsToAlbum rdf:type owl:ObjectProperty ;
                 rdfs:domain :Song ;
                 rdfs:range :Album .
+
+
+###  http://www.semanticweb.org/ERAS-ontology/belongsToLabel
+:belongsToLabel rdf:type owl:ObjectProperty ;
+                rdfs:domain :Album ,
+                            :Genre ;
+                rdfs:range :Label ,
+                           :Topic .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/hasArtist
@@ -45,36 +49,16 @@
           rdfs:range :Genre .
 
 
-###  http://www.semanticweb.org/ERAS-ontology/hasLyric
-:hasLyric rdf:type owl:ObjectProperty ;
-          rdfs:domain :Song .
-
-
-###  http://www.semanticweb.org/ERAS-ontology/hasName
-:hasName rdf:type owl:ObjectProperty .
-
-
-###  http://www.semanticweb.org/ERAS-ontology/hasReleaseDate
-:hasReleaseDate rdf:type owl:ObjectProperty ;
-                rdfs:domain :Album .
-
-
-###  http://www.semanticweb.org/ERAS-ontology/hasTitle
-:hasTitle rdf:type owl:ObjectProperty ;
-          rdfs:domain :Album ,
-                      :Song .
-
-
 ###  http://www.semanticweb.org/ERAS-ontology/hasTopic
 :hasTopic rdf:type owl:ObjectProperty ;
           rdfs:domain :Album ;
           rdfs:range :Topic .
 
 
-###  http://www.semanticweb.org/ERAS-ontology/isAbout
-:isAbout rdf:type owl:ObjectProperty ;
-         rdfs:domain :Genre ;
-         rdfs:range :Topic .
+###  http://www.semanticweb.org/ERAS-ontology/representsTopic
+:representsTopic rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Genre ;
+                 rdfs:range :Topic .
 
 
 #################################################################
@@ -101,10 +85,6 @@
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/ERAS-ontology#Label
-:Label rdf:type owl:Class .
-
-
 ###  http://www.semanticweb.org/ERAS-ontology/Album
 :Album rdf:type owl:Class .
 
@@ -115,6 +95,10 @@
 
 ###  http://www.semanticweb.org/ERAS-ontology/Genre
 :Genre rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ERAS-ontology/Label
+:Label rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Song
@@ -129,37 +113,25 @@
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/ERAS-ontology#Big_Machine
-:Big_Machine rdf:type owl:NamedIndividual ,
-                      :Label .
-
-
-###  http://www.semanticweb.org/ERAS-ontology#Republic
-:Republic rdf:type owl:NamedIndividual ,
-                   :Label .
-
-
 ###  http://www.semanticweb.org/ERAS-ontology#So_It_Goes...
 <http://www.semanticweb.org/ERAS-ontology#So_It_Goes...> rdf:type owl:NamedIndividual ,
                                                                   :Song ;
-                                                         :belongsToAlbum :Reputation .
-
-
-###  http://www.semanticweb.org/ERAS-ontology#Taylor_Swift_Productions
-:Taylor_Swift_Productions rdf:type owl:NamedIndividual ,
-                                   :Label .
+                                                         :belongsToAlbum :Reputation ;
+                                                         :has_title "So It Goes" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#'tis_the_damn_season
 <http://www.semanticweb.org/ERAS-ontology#'tis_the_damn_season> rdf:type owl:NamedIndividual ,
                                                                          :Song ;
-                                                                :belongsToAlbum :Evermore .
+                                                                :belongsToAlbum :Evermore ;
+                                                                :has_title "'tis the damn season" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#...Ready_For_It?
 <http://www.semanticweb.org/ERAS-ontology#...Ready_For_It?> rdf:type owl:NamedIndividual ,
                                                                      :Song ;
-                                                            :belongsToAlbum :Reputation .
+                                                            :belongsToAlbum :Reputation ;
+                                                            :has_title "...Ready For It?" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#1989
@@ -184,101 +156,125 @@
 ###  http://www.semanticweb.org/ERAS-ontology#22
 <http://www.semanticweb.org/ERAS-ontology#22> rdf:type owl:NamedIndividual ,
                                                        :Song ;
-                                              :belongsToAlbum :Red .
+                                              :belongsToAlbum :Red ;
+                                              :has_title 22 .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#Brendon_Urie_of_Panic!_At_The_Disco
 <http://www.semanticweb.org/ERAS-ontology#Brendon_Urie_of_Panic!_At_The_Disco> rdf:type owl:NamedIndividual ,
-                                                                                        :Artist .
+                                                                                        :Artist ;
+                                                                               :has_name "Brendon Urie" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#Contemporary_R&B
 <http://www.semanticweb.org/ERAS-ontology#Contemporary_R&B> rdf:type owl:NamedIndividual ,
-                                                                     :Genre .
+                                                                     :Genre ;
+                                                            :representsTopic :being_emotional ,
+                                                                             :enthusiasm ,
+                                                                             :expression ,
+                                                                             :fantasy ,
+                                                                             :persistence ,
+                                                                             :reflection .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#Don't_Blame_Me
 <http://www.semanticweb.org/ERAS-ontology#Don't_Blame_Me> rdf:type owl:NamedIndividual ,
                                                                    :Song ;
-                                                          :belongsToAlbum :Reputation .
+                                                          :belongsToAlbum :Reputation ;
+                                                          :has_title "Don't Blame Me" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#Don't_You
 <http://www.semanticweb.org/ERAS-ontology#Don't_You> rdf:type owl:NamedIndividual ,
                                                               :Song ;
-                                                     :belongsToAlbum :Fearless .
+                                                     :belongsToAlbum :Fearless ;
+                                                     :has_title "Don't You" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#Florida!!!
 <http://www.semanticweb.org/ERAS-ontology#Florida!!!> rdf:type owl:NamedIndividual ,
                                                                :Song ;
-                                                      :belongsToAlbum :The_Tortured_Poets_Department .
+                                                      :belongsToAlbum :The_Tortured_Poets_Department ;
+                                                      :hasFeaturedArtist :Florence_and_The_Machine ;
+                                                      :has_title "Florida!!!" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#Forever_&_Always
 <http://www.semanticweb.org/ERAS-ontology#Forever_&_Always> rdf:type owl:NamedIndividual ,
                                                                      :Song ;
-                                                            :belongsToAlbum :Fearless .
+                                                            :belongsToAlbum :Fearless ;
+                                                            :has_title "Forever & Always" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#Forever_&_Always_(Piano_Version)
 <http://www.semanticweb.org/ERAS-ontology#Forever_&_Always_(Piano_Version)> rdf:type owl:NamedIndividual ,
                                                                                      :Song ;
-                                                                            :belongsToAlbum :Fearless .
+                                                                            :belongsToAlbum :Fearless ;
+                                                                            :has_title "Forever & Always" .
 
 
-###  http://www.semanticweb.org/ERAS-ontology#Guildy_as_Sin?
-<http://www.semanticweb.org/ERAS-ontology#Guildy_as_Sin?> rdf:type owl:NamedIndividual ,
+###  http://www.semanticweb.org/ERAS-ontology#Guilty_as_Sin?
+<http://www.semanticweb.org/ERAS-ontology#Guilty_as_Sin?> rdf:type owl:NamedIndividual ,
                                                                    :Song ;
-                                                          :belongsToAlbum :The_Tortured_Poets_Department .
+                                                          :belongsToAlbum :The_Tortured_Poets_Department ;
+                                                          :has_title "Guilty as Sin?" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#How_Did_It_End?
 <http://www.semanticweb.org/ERAS-ontology#How_Did_It_End?> rdf:type owl:NamedIndividual ,
                                                                     :Song ;
-                                                           :belongsToAlbum :The_Tortured_Poets_Department .
+                                                           :belongsToAlbum :The_Tortured_Poets_Department ;
+                                                           :has_title "How Did It End" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#I'm_Only_Me_When_I'm_With_You
 <http://www.semanticweb.org/ERAS-ontology#I'm_Only_Me_When_I'm_With_You> rdf:type owl:NamedIndividual ,
                                                                                   :Song ;
-                                                                         :belongsToAlbum :Debut .
+                                                                         :belongsToAlbum :Debut ;
+                                                                         :has_title "I'm Only Me When I'm With You" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#I_Can_Fix_Him_(No_Really_I_Can)
 <http://www.semanticweb.org/ERAS-ontology#I_Can_Fix_Him_(No_Really_I_Can)> rdf:type owl:NamedIndividual ,
                                                                                     :Song ;
-                                                                           :belongsToAlbum :The_Tortured_Poets_Department .
+                                                                           :belongsToAlbum :The_Tortured_Poets_Department ;
+                                                                           :has_title "I Can Fix Him (No Really I Can)" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#I_Look_in_People's_Windows
 <http://www.semanticweb.org/ERAS-ontology#I_Look_in_People's_Windows> rdf:type owl:NamedIndividual ,
                                                                                :Song ;
-                                                                      :belongsToAlbum :The_Tortured_Poets_Department .
+                                                                      :belongsToAlbum :The_Tortured_Poets_Department ;
+                                                                      :has_title "I Look In People's Window" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#It's_Nice_To_Have_A_Friend
 <http://www.semanticweb.org/ERAS-ontology#It's_Nice_To_Have_A_Friend> rdf:type owl:NamedIndividual ,
                                                                                :Song ;
-                                                                      :belongsToAlbum :Lover .
+                                                                      :belongsToAlbum :Lover ;
+                                                                      :has_title "It's Nice To Have A Friend" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#ME!
 <http://www.semanticweb.org/ERAS-ontology#ME!> rdf:type owl:NamedIndividual ,
                                                         :Song ;
-                                               :belongsToAlbum :Lover .
+                                               :belongsToAlbum :Lover ;
+                                               :hasFeaturedArtist <http://www.semanticweb.org/ERAS-ontology#Brendon_Urie_of_Panic!_At_The_Disco> ;
+                                               :has_title "ME!" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#Mary's_Song_(Oh_My_My_My)
 <http://www.semanticweb.org/ERAS-ontology#Mary's_Song_(Oh_My_My_My)> rdf:type owl:NamedIndividual ,
                                                                               :Song ;
-                                                                     :belongsToAlbum :Debut .
+                                                                     :belongsToAlbum :Debut ;
+                                                                     :has_title "Mary's Song (Oh My My My)" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#Miss_Americana_&_The_Heartbreak_Prince
 <http://www.semanticweb.org/ERAS-ontology#Miss_Americana_&_The_Heartbreak_Prince> rdf:type owl:NamedIndividual ,
                                                                                            :Song ;
-                                                                                  :belongsToAlbum :Lover .
+                                                                                  :belongsToAlbum :Lover ;
+                                                                                  :has_title "Miss Americana & The Heartbreak Prince" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#New_Year's_Day
@@ -290,300 +286,401 @@
 ###  http://www.semanticweb.org/ERAS-ontology#Question...?
 <http://www.semanticweb.org/ERAS-ontology#Question...?> rdf:type owl:NamedIndividual ,
                                                                  :Song ;
-                                                        :belongsToAlbum :Midnights .
+                                                        :belongsToAlbum :Midnights ;
+                                                        :has_title "Question...?" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#Red_(Original_Demo_Recording)
 <http://www.semanticweb.org/ERAS-ontology#Red_(Original_Demo_Recording)> rdf:type owl:NamedIndividual ,
                                                                                   :Song ;
-                                                                         :belongsToAlbum :Red .
+                                                                         :belongsToAlbum :Red ;
+                                                                         :has_title "Red (Original Demo Recording)" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#Should've_Said_No
 <http://www.semanticweb.org/ERAS-ontology#Should've_Said_No> rdf:type owl:NamedIndividual ,
                                                                       :Song ;
-                                                             :belongsToAlbum :Debut .
+                                                             :belongsToAlbum :Debut ;
+                                                             :has_title "Should've Said No" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#So_Long,_London
 <http://www.semanticweb.org/ERAS-ontology#So_Long,_London> rdf:type owl:NamedIndividual ,
                                                                     :Song ;
-                                                           :belongsToAlbum :The_Tortured_Poets_Department .
+                                                           :belongsToAlbum :The_Tortured_Poets_Department ;
+                                                           :has_title "So Long, London" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#Soon_You'll_Get_Better
 <http://www.semanticweb.org/ERAS-ontology#Soon_You'll_Get_Better> rdf:type owl:NamedIndividual ,
                                                                            :Song ;
-                                                                  :belongsToAlbum :Lover .
+                                                                  :belongsToAlbum :Lover ;
+                                                                  :hasFeaturedArtist :The_Chicks ;
+                                                                  :has_title "Soon You'll Get Better" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#State_of_Grace_(Acoustic)
 <http://www.semanticweb.org/ERAS-ontology#State_of_Grace_(Acoustic)> rdf:type owl:NamedIndividual ,
                                                                               :Song ;
-                                                                     :belongsToAlbum :Red .
+                                                                     :belongsToAlbum :Red ;
+                                                                     :has_title "State of Grace (Acoustic)" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#That's_When
 <http://www.semanticweb.org/ERAS-ontology#That's_When> rdf:type owl:NamedIndividual ,
                                                                 :Song ;
-                                                       :belongsToAlbum :Fearless .
+                                                       :belongsToAlbum :Fearless ;
+                                                       :hasFeaturedArtist :Keith_Urban ;
+                                                       :has_title "That's When" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#This_Is_Why_We_Can't_Have_Nice_Things
 <http://www.semanticweb.org/ERAS-ontology#This_Is_Why_We_Can't_Have_Nice_Things> rdf:type owl:NamedIndividual ,
                                                                                           :Song ;
-                                                                                 :belongsToAlbum :Reputation .
+                                                                                 :belongsToAlbum :Reputation ;
+                                                                                 :has_title "This Is Why We Can't Have Nice Things" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#Treacherous_(Original_Demo_Recording)
 <http://www.semanticweb.org/ERAS-ontology#Treacherous_(Original_Demo_Recording)> rdf:type owl:NamedIndividual ,
                                                                                           :Song ;
-                                                                                 :belongsToAlbum :Red .
+                                                                                 :belongsToAlbum :Red ;
+                                                                                 :has_title "Treacherous (Original Demo Recording)" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#Who's_Afraid_of_Little_Old_Me?
 <http://www.semanticweb.org/ERAS-ontology#Who's_Afraid_of_Little_Old_Me?> rdf:type owl:NamedIndividual ,
                                                                                    :Song ;
-                                                                          :belongsToAlbum :The_Tortured_Poets_Department .
+                                                                          :belongsToAlbum :The_Tortured_Poets_Department ;
+                                                                          :has_title "Who's Afraid of Little Old Me" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#You're_Not_Sorry
 <http://www.semanticweb.org/ERAS-ontology#You're_Not_Sorry> rdf:type owl:NamedIndividual ,
                                                                      :Song ;
-                                                            :belongsToAlbum :Fearless .
+                                                            :belongsToAlbum :Fearless ;
+                                                            :has_title "You're Not Sorry" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#You're_On_Your_Own,_Kid
 <http://www.semanticweb.org/ERAS-ontology#You're_On_Your_Own,_Kid> rdf:type owl:NamedIndividual ,
                                                                             :Song ;
-                                                                   :belongsToAlbum :Midnights .
+                                                                   :belongsToAlbum :Midnights ;
+                                                                   :has_title "You're On Your Own, Kid" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology#it's_time_to_go
 <http://www.semanticweb.org/ERAS-ontology#it's_time_to_go> rdf:type owl:NamedIndividual ,
                                                                     :Song ;
-                                                           :belongsToAlbum :Evermore .
-
-
-###  http://www.semanticweb.org/ERAS-ontology#no_body,_no_crime
-<http://www.semanticweb.org/ERAS-ontology#no_body,_no_crime> rdf:type owl:NamedIndividual ,
-                                                                      :Song ;
-                                                             :belongsToAlbum :Evermore .
+                                                           :belongsToAlbum :Evermore ;
+                                                           :has_title "it's time to go" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/A_Perfectly_Good_Heart
 :A_Perfectly_Good_Heart rdf:type owl:NamedIndividual ,
                                  :Song ;
-                        :belongsToAlbum :Debut .
+                        :belongsToAlbum :Debut ;
+                        :has_title "A Perfectly Good Heart" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/A_Place_in_this_World
 :A_Place_in_this_World rdf:type owl:NamedIndividual ,
                                 :Song ;
-                       :belongsToAlbum :Debut .
+                       :belongsToAlbum :Debut ;
+                       :has_title "A Place in this World" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Afterglow
 :Afterglow rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum :Lover .
+           :belongsToAlbum :Lover ;
+           :has_title "Afterglow" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/All_Too_Well
 :All_Too_Well rdf:type owl:NamedIndividual ,
                        :Song ;
-              :belongsToAlbum :Red .
+              :belongsToAlbum :Red ;
+              :has_title "All Too Well" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/All_You_Had_To_Do_Was_Stay
 :All_You_Had_To_Do_Was_Stay rdf:type owl:NamedIndividual ,
                                      :Song ;
-                            :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> .
+                            :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> ;
+                            :has_title "All You Had To Do Was Stay" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Alternative_rock
 :Alternative_rock rdf:type owl:NamedIndividual ,
-                           :Genre .
+                           :Genre ;
+                  :representsTopic :being_emotional ,
+                                   :desperation ,
+                                   :discovery ,
+                                   :frustration ,
+                                   :nostalgia ,
+                                   :pain ,
+                                   :reflection ,
+                                   :struggle ,
+                                   :suffering .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Anti-Hero
 :Anti-Hero rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum :Midnights .
+           :belongsToAlbum :Midnights ;
+           :has_title "Anti-Hero" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Back_To_December
 :Back_To_December rdf:type owl:NamedIndividual ,
                            :Song ;
-                  :belongsToAlbum :Speak_Now .
+                  :belongsToAlbum :Speak_Now ;
+                  :has_title "Back To December" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Bad_Blood
 :Bad_Blood rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> .
+           :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> ;
+           :hasFeaturedArtist :Kendrick_Lamar ;
+           :has_title "Bad Blood" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Baroque_pop
 :Baroque_pop rdf:type owl:NamedIndividual ,
-                      :Genre .
+                      :Genre ;
+             :representsTopic :being_emotional ,
+                              :frustration ,
+                              :nostalgia ,
+                              :reflection ,
+                              :struggle ,
+                              :suffering .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Begin_Again
 :Begin_Again rdf:type owl:NamedIndividual ,
                       :Song ;
-             :belongsToAlbum :Red .
+             :belongsToAlbum :Red ;
+             :has_title "Begin Again" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Bejeweled
 :Bejeweled rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum :Midnights .
+           :belongsToAlbum :Midnights ;
+           :has_title "Bejeweled" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Better_Than_Revenge
 :Better_Than_Revenge rdf:type owl:NamedIndividual ,
                               :Song ;
-                     :belongsToAlbum :Speak_Now .
+                     :belongsToAlbum :Speak_Now ;
+                     :has_title "Better Than Revenge" .
+
+
+###  http://www.semanticweb.org/ERAS-ontology/Big_Machine
+:Big_Machine rdf:type owl:NamedIndividual ,
+                      :Label .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Black_Space
 :Black_Space rdf:type owl:NamedIndividual ,
                       :Song ;
-             :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> .
+             :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> ;
+             :has_title "Black Space" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Bon_Iver
 :Bon_Iver rdf:type owl:NamedIndividual ,
-                   :Artist .
+                   :Artist ;
+          :has_name "Bon Iver" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Breathe
 :Breathe rdf:type owl:NamedIndividual ,
                   :Song ;
-         :belongsToAlbum :Fearless .
+         :belongsToAlbum :Fearless ;
+         :hasFeaturedArtist :Colbie_Caillat ;
+         :has_title "Breathe" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/But_Daddy_I_Love_Him
 :But_Daddy_I_Love_Him rdf:type owl:NamedIndividual ,
                                :Song ;
-                      :belongsToAlbum :The_Tortured_Poets_Department .
+                      :belongsToAlbum :The_Tortured_Poets_Department ;
+                      :has_title "But Daddy I Love Him" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Bye_Bye_Baby
 :Bye_Bye_Baby rdf:type owl:NamedIndividual ,
                        :Song ;
-              :belongsToAlbum :Fearless .
+              :belongsToAlbum :Fearless ;
+              :has_title "Bye Bye Baby" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Call_It_What_You_Want
 :Call_It_What_You_Want rdf:type owl:NamedIndividual ,
                                 :Song ;
-                       :belongsToAlbum :Reputation .
+                       :belongsToAlbum :Reputation ;
+                       :has_title "Call It What You Want" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Cassandra
 :Cassandra rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum :The_Tortured_Poets_Department .
+           :belongsToAlbum :The_Tortured_Poets_Department ;
+           :has_title "Cassandra" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Change
 :Change rdf:type owl:NamedIndividual ,
                  :Song ;
-        :belongsToAlbum :Fearless .
+        :belongsToAlbum :Fearless ;
+        :has_title "Change" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Chillout
 :Chillout rdf:type owl:NamedIndividual ,
-                   :Genre .
+                   :Genre ;
+          :representsTopic :aspirations ,
+                           :companionship ,
+                           :family ,
+                           :memories ,
+                           :reflection ,
+                           :seeking_understanding .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Chloe_or_Sam_or_Sophia_or_Marcus
 :Chloe_or_Sam_or_Sophia_or_Marcus rdf:type owl:NamedIndividual ,
                                            :Song ;
-                                  :belongsToAlbum :The_Tortured_Poets_Department .
+                                  :belongsToAlbum :The_Tortured_Poets_Department ;
+                                  :has_title "Chloe or Sam or Sophia or Marcus" .
+
+
+###  http://www.semanticweb.org/ERAS-ontology/Chris_Stapleton
+:Chris_Stapleton rdf:type owl:NamedIndividual ,
+                          :Artist ;
+                 :has_name "Chris_Stapleton" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Clara_Bow
 :Clara_Bow rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum :The_Tortured_Poets_Department .
+           :belongsToAlbum :The_Tortured_Poets_Department ;
+           :has_title "Clara Bow" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Clean
 :Clean rdf:type owl:NamedIndividual ,
                 :Song ;
-       :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> .
+       :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> ;
+       :has_title "Clean" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Colbie_Caillat
 :Colbie_Caillat rdf:type owl:NamedIndividual ,
-                         :Artist .
+                         :Artist ;
+                :has_name "Colbie Caillat" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Cold_as_You
 :Cold_as_You rdf:type owl:NamedIndividual ,
                       :Song ;
-             :belongsToAlbum :Debut .
+             :belongsToAlbum :Debut ;
+             :has_title "Cold As You" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Come_Back...Be_Here
 :Come_Back...Be_Here rdf:type owl:NamedIndividual ,
                               :Song ;
-                     :belongsToAlbum :Red .
+                     :belongsToAlbum :Red ;
+                     :has_title "Come Back Be Here" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Come_In_With_The_Rain
 :Come_In_With_The_Rain rdf:type owl:NamedIndividual ,
                                 :Song ;
-                       :belongsToAlbum :Fearless .
+                       :belongsToAlbum :Fearless ;
+                       :has_title "Come In With The Rain" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Cornelia_Street
 :Cornelia_Street rdf:type owl:NamedIndividual ,
                           :Song ;
-                 :belongsToAlbum :Lover .
+                 :belongsToAlbum :Lover ;
+                 :has_title "Cornelia Street" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Country_pop
 :Country_pop rdf:type owl:NamedIndividual ,
-                      :Genre .
+                      :Genre ;
+             :representsTopic :adventure ,
+                              :appreciation ,
+                              :breakup ,
+                              :challenges ,
+                              :conflict ,
+                              :decision-making ,
+                              :desire ,
+                              :expression ,
+                              :future ,
+                              :intimacy ,
+                              :loneliness ,
+                              :love ,
+                              :music ,
+                              :nature ,
+                              :nostalgia ,
+                              :persistence ,
+                              :reflection ,
+                              :regret ,
+                              :return_and_departure ,
+                              :uncertainty .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Cruel_Summer
 :Cruel_Summer rdf:type owl:NamedIndividual ,
                        :Song ;
-              :belongsToAlbum :Lover .
+              :belongsToAlbum :Lover ;
+              :has_title "Cruel Summer" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Dance_pop
 :Dance_pop rdf:type owl:NamedIndividual ,
-                    :Genre .
+                    :Genre ;
+           :representsTopic :desire ,
+                            :enjoying_life ,
+                            :moving_on ,
+                            :relationships ,
+                            :romantic_vibes ,
+                            :turmoil .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Dancing_With_Our_Hands_Tied
 :Dancing_With_Our_Hands_Tied rdf:type owl:NamedIndividual ,
                                       :Song ;
-                             :belongsToAlbum :Reputation .
+                             :belongsToAlbum :Reputation ;
+                             :has_title "Dancing With Our Hands Tied" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Daylight
 :Daylight rdf:type owl:NamedIndividual ,
                    :Song ;
-          :belongsToAlbum :Lover .
+          :belongsToAlbum :Lover ;
+          :has_title "Daylight" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Dear_John
 :Dear_John rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum :Speak_Now .
+           :belongsToAlbum :Speak_Now ;
+           :has_title "Dear John" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Death_By_A_Thousand_Cuts
 :Death_By_A_Thousand_Cuts rdf:type owl:NamedIndividual ,
                                    :Song ;
-                          :belongsToAlbum :Lover .
+                          :belongsToAlbum :Lover ;
+                          :has_title "Death By A Thousand Cuts" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Debut
@@ -606,36 +703,66 @@
 ###  http://www.semanticweb.org/ERAS-ontology/Delicate
 :Delicate rdf:type owl:NamedIndividual ,
                    :Song ;
-          :belongsToAlbum :Reputation .
+          :belongsToAlbum :Reputation ;
+          :has_title "Delicate" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Down_Bad
 :Down_Bad rdf:type owl:NamedIndividual ,
                    :Song ;
-          :belongsToAlbum :The_Tortured_Poets_Department .
+          :belongsToAlbum :The_Tortured_Poets_Department ;
+          :has_title "Down Bad" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Dress
 :Dress rdf:type owl:NamedIndividual ,
                 :Song ;
-       :belongsToAlbum :Reputation .
+       :belongsToAlbum :Reputation ;
+       :has_title "Dress" .
+
+
+###  http://www.semanticweb.org/ERAS-ontology/Ed_Sheeran
+:Ed_Sheeran rdf:type owl:NamedIndividual ,
+                     :Artist ;
+            :has_name "Ed Sheeran" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Elettropop
 :Elettropop rdf:type owl:NamedIndividual ,
-                     :Genre .
+                     :Genre ;
+            :representsTopic :anger ,
+                             :aspirations ,
+                             :being_emotional ,
+                             :companionship ,
+                             :desire ,
+                             :devotion ,
+                             :enthusiasm ,
+                             :excitement ,
+                             :expression ,
+                             :family ,
+                             :fantasy ,
+                             :memories ,
+                             :nostalgia ,
+                             :persistence ,
+                             :reflection ,
+                             :relationships ,
+                             :seeking_understanding .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Enchanted
 :Enchanted rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum :Speak_Now .
+           :belongsToAlbum :Speak_Now ;
+           :has_title "Enchanted" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/End_Game
 :End_Game rdf:type owl:NamedIndividual ,
                    :Song ;
-          :belongsToAlbum :Reputation .
+          :belongsToAlbum :Reputation ;
+          :hasFeaturedArtist :Ed_Sheeran ,
+                             :Future ;
+          :has_title "End Game" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Evermore
@@ -661,18 +788,27 @@
 ###  http://www.semanticweb.org/ERAS-ontology/Everything_Has_Changed
 :Everything_Has_Changed rdf:type owl:NamedIndividual ,
                                  :Song ;
-                        :belongsToAlbum :Red .
+                        :belongsToAlbum :Red ;
+                        :hasFeaturedArtist :Ed_Sheeran ;
+                        :has_title "Everything Has Changed" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Experimental_pop
 :Experimental_pop rdf:type owl:NamedIndividual ,
-                           :Genre .
+                           :Genre ;
+                  :representsTopic :aspirations ,
+                                   :companionship ,
+                                   :family ,
+                                   :memories ,
+                                   :reflection ,
+                                   :seeking_understanding .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/False_God
 :False_God rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum :Lover .
+           :belongsToAlbum :Lover ;
+           :has_title "False God" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Fearless
@@ -696,17 +832,30 @@
 ###  http://www.semanticweb.org/ERAS-ontology/Fifteen
 :Fifteen rdf:type owl:NamedIndividual ,
                   :Song ;
-         :belongsToAlbum :Fearless .
+         :belongsToAlbum :Fearless ;
+         :has_title "Fifteen" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Florence_and_The_Machine
 :Florence_and_The_Machine rdf:type owl:NamedIndividual ,
-                                   :Artist .
+                                   :Artist ;
+                          :has_name "Florence and The Machine" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Folk_pop
 :Folk_pop rdf:type owl:NamedIndividual ,
-                   :Genre .
+                   :Genre ;
+          :representsTopic :aspirations ,
+                           :being_emotional ,
+                           :companionship ,
+                           :family ,
+                           :frustration ,
+                           :memories ,
+                           :nostalgia ,
+                           :reflection ,
+                           :seeking_understanding ,
+                           :struggle ,
+                           :suffering .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Folklore
@@ -731,213 +880,292 @@
 
 ###  http://www.semanticweb.org/ERAS-ontology/Folktronica
 :Folktronica rdf:type owl:NamedIndividual ,
-                      :Genre .
+                      :Genre ;
+             :representsTopic :desperation ,
+                              :discovery ,
+                              :frustration ,
+                              :pain ,
+                              :reflection ,
+                              :struggle .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Fortnight
 :Fortnight rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum :The_Tortured_Poets_Department .
+           :belongsToAlbum :The_Tortured_Poets_Department ;
+           :hasFeaturedArtist :Post_Malone ;
+           :has_title "Fortnight" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Fresh_Out_The_Slammer
 :Fresh_Out_The_Slammer rdf:type owl:NamedIndividual ,
                                 :Song ;
-                       :belongsToAlbum :The_Tortured_Poets_Department .
+                       :belongsToAlbum :The_Tortured_Poets_Department ;
+                       :has_title "Fresh Out The Slammer" .
+
+
+###  http://www.semanticweb.org/ERAS-ontology/Future
+:Future rdf:type owl:NamedIndividual ,
+                 :Artist ;
+        :has_title "Future" .
+
+
+###  http://www.semanticweb.org/ERAS-ontology/Gary_Lightbody
+:Gary_Lightbody rdf:type owl:NamedIndividual ,
+                         :Artist ;
+                :has_name "Gary Lightbody" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Gateway_Car
 :Gateway_Car rdf:type owl:NamedIndividual ,
                       :Song ;
-             :belongsToAlbum :Reputation .
+             :belongsToAlbum :Reputation ;
+             :has_title "Gateway Car" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Girl_at_Home
 :Girl_at_Home rdf:type owl:NamedIndividual ,
                        :Song ;
-              :belongsToAlbum :Red .
+              :belongsToAlbum :Red ;
+              :has_title "Girl at Home" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Gorgeous
 :Gorgeous rdf:type owl:NamedIndividual ,
                    :Song ;
-          :belongsToAlbum :Reputation .
+          :belongsToAlbum :Reputation ;
+          :has_title "Gorgeous" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/HAIM
 :HAIM rdf:type owl:NamedIndividual ,
-               :Artist .
+               :Artist ;
+      :has_name "HAIM" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Haunted
 :Haunted rdf:type owl:NamedIndividual ,
                   :Song ;
-         :belongsToAlbum :Speak_Now .
+         :belongsToAlbum :Speak_Now ;
+         :has_title "Haunted" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Hey_Stephen
 :Hey_Stephen rdf:type owl:NamedIndividual ,
                       :Song ;
-             :belongsToAlbum :Fearless .
+             :belongsToAlbum :Fearless ;
+             :has_title "Hey Stephen" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Holy_Ground
 :Holy_Ground rdf:type owl:NamedIndividual ,
                       :Song ;
-             :belongsToAlbum :Red .
+             :belongsToAlbum :Red ;
+             :has_title "Holy Ground" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/How_You_Get_The_Girl
 :How_You_Get_The_Girl rdf:type owl:NamedIndividual ,
                                :Song ;
-                      :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> .
+                      :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> ;
+                      :has_title "How You Get The Girl" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/I_Almost_Do
 :I_Almost_Do rdf:type owl:NamedIndividual ,
                       :Song ;
-             :belongsToAlbum :Red .
+             :belongsToAlbum :Red ;
+             :has_title "I Almost Do" .
+
+
+###  http://www.semanticweb.org/ERAS-ontology/I_Bet_You_Think_About_Me
+:I_Bet_You_Think_About_Me rdf:type owl:NamedIndividual ,
+                                   :Song ;
+                          :belongsToAlbum :Red ;
+                          :hasFeaturedArtist :Chris_Stapleton ;
+                          :has_name "I Bet You Think About Me" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/I_Can_Do_It_With_a_Broken_Heart
 :I_Can_Do_It_With_a_Broken_Heart rdf:type owl:NamedIndividual ,
                                           :Song ;
-                                 :belongsToAlbum :The_Tortured_Poets_Department .
+                                 :belongsToAlbum :The_Tortured_Poets_Department ;
+                                 :has_title "I Can Do It WIth a Broken Heart" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/I_Did_Something_Bad
 :I_Did_Something_Bad rdf:type owl:NamedIndividual ,
                               :Song ;
-                     :belongsToAlbum :Reputation .
+                     :belongsToAlbum :Reputation ;
+                     :has_title "I Did Something Bad" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/I_Forgot_That_You_Existed
 :I_Forgot_That_You_Existed rdf:type owl:NamedIndividual ,
                                     :Song ;
-                           :belongsToAlbum :Lover .
+                           :belongsToAlbum :Lover ;
+                           :has_title "I Forgot That You Existed" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/I_Hate_It_Here
 :I_Hate_It_Here rdf:type owl:NamedIndividual ,
                          :Song ;
-                :belongsToAlbum :The_Tortured_Poets_Department .
+                :belongsToAlbum :The_Tortured_Poets_Department ;
+                :has_title "I Hate It Here" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/I_Knew_You_Were_Trouble
 :I_Knew_You_Were_Trouble rdf:type owl:NamedIndividual ,
                                   :Song ;
-                         :belongsToAlbum :Red .
+                         :belongsToAlbum :Red ;
+                         :has_title "I Knew You Were Trouble" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/I_Know_Places
 :I_Know_Places rdf:type owl:NamedIndividual ,
                         :Song ;
-               :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> .
+               :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> ;
+               :has_title "I Know Places" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/I_Think_He_Knows
 :I_Think_He_Knows rdf:type owl:NamedIndividual ,
                            :Song ;
-                  :belongsToAlbum :Lover .
+                  :belongsToAlbum :Lover ;
+                  :has_title "I Think He Knows" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/I_Wish_You_Would
 :I_Wish_You_Would rdf:type owl:NamedIndividual ,
                            :Song ;
-                  :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> .
+                  :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> ;
+                  :has_title "I Wish You Would" .
+
+
+###  http://www.semanticweb.org/ERAS-ontology/Ice_Spice
+:Ice_Spice rdf:type owl:NamedIndividual ,
+                    :Artist .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/If_This_Was_a_Movie
 :If_This_Was_a_Movie rdf:type owl:NamedIndividual ,
                               :Song ;
-                     :belongsToAlbum :Speak_Now .
+                     :belongsToAlbum :Speak_Now ;
+                     :has_title "If This Was a Movie" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Indie_folk
 :Indie_folk rdf:type owl:NamedIndividual ,
-                     :Genre .
+                     :Genre ;
+            :representsTopic :desperation ,
+                             :discovery ,
+                             :frustration ,
+                             :pain ,
+                             :reflection ,
+                             :struggle .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Innocent
 :Innocent rdf:type owl:NamedIndividual ,
                    :Song ;
-          :belongsToAlbum :Speak_Now .
+          :belongsToAlbum :Speak_Now ;
+          :has_title "Innocent" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Invisible
 :Invisible rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum :Debut .
+           :belongsToAlbum :Debut ;
+           :has_title "Invisible" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Jump_Then_Fall
 :Jump_Then_Fall rdf:type owl:NamedIndividual ,
                          :Song ;
-                :belongsToAlbum :Fearless .
+                :belongsToAlbum :Fearless ;
+                :has_title "Jump Then Fall" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Karma
 :Karma rdf:type owl:NamedIndividual ,
                 :Song ;
-       :belongsToAlbum :Midnights .
+       :belongsToAlbum :Midnights ;
+       :hasFeaturedArtist :Ice_Spice ;
+       :has_title "Karma" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Keith_Urban
 :Keith_Urban rdf:type owl:NamedIndividual ,
-                      :Artist .
+                      :Artist ;
+             :has_name "Keith Urban" .
+
+
+###  http://www.semanticweb.org/ERAS-ontology/Kendrick_Lamar
+:Kendrick_Lamar rdf:type owl:NamedIndividual ,
+                         :Artist ;
+                :has_name "Kendrick Lamar" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/King_Of_My_Heart
 :King_Of_My_Heart rdf:type owl:NamedIndividual ,
                            :Song ;
-                  :belongsToAlbum :Reputation .
+                  :belongsToAlbum :Reputation ;
+                  :has_title "King Of My Heart" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Labyrinth
 :Labyrinth rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum :Midnights .
+           :belongsToAlbum :Midnights ;
+           :has_title "Labyrinth" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Lana_Del_Rey
 :Lana_Del_Rey rdf:type owl:NamedIndividual ,
-                       :Artist .
+                       :Artist ;
+              :has_name "Lana Del Rey" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Last_Kiss
 :Last_Kiss rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum :Speak_Now .
+           :belongsToAlbum :Speak_Now ;
+           :has_title "Last Kiss" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Lavander_Haze
 :Lavander_Haze rdf:type owl:NamedIndividual ,
                         :Song ;
-               :belongsToAlbum :Midnights .
+               :belongsToAlbum :Midnights ;
+               :has_title "Lavander Haze" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/London_Boy
 :London_Boy rdf:type owl:NamedIndividual ,
                      :Song ;
-            :belongsToAlbum :Lover .
+            :belongsToAlbum :Lover ;
+            :has_title "London Boy" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Long_Live
 :Long_Live rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum :Speak_Now .
+           :belongsToAlbum :Speak_Now ;
+           :has_title "Long Live" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Look_What_You_Made_Me_Do
 :Look_What_You_Made_Me_Do rdf:type owl:NamedIndividual ,
                                    :Song ;
-                          :belongsToAlbum :Reputation .
+                          :belongsToAlbum :Reputation ;
+                          :has_title "Look What You Made Me Do" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Love_Story
 :Love_Story rdf:type owl:NamedIndividual ,
                      :Song ;
-            :belongsToAlbum :Fearless .
+            :belongsToAlbum :Fearless ;
+            :has_title "Love Story" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Lover
@@ -963,31 +1191,36 @@
 
 ###  http://www.semanticweb.org/ERAS-ontology/Maren_Morris
 :Maren_Morris rdf:type owl:NamedIndividual ,
-                       :Artist .
+                       :Artist ;
+              :has_name "Maren Morris" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Maroon
 :Maroon rdf:type owl:NamedIndividual ,
                  :Song ;
-        :belongsToAlbum :Midnights .
+        :belongsToAlbum :Midnights ;
+        :has_title "Maroon" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Mastermind
 :Mastermind rdf:type owl:NamedIndividual ,
                      :Song ;
-            :belongsToAlbum :Midnights .
+            :belongsToAlbum :Midnights ;
+            :has_title "Masterming" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Mean
 :Mean rdf:type owl:NamedIndividual ,
                :Song ;
-      :belongsToAlbum :Speak_Now .
+      :belongsToAlbum :Speak_Now ;
+      :has_title "Mean" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Midnight_Rain
 :Midnight_Rain rdf:type owl:NamedIndividual ,
                         :Song ;
-               :belongsToAlbum :Midnights .
+               :belongsToAlbum :Midnights ;
+               :has_title "Midnight Rain" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Midnights
@@ -1014,19 +1247,22 @@
 ###  http://www.semanticweb.org/ERAS-ontology/Mine
 :Mine rdf:type owl:NamedIndividual ,
                :Song ;
-      :belongsToAlbum :Speak_Now .
+      :belongsToAlbum :Speak_Now ;
+      :has_title "Mine" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Mr.Perfectly_Fine
 :Mr.Perfectly_Fine rdf:type owl:NamedIndividual ,
                             :Song ;
-                   :belongsToAlbum :Fearless .
+                   :belongsToAlbum :Fearless ;
+                   :has_title "Mr. Perfeclty Fine" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/My_Boy_Only_Breaks_His_Favorit_Toys
 :My_Boy_Only_Breaks_His_Favorit_Toys rdf:type owl:NamedIndividual ,
                                               :Song ;
-                                     :belongsToAlbum :The_Tortured_Poets_Department .
+                                     :belongsToAlbum :The_Tortured_Poets_Department ;
+                                     :has_title "My Boy Only Breaks His Favorite Toys" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Never_Grow_Up
@@ -1044,52 +1280,75 @@
 ###  http://www.semanticweb.org/ERAS-ontology/Our_Song
 :Our_Song rdf:type owl:NamedIndividual ,
                    :Song ;
-          :belongsToAlbum :Debut .
+          :belongsToAlbum :Debut ;
+          :has_title "Our_Song" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Ours
 :Ours rdf:type owl:NamedIndividual ,
                :Song ;
-      :belongsToAlbum :Speak_Now .
+      :belongsToAlbum :Speak_Now ;
+      :has_title "Ours" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Out_of_the_Woods
 :Out_of_the_Woods rdf:type owl:NamedIndividual ,
                            :Song ;
-                  :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> .
+                  :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> ;
+                  :has_title "Out_of_the_Woods" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Paper_Rings
 :Paper_Rings rdf:type owl:NamedIndividual ,
                       :Song ;
-             :belongsToAlbum :Lover .
+             :belongsToAlbum :Lover ;
+             :has_title "Paper Rings" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Peter
 :Peter rdf:type owl:NamedIndividual ,
                 :Song ;
-       :belongsToAlbum :The_Tortured_Poets_Department .
+       :belongsToAlbum :The_Tortured_Poets_Department ;
+       :has_title "peter" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Picture_to_Burn
 :Picture_to_Burn rdf:type owl:NamedIndividual ,
                           :Song ;
-                 :belongsToAlbum :Debut .
+                 :belongsToAlbum :Debut ;
+                 :has_title "Picture to Burn" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Pop
 :Pop rdf:type owl:NamedIndividual ,
-              :Genre .
+              :Genre ;
+     :representsTopic :desire ,
+                      :enjoying_life ,
+                      :moving_on ,
+                      :relationships ,
+                      :romantic_vibes ,
+                      :turmoil .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Pop_rock
 :Pop_rock rdf:type owl:NamedIndividual ,
-                   :Genre .
+                   :Genre ;
+          :representsTopic :anger ,
+                           :challenges ,
+                           :desire ,
+                           :devotion ,
+                           :excitement ,
+                           :loneliness ,
+                           :music ,
+                           :nostalgia ,
+                           :regret ,
+                           :relationships .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Post_Malone
 :Post_Malone rdf:type owl:NamedIndividual ,
-                      :Artist .
+                      :Artist ;
+             :has_name "Post Malone" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Red
@@ -1109,6 +1368,11 @@
      :has_duration 65.11 ;
      :has_release_year 2012 ;
      :has_title "Red" .
+
+
+###  http://www.semanticweb.org/ERAS-ontology/Republic
+:Republic rdf:type owl:NamedIndividual ,
+                   :Label .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Reputation
@@ -1132,42 +1396,44 @@
 ###  http://www.semanticweb.org/ERAS-ontology/Robin
 :Robin rdf:type owl:NamedIndividual ,
                 :Song ;
-       :belongsToAlbum :The_Tortured_Poets_Department .
-
-
-###  http://www.semanticweb.org/ERAS-ontology/Rock_alternativo
-:Rock_alternativo rdf:type owl:NamedIndividual ,
-                           :Genre .
+       :belongsToAlbum :The_Tortured_Poets_Department ;
+       :has_title "Robin" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Sad_Beautiful_Tragic
 :Sad_Beautiful_Tragic rdf:type owl:NamedIndividual ,
                                :Song ;
-                      :belongsToAlbum :Red .
+                      :belongsToAlbum :Red ;
+                      :has_title "Sad Beautiful Tragic" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Shake_It_Off
 :Shake_It_Off rdf:type owl:NamedIndividual ,
                        :Song ;
-              :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> .
+              :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> ;
+              :has_title "Shake It Off" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Snow_On_the_Beach
 :Snow_On_the_Beach rdf:type owl:NamedIndividual ,
                             :Song ;
-                   :belongsToAlbum :Midnights .
+                   :belongsToAlbum :Midnights ;
+                   :hasFeaturedArtist :Lana_Del_Rey ;
+                   :has_title "Snow On The Beach" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/So_High_School
 :So_High_School rdf:type owl:NamedIndividual ,
                          :Song ;
-                :belongsToAlbum :The_Tortured_Poets_Department .
+                :belongsToAlbum :The_Tortured_Poets_Department ;
+                :has_title "So High School" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Sparks_Fly
 :Sparks_Fly rdf:type owl:NamedIndividual ,
                      :Song ;
-            :belongsToAlbum :Speak_Now .
+            :belongsToAlbum :Speak_Now ;
+            :has_title "Sparks Fly" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Speak_Now
@@ -1191,183 +1457,233 @@
 ###  http://www.semanticweb.org/ERAS-ontology/Starlight
 :Starlight rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum :Red .
+           :belongsToAlbum :Red ;
+           :has_title "Starlight" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/State_Of_Grace
 :State_Of_Grace rdf:type owl:NamedIndividual ,
                          :Song ;
-                :belongsToAlbum :Red .
+                :belongsToAlbum :Red ;
+                :has_title "State Of Grace" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Stay_Beautiful
 :Stay_Beautiful rdf:type owl:NamedIndividual ,
                          :Song ;
-                :belongsToAlbum :Debut .
+                :belongsToAlbum :Debut ;
+                :has_title "Stay Beautiful" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Stay_Stay_Stay
 :Stay_Stay_Stay rdf:type owl:NamedIndividual ,
                          :Song ;
-                :belongsToAlbum :Red .
+                :belongsToAlbum :Red ;
+                :has_title "Stay Stay Stay" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Style
 :Style rdf:type owl:NamedIndividual ,
                 :Song ;
-       :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> .
+       :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> ;
+       :has_title "Style" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Superman
 :Superman rdf:type owl:NamedIndividual ,
                    :Song ;
-          :belongsToAlbum :Speak_Now .
+          :belongsToAlbum :Speak_Now ;
+          :has_title "Superman" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Superstar
 :Superstar rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum :Fearless .
+           :belongsToAlbum :Fearless ;
+           :has_title "Superstar" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Sweet_Nothing
 :Sweet_Nothing rdf:type owl:NamedIndividual ,
                         :Song ;
-               :belongsToAlbum :Midnights .
+               :belongsToAlbum :Midnights ;
+               :has_title "Sweet Nothing" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Synth_pop
 :Synth_pop rdf:type owl:NamedIndividual ,
-                    :Genre .
+                    :Genre ;
+           :representsTopic :anger ,
+                            :desire ,
+                            :devotion ,
+                            :enjoying_life ,
+                            :excitement ,
+                            :heartache ,
+                            :intensity ,
+                            :moving_on ,
+                            :nostalgia ,
+                            :reconciliation ,
+                            :relationships ,
+                            :reminescence ,
+                            :romantic_vibes ,
+                            :turmoil .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Taylor_Swift
 :Taylor_Swift rdf:type owl:NamedIndividual ,
-                       :Artist .
+                       :Artist ;
+              :has_name "Taylor Swift" .
+
+
+###  http://www.semanticweb.org/ERAS-ontology/Taylor_Swift_Productions
+:Taylor_Swift_Productions rdf:type owl:NamedIndividual ,
+                                   :Label .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Teadrops_on_My_Guitar
 :Teadrops_on_My_Guitar rdf:type owl:NamedIndividual ,
                                 :Song ;
-                       :belongsToAlbum :Debut .
+                       :belongsToAlbum :Debut ;
+                       :has_title "Teadrops On My Guitar" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Teadrops_on_My_Guitar_-_Pop_Version
 :Teadrops_on_My_Guitar_-_Pop_Version rdf:type owl:NamedIndividual ,
                                               :Song ;
-                                     :belongsToAlbum :Debut .
+                                     :belongsToAlbum :Debut ;
+                                     :has_title "Teadrops on My Guitar - Pop Version" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Tell_Me_Why
 :Tell_Me_Why rdf:type owl:NamedIndividual ,
                       :Song ;
-             :belongsToAlbum :Fearless .
+             :belongsToAlbum :Fearless ;
+             :has_title "Tell Me Why" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/The_Albatross
 :The_Albatross rdf:type owl:NamedIndividual ,
                         :Song ;
-               :belongsToAlbum :The_Tortured_Poets_Department .
+               :belongsToAlbum :The_Tortured_Poets_Department ;
+               :has_title "The Albatross" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/The_Alchemy
 :The_Alchemy rdf:type owl:NamedIndividual ,
                       :Song ;
-             :belongsToAlbum :The_Tortured_Poets_Department .
+             :belongsToAlbum :The_Tortured_Poets_Department ;
+             :has_title "The Alchemy" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/The_Archer
 :The_Archer rdf:type owl:NamedIndividual ,
                      :Song ;
-            :belongsToAlbum :Lover .
+            :belongsToAlbum :Lover ;
+            :has_title "The Archer" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/The_Best_Day
 :The_Best_Day rdf:type owl:NamedIndividual ,
                        :Song ;
-              :belongsToAlbum :Fearless .
+              :belongsToAlbum :Fearless ;
+              :has_title "The Best Day" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/The_Black_Dog
 :The_Black_Dog rdf:type owl:NamedIndividual ,
                         :Song ;
-               :belongsToAlbum :The_Tortured_Poets_Department .
+               :belongsToAlbum :The_Tortured_Poets_Department ;
+               :has_title "The Black Dog" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/The_Bolter
 :The_Bolter rdf:type owl:NamedIndividual ,
                      :Song ;
-            :belongsToAlbum :The_Tortured_Poets_Department .
+            :belongsToAlbum :The_Tortured_Poets_Department ;
+            :has_title "The Bolter" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/The_Chicks
 :The_Chicks rdf:type owl:NamedIndividual ,
-                     :Artist .
+                     :Artist ;
+            :has_name "The Chicks" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/The_Last_Time
 :The_Last_Time rdf:type owl:NamedIndividual ,
                         :Song ;
-               :belongsToAlbum :Red .
+               :belongsToAlbum :Red ;
+               :hasFeaturedArtist :Gary_Lightbody ;
+               :has_title "The Last Time" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/The_Lucky_One
 :The_Lucky_One rdf:type owl:NamedIndividual ,
                         :Song ;
-               :belongsToAlbum :Red .
+               :belongsToAlbum :Red ;
+               :has_title "The Lucky One" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/The_Man
 :The_Man rdf:type owl:NamedIndividual ,
                   :Song ;
-         :belongsToAlbum :Lover .
+         :belongsToAlbum :Lover ;
+         :has_title "The Man" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/The_Manuscript
 :The_Manuscript rdf:type owl:NamedIndividual ,
                          :Song ;
-                :belongsToAlbum :The_Tortured_Poets_Department .
+                :belongsToAlbum :The_Tortured_Poets_Department ;
+                :has_title "The Manuscript" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/The_Moment_I_Knew
 :The_Moment_I_Knew rdf:type owl:NamedIndividual ,
                             :Song ;
-                   :belongsToAlbum :Red .
+                   :belongsToAlbum :Red ;
+                   :has_title "The Moment I Knew" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/The_National
 :The_National rdf:type owl:NamedIndividual ,
-                       :Artist .
+                       :Artist ;
+              :has_name "The National" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/The_Other_Side_of_The_Door
 :The_Other_Side_of_The_Door rdf:type owl:NamedIndividual ,
                                      :Song ;
-                            :belongsToAlbum :Fearless .
+                            :belongsToAlbum :Fearless ;
+                            :has_title "The Other Side of The Door" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/The_Outside
 :The_Outside rdf:type owl:NamedIndividual ,
                       :Song ;
-             :belongsToAlbum :Debut .
+             :belongsToAlbum :Debut ;
+             :has_title "The Outside" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/The_Prophecy
 :The_Prophecy rdf:type owl:NamedIndividual ,
                        :Song ;
-              :belongsToAlbum :The_Tortured_Poets_Department .
+              :belongsToAlbum :The_Tortured_Poets_Department ;
+              :has_title "The Prophecy" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/The_Smallest_Man_Who_Ever_Lived
 :The_Smallest_Man_Who_Ever_Lived rdf:type owl:NamedIndividual ,
                                           :Song ;
-                                 :belongsToAlbum :The_Tortured_Poets_Department .
+                                 :belongsToAlbum :The_Tortured_Poets_Department ;
+                                 :has_title "The Smallest Man Who Ever Lived" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/The_Story_of_Us
 :The_Story_of_Us rdf:type owl:NamedIndividual ,
                           :Song ;
-                 :belongsToAlbum :Speak_Now .
+                 :belongsToAlbum :Speak_Now ;
+                 :has_title "The Story of Us" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department
@@ -1391,109 +1707,128 @@
 ###  http://www.semanticweb.org/ERAS-ontology/The_Way_I_Loved_You
 :The_Way_I_Loved_You rdf:type owl:NamedIndividual ,
                               :Song ;
-                     :belongsToAlbum :Fearless .
+                     :belongsToAlbum :Fearless ;
+                     :has_title "The Way I Loved You" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/This_Love
 :This_Love rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> .
+           :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> ;
+           :has_title "This Love" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Tied_Together_with_a_Smile
 :Tied_Together_with_a_Smile rdf:type owl:NamedIndividual ,
                                      :Song ;
-                            :belongsToAlbum :Debut .
+                            :belongsToAlbum :Debut ;
+                            :has_title "Tied Together with a Smile" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Tim_McGraw
 :Tim_McGraw rdf:type owl:NamedIndividual ,
                      :Song ;
-            :belongsToAlbum :Debut .
+            :belongsToAlbum :Debut ;
+            :has_title "Tim McGraw" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Today_Was_A_Fairytale
 :Today_Was_A_Fairytale rdf:type owl:NamedIndividual ,
                                 :Song ;
-                       :belongsToAlbum :Fearless .
+                       :belongsToAlbum :Fearless ;
+                       :has_title "Today Was A Fairytale" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Treacherous
 :Treacherous rdf:type owl:NamedIndividual ,
                       :Song ;
-             :belongsToAlbum :Red .
+             :belongsToAlbum :Red ;
+             :has_title "Treacherous" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Untouchable
 :Untouchable rdf:type owl:NamedIndividual ,
                       :Song ;
-             :belongsToAlbum :Fearless .
+             :belongsToAlbum :Fearless ;
+             :has_title "Untouchable" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Vigilante_Shit
 :Vigilante_Shit rdf:type owl:NamedIndividual ,
                          :Song ;
-                :belongsToAlbum :Midnights .
+                :belongsToAlbum :Midnights ;
+                :has_title "Vigilante Shit" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/We_Are_Never_Ever_Getting_Back_Together
 :We_Are_Never_Ever_Getting_Back_Together rdf:type owl:NamedIndividual ,
                                                   :Song ;
-                                         :belongsToAlbum :Red .
+                                         :belongsToAlbum :Red ;
+                                         :has_title "We Are Never Ever Getting Back Together" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/We_Were_Happy
 :We_Were_Happy rdf:type owl:NamedIndividual ,
                         :Song ;
-               :belongsToAlbum :Fearless .
+               :belongsToAlbum :Fearless ;
+               :has_title "We Were Happy" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Welcome_To_New_York
 :Welcome_To_New_York rdf:type owl:NamedIndividual ,
                               :Song ;
-                     :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> .
+                     :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> ;
+                     :has_title "Welcome To New York" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/White_Horse
 :White_Horse rdf:type owl:NamedIndividual ,
                       :Song ;
-             :belongsToAlbum :Fearless .
+             :belongsToAlbum :Fearless ;
+             :has_title "White Horse" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Wildest_Dreams
 :Wildest_Dreams rdf:type owl:NamedIndividual ,
                          :Song ;
-                :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> .
+                :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> ;
+                :has_title "Wildest Dreams" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/Wonderland
 :Wonderland rdf:type owl:NamedIndividual ,
                      :Song ;
-            :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> .
+            :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> ;
+            :has_title "Wonderland" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/You_All_Over_Me
 :You_All_Over_Me rdf:type owl:NamedIndividual ,
                           :Song ;
-                 :belongsToAlbum :Fearless .
+                 :belongsToAlbum :Fearless ;
+                 :hasFeaturedArtist :Maren_Morris ;
+                 :has_title "You All Over Me" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/You_Are_In_Love
 :You_Are_In_Love rdf:type owl:NamedIndividual ,
                           :Song ;
-                 :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> .
+                 :belongsToAlbum <http://www.semanticweb.org/ERAS-ontology#1989> ;
+                 :has_title "You Are In Love" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/You_Belong_With_Me
 :You_Belong_With_Me rdf:type owl:NamedIndividual ,
                              :Song ;
-                    :belongsToAlbum :Fearless .
+                    :belongsToAlbum :Fearless ;
+                    :has_title "You Belong With Me" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/You_Need_To_Calm_Down
 :You_Need_To_Calm_Down rdf:type owl:NamedIndividual ,
                                 :Song ;
-                       :belongsToAlbum :Lover .
+                       :belongsToAlbum :Lover ;
+                       :has_title "You Need To Calm Down" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/adventure
@@ -1519,7 +1854,8 @@
 ###  http://www.semanticweb.org/ERAS-ontology/august
 :august rdf:type owl:NamedIndividual ,
                  :Song ;
-        :belongsToAlbum :Folklore .
+        :belongsToAlbum :Folklore ;
+        :has_title "august" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/being_emotional
@@ -1530,7 +1866,8 @@
 ###  http://www.semanticweb.org/ERAS-ontology/betty
 :betty rdf:type owl:NamedIndividual ,
                 :Song ;
-       :belongsToAlbum :Folklore .
+       :belongsToAlbum :Folklore ;
+       :has_title "betty" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/breakup
@@ -1541,7 +1878,8 @@
 ###  http://www.semanticweb.org/ERAS-ontology/cardigan
 :cardigan rdf:type owl:NamedIndividual ,
                    :Song ;
-          :belongsToAlbum :Folklore .
+          :belongsToAlbum :Folklore ;
+          :has_title "cardigan" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/challenges
@@ -1552,13 +1890,15 @@
 ###  http://www.semanticweb.org/ERAS-ontology/champagne_problems
 :champagne_problems rdf:type owl:NamedIndividual ,
                              :Song ;
-                    :belongsToAlbum :Evermore .
+                    :belongsToAlbum :Evermore ;
+                    :has_title "champagne problems" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/closure
 :closure rdf:type owl:NamedIndividual ,
                   :Song ;
-         :belongsToAlbum :Evermore .
+         :belongsToAlbum :Evermore ;
+         :has_title "closure" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/companionship
@@ -1569,7 +1909,9 @@
 ###  http://www.semanticweb.org/ERAS-ontology/coney_island
 :coney_island rdf:type owl:NamedIndividual ,
                        :Song ;
-              :belongsToAlbum :Evermore .
+              :belongsToAlbum :Evermore ;
+              :hasFeaturedArtist :The_National ;
+              :has_title "coney island" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/conflict
@@ -1580,7 +1922,8 @@
 ###  http://www.semanticweb.org/ERAS-ontology/cowboy_like_me
 :cowboy_like_me rdf:type owl:NamedIndividual ,
                          :Song ;
-                :belongsToAlbum :Evermore .
+                :belongsToAlbum :Evermore ;
+                :has_title "cowboy like me" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/decision-making
@@ -1611,7 +1954,8 @@
 ###  http://www.semanticweb.org/ERAS-ontology/dorothea
 :dorothea rdf:type owl:NamedIndividual ,
                    :Song ;
-          :belongsToAlbum :Evermore .
+          :belongsToAlbum :Evermore ;
+          :has_title "dorothea" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/enjoying_life
@@ -1627,13 +1971,16 @@
 ###  http://www.semanticweb.org/ERAS-ontology/epiphany
 :epiphany rdf:type owl:NamedIndividual ,
                    :Song ;
-          :belongsToAlbum :Folklore .
+          :belongsToAlbum :Folklore ;
+          :has_title "Epiphany" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/evermore
 :evermore rdf:type owl:NamedIndividual ,
                    :Song ;
-          :belongsToAlbum :Evermore .
+          :belongsToAlbum :Evermore ;
+          :hasFeaturedArtist :Bon_Iver ;
+          :has_title "evermore" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/excitement
@@ -1644,7 +1991,9 @@
 ###  http://www.semanticweb.org/ERAS-ontology/exile
 :exile rdf:type owl:NamedIndividual ,
                 :Song ;
-       :belongsToAlbum :Folklore .
+       :belongsToAlbum :Folklore ;
+       :hasFeaturedArtist :Bon_Iver ;
+       :has_title "exile" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/expression
@@ -1664,7 +2013,8 @@
 
 ###  http://www.semanticweb.org/ERAS-ontology/frustration
 :frustration rdf:type owl:NamedIndividual ,
-                      :Topic .
+                      :Topic ;
+             :representsTopic :reflection .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/future
@@ -1675,13 +2025,15 @@
 ###  http://www.semanticweb.org/ERAS-ontology/gold_rush
 :gold_rush rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum :Evermore .
+           :belongsToAlbum :Evermore ;
+           :has_title "gold rush" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/happiness
 :happiness rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum :Folklore .
+           :belongsToAlbum :evermore ;
+           :has_title "happiness" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/heartache
@@ -1692,19 +2044,22 @@
 ###  http://www.semanticweb.org/ERAS-ontology/hoax
 :hoax rdf:type owl:NamedIndividual ,
                :Song ;
-      :belongsToAlbum :Folklore .
+      :belongsToAlbum :Folklore ;
+      :has_title "hoax" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/illicit_affairs
 :illicit_affairs rdf:type owl:NamedIndividual ,
                           :Song ;
-                 :belongsToAlbum :Folklore .
+                 :belongsToAlbum :Folklore ;
+                 :has_title "illicit affairs" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/imgonnagetyouback
 :imgonnagetyouback rdf:type owl:NamedIndividual ,
                             :Song ;
-                   :belongsToAlbum :The_Tortured_Poets_Department .
+                   :belongsToAlbum :The_Tortured_Poets_Department ;
+                   :has_title "imgonnagetyouback" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/intensity
@@ -1720,19 +2075,22 @@
 ###  http://www.semanticweb.org/ERAS-ontology/invisible_string
 :invisible_string rdf:type owl:NamedIndividual ,
                            :Song ;
-                  :belongsToAlbum :Folklore .
+                  :belongsToAlbum :Folklore ;
+                  :has_title "invisible string" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/ivy
 :ivy rdf:type owl:NamedIndividual ,
               :Song ;
-     :belongsToAlbum :ivy .
+     :belongsToAlbum :ivy ;
+     :has_title "ivy" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/loml
 :loml rdf:type owl:NamedIndividual ,
                :Song ;
-      :belongsToAlbum :The_Tortured_Poets_Department .
+      :belongsToAlbum :The_Tortured_Poets_Department ;
+      :has_title "loml" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/loneliness
@@ -1743,7 +2101,8 @@
 ###  http://www.semanticweb.org/ERAS-ontology/long_story_short
 :long_story_short rdf:type owl:NamedIndividual ,
                            :Song ;
-                  :belongsToAlbum :Evermore .
+                  :belongsToAlbum :Evermore ;
+                  :has_title "long story short" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/love
@@ -1754,13 +2113,15 @@
 ###  http://www.semanticweb.org/ERAS-ontology/mad_woman
 :mad_woman rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum :Folklore .
+           :belongsToAlbum :Folklore ;
+           :has_title "mad woman" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/marjorie
 :marjorie rdf:type owl:NamedIndividual ,
                    :Song ;
-          :belongsToAlbum :Evermore .
+          :belongsToAlbum :Evermore ;
+          :has_title "marjorie" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/memories
@@ -1771,7 +2132,8 @@
 ###  http://www.semanticweb.org/ERAS-ontology/mirrorball
 :mirrorball rdf:type owl:NamedIndividual ,
                      :Song ;
-            :belongsToAlbum :Folklore .
+            :belongsToAlbum :Folklore ;
+            :has_title "Mirrorball" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/moving_on
@@ -1787,12 +2149,21 @@
 ###  http://www.semanticweb.org/ERAS-ontology/my_tears_ricochet
 :my_tears_ricochet rdf:type owl:NamedIndividual ,
                             :Song ;
-                   :belongsToAlbum :Folklore .
+                   :belongsToAlbum :Folklore ;
+                   :has_title "my tears ricochet" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/nature
 :nature rdf:type owl:NamedIndividual ,
                  :Topic .
+
+
+###  http://www.semanticweb.org/ERAS-ontology/no_body_no_crime
+:no_body_no_crime rdf:type owl:NamedIndividual ,
+                           :Song ;
+                  :belongsToAlbum :evermore ;
+                  :hasFeaturedArtist :HAIM ;
+                  :has_title "no body no crime" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/nostalgia
@@ -1808,7 +2179,8 @@
 ###  http://www.semanticweb.org/ERAS-ontology/peace
 :peace rdf:type owl:NamedIndividual ,
                 :Song ;
-       :belongsToAlbum :Folklore .
+       :belongsToAlbum :Folklore ;
+       :has_title "peace" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/persistence
@@ -1833,7 +2205,8 @@
 
 ###  http://www.semanticweb.org/ERAS-ontology/relationships
 :relationships rdf:type owl:NamedIndividual ,
-                        :Topic .
+                        :Topic ;
+               :representsTopic :turmoil .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/reminescence
@@ -1849,7 +2222,8 @@
 ###  http://www.semanticweb.org/ERAS-ontology/right_were_you_left_me
 :right_were_you_left_me rdf:type owl:NamedIndividual ,
                                  :Song ;
-                        :belongsToAlbum :Evermore .
+                        :belongsToAlbum :Evermore ;
+                        :has_title "right were you left me" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/romantic_vibes
@@ -1865,7 +2239,8 @@
 ###  http://www.semanticweb.org/ERAS-ontology/seven
 :seven rdf:type owl:NamedIndividual ,
                 :Song ;
-       :belongsToAlbum :Folklore .
+       :belongsToAlbum :Folklore ;
+       :has_title "seven" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/struggle
@@ -1881,37 +2256,43 @@
 ###  http://www.semanticweb.org/ERAS-ontology/thanK_you_aIMee
 :thanK_you_aIMee rdf:type owl:NamedIndividual ,
                           :Song ;
-                 :belongsToAlbum :The_Tortured_Poets_Department .
+                 :belongsToAlbum :The_Tortured_Poets_Department ;
+                 :has_title "thanK you aIMee" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/the1
 :the1 rdf:type owl:NamedIndividual ,
                :Song ;
-      :belongsToAlbum :Folklore .
+      :belongsToAlbum :Folklore ;
+      :has_title "the1" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/the_lakes
 :the_lakes rdf:type owl:NamedIndividual ,
                     :Song ;
-           :belongsToAlbum :Folklore .
+           :belongsToAlbum :Folklore ;
+           :has_title "the lakes" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/the_last_great_american_dynasty
 :the_last_great_american_dynasty rdf:type owl:NamedIndividual ,
                                           :Song ;
-                                 :belongsToAlbum :Folklore .
+                                 :belongsToAlbum :Folklore ;
+                                 :has_title "the last great american dynasty" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/this_is_me_trying
 :this_is_me_trying rdf:type owl:NamedIndividual ,
                             :Song ;
-                   :belongsToAlbum :Folklore .
+                   :belongsToAlbum :Folklore ;
+                   :has_title "this is me trying" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/tolerate_it
 :tolerate_it rdf:type owl:NamedIndividual ,
                       :Song ;
-             :belongsToAlbum :Evermore .
+             :belongsToAlbum :Evermore ;
+             :has_title "tolerate it" .
 
 
 ###  http://www.semanticweb.org/ERAS-ontology/turmoil
@@ -1927,7 +2308,8 @@
 ###  http://www.semanticweb.org/ERAS-ontology/willow
 :willow rdf:type owl:NamedIndividual ,
                  :Song ;
-        :belongsToAlbum :Evermore .
+        :belongsToAlbum :Evermore ;
+        :has_title "willow" .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
