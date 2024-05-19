@@ -19,7 +19,7 @@
   --bs-orange: #fd7e14;
   --bs-yellow: #e4c662;
   --bs-green: #67c29c;
-  --bs-teal: #64a19d;
+  --bs-teal: #6610f2;
   --bs-cyan: #1cabc4;
   --bs-black: #000;
   --bs-white: #fff;
@@ -34,7 +34,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #64a19d;
+  --bs-primary: #6610f2;
   --bs-secondary: #7464a1;
   --bs-success: #67c29c;
   --bs-info: #1cabc4;
@@ -58,10 +58,10 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "IM Fell DW Pica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-family: "IM Fell DW Pica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -77,8 +77,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #64a19d;
-  --bs-link-hover-color: #50817e;
+  --bs-link-color: #a774f9;
+  --bs-link-hover-color: #c3a7f1;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #faf4e0;
 }
@@ -250,7 +250,7 @@ sup {
 
 a {
   color: var(--bs-link-color);
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: var(--bs-link-hover-color);
@@ -2257,8 +2257,8 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem rgba(100, 161, 157, 0.25);
 }
 .form-check-input:checked {
-  background-color: #64a19d;
-  border-color: #64a19d;
+  background-color: #6610f2;
+  border-color: #6610f2;
 }
 .form-check-input:checked[type=checkbox] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
@@ -2267,8 +2267,8 @@ textarea.form-control-lg {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 .form-check-input[type=checkbox]:indeterminate {
-  background-color: #64a19d;
-  border-color: #64a19d;
+  background-color: #6610f2;
+  border-color: #6610f2;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 .form-check-input:disabled {
@@ -2354,7 +2354,7 @@ textarea.form-control-lg {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: #64a19d;
+  background-color: #6610f2;
   border: 0;
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2383,7 +2383,7 @@ textarea.form-control-lg {
 .form-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
-  background-color: #64a19d;
+  background-color: #6610f2;
   border: 0;
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2849,19 +2849,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #64a19d;
-  --bs-btn-border-color: #64a19d;
+  --bs-btn-bg: #c3a7f1;
+  --bs-btn-border-color: #6610f2;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #558985;
-  --bs-btn-hover-border-color: #50817e;
+  --bs-btn-hover-bg: #c3a7f1;
+  --bs-btn-hover-border-color: #6610f2;
   --bs-btn-focus-shadow-rgb: 123, 175, 172;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #50817e;
-  --bs-btn-active-border-color: #4b7976;
+  --bs-btn-active-bg: #c3a7f1;
+  --bs-btn-active-border-color: #6610f2;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #64a19d;
-  --bs-btn-disabled-border-color: #64a19d;
+  --bs-btn-disabled-bg: #c3a7f1;
+  --bs-btn-disabled-border-color: #6610f2;
 }
 
 .btn-secondary {
@@ -3018,19 +3018,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  --bs-btn-color: #64a19d;
-  --bs-btn-border-color: #64a19d;
+  --bs-btn-color: #6610f2;
+  --bs-btn-border-color: #6610f2;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #64a19d;
-  --bs-btn-hover-border-color: #64a19d;
+  --bs-btn-hover-bg: #6610f2;
+  --bs-btn-hover-border-color: #6610f2;
   --bs-btn-focus-shadow-rgb: 100, 161, 157;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #64a19d;
-  --bs-btn-active-border-color: #64a19d;
+  --bs-btn-active-bg: #6610f2;
+  --bs-btn-active-border-color: #6610f2;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #64a19d;
+  --bs-btn-disabled-color: #6610f2;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #64a19d;
+  --bs-btn-disabled-border-color: #6610f2;
   --bs-gradient: none;
 }
 
@@ -3306,7 +3306,7 @@ textarea.form-control-lg {
   --bs-dropdown-link-hover-color: #1e2125;
   --bs-dropdown-link-hover-bg: #e9ecef;
   --bs-dropdown-link-active-color: #fff;
-  --bs-dropdown-link-active-bg: #64a19d;
+  --bs-dropdown-link-active-bg: #6610f2;
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-item-padding-x: 1rem;
   --bs-dropdown-item-padding-y: 0.25rem;
@@ -3571,7 +3571,7 @@ textarea.form-control-lg {
   --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
   --bs-dropdown-link-hover-bg: rgba(255, 255, 255, 0.15);
   --bs-dropdown-link-active-color: #fff;
-  --bs-dropdown-link-active-bg: #64a19d;
+  --bs-dropdown-link-active-bg: #6610f2;
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-header-color: #adb5bd;
 }
@@ -3754,7 +3754,7 @@ textarea.form-control-lg {
 .nav-pills {
   --bs-nav-pills-border-radius: 0.375rem;
   --bs-nav-pills-link-active-color: #fff;
-  --bs-nav-pills-link-active-bg: #64a19d;
+  --bs-nav-pills-link-active-bg: #6610f2;
 }
 .nav-pills .nav-link {
   background: none;
@@ -3814,7 +3814,7 @@ textarea.form-control-lg {
   --bs-navbar-toggler-padding-x: 0.75rem;
   --bs-navbar-toggler-font-size: 1.25rem;
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1);
+  /*--bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1);*/
   --bs-navbar-toggler-border-radius: 0.375rem;
   --bs-navbar-toggler-focus-width: 0.25rem;
   --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
@@ -4585,8 +4585,8 @@ textarea.form-control-lg {
   --bs-pagination-focus-bg: #e9ecef;
   --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(100, 161, 157, 0.25);
   --bs-pagination-active-color: #fff;
-  --bs-pagination-active-bg: #64a19d;
-  --bs-pagination-active-border-color: #64a19d;
+  --bs-pagination-active-bg: #6610f2;
+  --bs-pagination-active-border-color: #6610f2;
   --bs-pagination-disabled-color: #6c757d;
   --bs-pagination-disabled-bg: #fff;
   --bs-pagination-disabled-border-color: #dee2e6;
@@ -4829,7 +4829,7 @@ textarea.form-control-lg {
   --bs-progress-border-radius: 0.375rem;
   --bs-progress-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   --bs-progress-bar-color: #fff;
-  --bs-progress-bar-bg: #64a19d;
+  --bs-progress-bar-bg: #6610f2;
   --bs-progress-bar-transition: width 0.6s ease;
   display: flex;
   height: var(--bs-progress-height);
@@ -4886,8 +4886,8 @@ textarea.form-control-lg {
   --bs-list-group-disabled-color: #6c757d;
   --bs-list-group-disabled-bg: #fff;
   --bs-list-group-active-color: #fff;
-  --bs-list-group-active-bg: #64a19d;
-  --bs-list-group-active-border-color: #64a19d;
+  --bs-list-group-active-bg: #6610f2;
+  --bs-list-group-active-border-color: #6610f2;
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -5659,7 +5659,7 @@ textarea.form-control-lg {
   display: block;
   padding: var(--bs-tooltip-arrow-height);
   margin: var(--bs-tooltip-margin);
-  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "IM Fell DW Pica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5769,7 +5769,7 @@ textarea.form-control-lg {
   z-index: var(--bs-popover-zindex);
   display: block;
   max-width: var(--bs-popover-max-width);
-  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "IM Fell DW Pica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6823,7 +6823,7 @@ textarea.form-control-lg {
 }
 
 .link-primary {
-  color: #64a19d !important;
+  color: #6610f2 !important;
 }
 .link-primary:hover, .link-primary:focus {
   color: #50817e !important;
@@ -8246,8 +8246,8 @@ textarea.form-control-lg {
 }
 
 .text-white-50 {
-  --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5) !important;
+  --bs-text-opacity: 0;
+  color: white !important;
 }
 
 .text-reset {
@@ -10986,8 +10986,8 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #6610f2;
+  border: 1px solid #6610f2;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
@@ -11041,22 +11041,22 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #6610f2;
   }
   #mainNav.navbar-shrink .nav-link:active {
     color: #467370;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #6610f2;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #6610f2;
   }
 }
 
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "IM Fell DW Pica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
@@ -11076,12 +11076,14 @@ body {
   background-size: cover;
 }
 .masthead h1, .masthead .h1 {
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "IM Fell DW Pica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-style: bold;
+  color: white;
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
+  /*-webkit-text-fill-color: transparent;*/
   -webkit-background-clip: text;
           background-clip: text;
 }
@@ -11112,7 +11114,7 @@ body {
 }
 
 .about-section {
-  padding-top: 10rem;
+  padding-top: 30px;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
@@ -11120,7 +11122,7 @@ body {
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 35px;
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -11128,7 +11130,7 @@ body {
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid #6610f2;
   }
 }
 .projects-section .project-text {
@@ -11153,7 +11155,7 @@ body {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   height: auto;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "IM Fell DW Pica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
@@ -11165,17 +11167,17 @@ body {
 }
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #6610f2;
 }
 .contact-section .card h4, .contact-section .card .h4 {
   font-size: 0.8rem;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "IM Fell DW Pica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
 .contact-section .card hr {
   opacity: 1;
-  border-color: #64a19d;
+  border-color: #6610f2;
   border-width: 0.25rem;
   width: 3rem;
 }
@@ -11201,3 +11203,6 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+
+
