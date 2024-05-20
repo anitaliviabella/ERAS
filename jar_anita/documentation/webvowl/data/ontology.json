@@ -1,0 +1,2122 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "baseIris" : [ "http://www.semanticweb.org/ERAS-ontology", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.semanticweb.org/ERAS-ontology"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "12",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/ERAS-ontology/Topic",
+    "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Topic"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/suffering",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "suffering"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/anger",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "anger"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/challenges",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "challenges"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/reminescence",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "reminescence"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/decision-making",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "decision-making"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/breakup",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "breakup"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/love",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "love"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/persistence",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "persistence"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/companionship",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "companionship"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/heartache",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "heartache"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/uncertainty",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "uncertainty"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/music",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "music"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/intimacy",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "intimacy"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/loneliness",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "loneliness"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/enthusiasm",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "enthusiasm"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/appreciation",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "appreciation"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/romantic_vibes",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "romantic_vibes"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/regret",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "regret"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/aspirations",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "aspirations"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/expression",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "expression"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/reflection",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "reflection"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/fantasy",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "fantasy"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/moving_on",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "moving_on"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/seeking_understanding",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "seeking_understanding"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/struggle",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "struggle"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/excitement",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "excitement"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/turmoil",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "turmoil"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/nature",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "nature"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/pain",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "pain"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/nostalgia",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "nostalgia"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/memories",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "memories"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/relationships",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "relationships"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/enjoying_life",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "enjoying_life"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/desperation",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "desperation"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/devotion",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "devotion"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/family",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "family"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/return_and_departure",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "return_and_departure"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/adventure",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "adventure"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/being_emotional",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "being_emotional"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/conflict",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "conflict"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/reconciliation",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "reconciliation"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/intensity",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "intensity"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/desire",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "desire"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/future",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "future"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/discovery",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "discovery"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/frustration",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "frustration"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/ERAS-ontology/Label",
+    "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Label"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Big_Machine",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Big_Machine"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Republic",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Republic"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Taylor_Swift_Productions",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Taylor_Swift_Productions"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.semanticweb.org/ERAS-ontology/Artist",
+    "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Artist"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Keith_Urban",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Keith_Urban"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Post_Malone",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Post_Malone"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Ed_Sheeran",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Ed_Sheeran"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Taylor_Swift",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Taylor_Swift"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/HAIM",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "HAIM"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Bon_Iver",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Bon_Iver"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#Brendon_Urie_of_Panic!_At_The_Disco",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Brendon_Urie_of_Panic!_At_The_Disco"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Colbie_Caillat",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Colbie_Caillat"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Ice_Spice",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Ice_Spice"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Lana_Del_Rey",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Lana_Del_Rey"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Future",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Future"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_Chicks",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_Chicks"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Gary_Lightbody",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Gary_Lightbody"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Florence_and_The_Machine",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Florence_and_The_Machine"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Kendrick_Lamar",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Kendrick_Lamar"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Chris_Stapleton",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Chris_Stapleton"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_National",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_National"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Maren_Morris",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Maren_Morris"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "12",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "3", "4" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "15"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.semanticweb.org/ERAS-ontology/Song",
+    "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Song"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/I_Hate_It_Here",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "I_Hate_It_Here"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Shake_It_Off",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Shake_It_Off"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#I'm_Only_Me_When_I'm_With_You",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "I'm_Only_Me_When_I'm_With_You"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Invisible",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Invisible"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Teadrops_on_My_Guitar",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Teadrops_on_My_Guitar"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Daylight",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Daylight"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Speak_Now",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Speak_Now"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#So_Long,_London",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "So_Long,_London"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/illicit_affairs",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "illicit_affairs"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_Man",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_Man"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Tim_McGraw",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Tim_McGraw"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/seven",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "seven"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Dear_John",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Dear_John"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/mad_woman",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "mad_woman"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Black_Space",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Black_Space"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#Should've_Said_No",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Should've_Said_No"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/A_Perfectly_Good_Heart",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "A_Perfectly_Good_Heart"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#Forever_&_Always",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Forever_&_Always"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#Who's_Afraid_of_Little_Old_Me?",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Who's_Afraid_of_Little_Old_Me?"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/cowboy_like_me",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "cowboy_like_me"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Untouchable",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Untouchable"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Fifteen",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Fifteen"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Anti-Hero",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Anti-Hero"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_Best_Day",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_Best_Day"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/hoax",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "hoax"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/dorothea",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "dorothea"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/imgonnagetyouback",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "imgonnagetyouback"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Bye_Bye_Baby",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Bye_Bye_Baby"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_Bolter",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_Bolter"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Starlight",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Starlight"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/White_Horse",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "White_Horse"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Mean",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Mean"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Long_Live",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Long_Live"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Holy_Ground",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Holy_Ground"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/I_Think_He_Knows",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "I_Think_He_Knows"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/I_Know_Places",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "I_Know_Places"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/happiness",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "happiness"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Delicate",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Delicate"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Look_What_You_Made_Me_Do",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Look_What_You_Made_Me_Do"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/thanK_you_aIMee",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "thanK_you_aIMee"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/I_Knew_You_Were_Trouble",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "I_Knew_You_Were_Trouble"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/the1",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "the1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Bad_Blood",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Bad_Blood"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Enchanted",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Enchanted"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_Way_I_Loved_You",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_Way_I_Loved_You"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Snow_On_the_Beach",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Snow_On_the_Beach"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#You're_Not_Sorry",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "You're_Not_Sorry"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#You're_On_Your_Own,_Kid",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "You're_On_Your_Own,_Kid"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Change",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Change"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/the_lakes",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "the_lakes"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#This_Is_Why_We_Can't_Have_Nice_Things",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "This_Is_Why_We_Can't_Have_Nice_Things"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Dancing_With_Our_Hands_Tied",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Dancing_With_Our_Hands_Tied"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_Smallest_Man_Who_Ever_Lived",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_Smallest_Man_Who_Ever_Lived"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/All_You_Had_To_Do_Was_Stay",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "All_You_Had_To_Do_Was_Stay"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Hey_Stephen",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Hey_Stephen"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Paper_Rings",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Paper_Rings"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/London_Boy",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "London_Boy"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#Question...?",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Question...?"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Fortnight",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Fortnight"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#'tis_the_damn_season",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "'tis_the_damn_season"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Superman",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Superman"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#Soon_You'll_Get_Better",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Soon_You'll_Get_Better"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_Story_of_Us",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_Story_of_Us"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Karma",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Karma"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#Florida!!!",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Florida!!!"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/You_Belong_With_Me",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "You_Belong_With_Me"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Welcome_To_New_York",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Welcome_To_New_York"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Cold_as_You",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Cold_as_You"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/I_Almost_Do",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "I_Almost_Do"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Midnight_Rain",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Midnight_Rain"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/But_Daddy_I_Love_Him",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "But_Daddy_I_Love_Him"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Labyrinth",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Labyrinth"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Treacherous",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Treacherous"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/august",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "august"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/right_were_you_left_me",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "right_were_you_left_me"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#...Ready_For_It?",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "...Ready_For_It?"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/peace",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "peace"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Robin",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Robin"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Vigilante_Shit",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Vigilante_Shit"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/I_Did_Something_Bad",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "I_Did_Something_Bad"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Out_of_the_Woods",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Out_of_the_Woods"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/coney_island",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "coney_island"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_Other_Side_of_The_Door",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_Other_Side_of_The_Door"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/mirrorball",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "mirrorball"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/betty",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "betty"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Come_Back...Be_Here",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Come_Back...Be_Here"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/willow",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "willow"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#22",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "22"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Picture_to_Burn",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Picture_to_Burn"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#So_It_Goes...",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "So_It_Goes..."
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Innocent",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Innocent"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Never_Grow_Up",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Never_Grow_Up"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/We_Were_Happy",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "We_Were_Happy"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_Prophecy",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_Prophecy"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Tied_Together_with_a_Smile",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Tied_Together_with_a_Smile"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Style",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Style"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/loml",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "loml"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Mine",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Mine"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Death_By_A_Thousand_Cuts",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Death_By_A_Thousand_Cuts"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Gateway_Car",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Gateway_Car"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/I_Wish_You_Would",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "I_Wish_You_Would"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_Last_Time",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_Last_Time"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/You_Need_To_Calm_Down",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "You_Need_To_Calm_Down"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Wonderland",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Wonderland"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Peter",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Peter"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/I_Bet_You_Think_About_Me",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "I_Bet_You_Think_About_Me"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/cardigan",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "cardigan"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/State_Of_Grace",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "State_Of_Grace"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Red",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Red"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#It's_Nice_To_Have_A_Friend",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "It's_Nice_To_Have_A_Friend"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#I_Can_Fix_Him_(No_Really_I_Can)",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "I_Can_Fix_Him_(No_Really_I_Can)"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/This_Love",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "This_Love"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#New_Year's_Day",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "New_Year's_Day"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Fearless",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Fearless"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/epiphany",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "epiphany"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#That's_When",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "That's_When"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Haunted",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Haunted"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/champagne_problems",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "champagne_problems"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#State_of_Grace_(Acoustic)",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "State_of_Grace_(Acoustic)"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Bejeweled",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Bejeweled"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Mastermind",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Mastermind"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Come_In_With_The_Rain",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Come_In_With_The_Rain"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#Red_(Original_Demo_Recording)",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Red_(Original_Demo_Recording)"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Superstar",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Superstar"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_Albatross",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_Albatross"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_Tortured_Poets_Department"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Tell_Me_Why",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Tell_Me_Why"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/marjorie",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "marjorie"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/So_High_School",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "So_High_School"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/A_Place_in_this_World",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "A_Place_in_this_World"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Clara_Bow",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Clara_Bow"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_Lucky_One",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_Lucky_One"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/evermore",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "evermore"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Begin_Again",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Begin_Again"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#ME!",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "ME!"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/End_Game",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "End_Game"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Sweet_Nothing",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Sweet_Nothing"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Fresh_Out_The_Slammer",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Fresh_Out_The_Slammer"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Clean",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Clean"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Our_Song",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Our_Song"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#it's_time_to_go",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "it's_time_to_go"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Girl_at_Home",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Girl_at_Home"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_Black_Dog",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_Black_Dog"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Stay_Beautiful",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Stay_Beautiful"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_Archer",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_Archer"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/exile",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "exile"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Cassandra",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Cassandra"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Back_To_December",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Back_To_December"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/no_body_no_crime",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "no_body_no_crime"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Ours",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Ours"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Better_Than_Revenge",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Better_Than_Revenge"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Dress",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Dress"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#Treacherous_(Original_Demo_Recording)",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Treacherous_(Original_Demo_Recording)"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/closure",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "closure"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Love_Story",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Love_Story"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/ivy",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "ivy"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/tolerate_it",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "tolerate_it"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/I_Forgot_That_You_Existed",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "I_Forgot_That_You_Existed"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Cruel_Summer",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Cruel_Summer"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Today_Was_A_Fairytale",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Today_Was_A_Fairytale"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/New_Romantics",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "New_Romantics"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/my_tears_ricochet",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "my_tears_ricochet"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/You_All_Over_Me",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "You_All_Over_Me"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/False_God",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "False_God"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#I_Look_in_People's_Windows",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "I_Look_in_People's_Windows"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/King_Of_My_Heart",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "King_Of_My_Heart"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Down_Bad",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Down_Bad"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#Forever_&_Always_(Piano_Version)",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Forever_&_Always_(Piano_Version)"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/invisible_string",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "invisible_string"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_Outside",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_Outside"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/If_This_Was_a_Movie",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "If_This_Was_a_Movie"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Gorgeous",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Gorgeous"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Mr.Perfectly_Fine",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Mr.Perfectly_Fine"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#Miss_Americana_&_The_Heartbreak_Prince",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Miss_Americana_&_The_Heartbreak_Prince"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Cornelia_Street",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Cornelia_Street"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/How_You_Get_The_Girl",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "How_You_Get_The_Girl"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/My_Boy_Only_Breaks_His_Favorit_Toys",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "My_Boy_Only_Breaks_His_Favorit_Toys"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Last_Kiss",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Last_Kiss"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_Alchemy",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_Alchemy"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Wildest_Dreams",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Wildest_Dreams"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#Don't_Blame_Me",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Don't_Blame_Me"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/this_is_me_trying",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "this_is_me_trying"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/We_Are_Never_Ever_Getting_Back_Together",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "We_Are_Never_Ever_Getting_Back_Together"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_Moment_I_Knew",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_Moment_I_Knew"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Chloe_or_Sam_or_Sophia_or_Marcus",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Chloe_or_Sam_or_Sophia_or_Marcus"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/gold_rush",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "gold_rush"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#Mary's_Song_(Oh_My_My_My)",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Mary's_Song_(Oh_My_My_My)"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Sparks_Fly",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Sparks_Fly"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Lover",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Lover"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Breathe",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Breathe"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Call_It_What_You_Want",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Call_It_What_You_Want"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#How_Did_It_End?",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "How_Did_It_End?"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/the_last_great_american_dynasty",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "the_last_great_american_dynasty"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Teadrops_on_My_Guitar_-_Pop_Version",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Teadrops_on_My_Guitar_-_Pop_Version"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/You_Are_In_Love",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "You_Are_In_Love"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#Guilty_as_Sin?",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Guilty_as_Sin?"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/All_Too_Well",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "All_Too_Well"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Maroon",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Maroon"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_Manuscript",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_Manuscript"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Lavander_Haze",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Lavander_Haze"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Sad_Beautiful_Tragic",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Sad_Beautiful_Tragic"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#Don't_You",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Don't_You"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Afterglow",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Afterglow"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Everything_Has_Changed",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Everything_Has_Changed"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/I_Can_Do_It_With_a_Broken_Heart",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "I_Can_Do_It_With_a_Broken_Heart"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Jump_Then_Fall",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Jump_Then_Fall"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Stay_Stay_Stay",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Stay_Stay_Stay"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/long_story_short",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "long_story_short"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "6",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/ERAS-ontology/Album",
+    "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Album"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Lover",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Lover"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Red",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Red"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#1989",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "1989"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Debut",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Debut"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Midnights",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Midnights"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Fearless",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Fearless"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Reputation",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Reputation"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Evermore",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Evermore"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "The_Tortured_Poets_Department"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Speak_Now",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Speak_Now"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Folklore",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Folklore"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/ERAS-ontology/Genre",
+    "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Genre"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Country_pop",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Country_pop"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Folktronica",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Folktronica"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Folk_pop",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Folk_pop"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Experimental_pop",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Experimental_pop"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Dance_pop",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Dance_pop"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Indie_folk",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Indie_folk"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Synth_pop",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Synth_pop"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Pop",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Pop"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Alternative_rock",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Alternative_rock"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Baroque_pop",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Baroque_pop"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Pop_rock",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Pop_rock"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Chillout",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Chillout"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology#Contemporary_R&B",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Contemporary_R&B"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ERAS-ontology/Elettropop",
+      "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+      "labels" : {
+        "IRI-based" : "Elettropop"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/ERAS-ontology/hasGenre",
+    "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasGenre"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/ERAS-ontology/has_release_year",
+    "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "has_release_year"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/ERAS-ontology/has_title",
+    "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "has_title"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist",
+    "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasFeaturedArtist"
+    },
+    "domain" : "14",
+    "attributes" : [ "external", "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.semanticweb.org/ERAS-ontology/belongsToLabel",
+    "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "belongsToLabel"
+    },
+    "domain" : "17",
+    "attributes" : [ "external", "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.semanticweb.org/ERAS-ontology/hasDuration",
+    "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasDuration"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.semanticweb.org/ERAS-ontology/has_duration",
+    "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "has_duration"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.semanticweb.org/ERAS-ontology/representsTopic",
+    "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "representsTopic"
+    },
+    "domain" : "2",
+    "attributes" : [ "external", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.semanticweb.org/ERAS-ontology/hasTopic",
+    "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasTopic"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.semanticweb.org/ERAS-ontology/hasArtist",
+    "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasArtist"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.semanticweb.org/ERAS-ontology/has_name",
+    "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "has_name"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum",
+    "baseIri" : "http://www.semanticweb.org/ERAS-ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "belongsToAlbum"
+    },
+    "domain" : "14",
+    "attributes" : [ "external", "object" ],
+    "id" : "25"
+  } ]
+}

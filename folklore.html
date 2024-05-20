@@ -1,80 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>ERAS</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica">
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/styles.css" rel="stylesheet" />
-
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">HOME</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive" id="navE">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html#theproject">The project</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#workflow">Workflow</a></li>                        
-                        <li class="nav-item"><a class="nav-link" href="knowledge_extraction.html">Knowledge Extraction</a></li>
-                        <li class="nav-item"><a class="nav-link" href="ontology.html">Ontology</a></li>
-                        <li class="nav-item"><a class="nav-link" href="sparql_queries.html">SPARQL queries</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <header class="masthead2" href="#top">
-            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-                <div class="d-flex justify-content-center">
-                    <div class="text-center">
-                        <h1 class="text-white-50 mx-auto mt-2 mb-5">Knowledge Extraction</h2>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Projects-->
-        <section class="projects-section bg-light" id="projects">
-            <div class="container px-4 px-lg-5">
-                <h2>Topic modeling</h2>
-                <p>
-                  This python code is designed to analyze the collection of song lyrics of the album <I>folklore</I> and categorize them into thematic topics using a technique called Non-negative Matrix Factorization (NMF).<br>
-                  The process begins by reading the lyrics from a CSV file and preprocessing them to remove irrelevant words. Stopwords, common words like "the" or "and," are eliminated to focus on meaningful content.<br>
-                  Next, the lyrics are converted into a numerical representation using TF-IDF (Term Frequency-Inverse Document Frequency) vectorization. This step assigns weights to words based on their importance in individual songs and across the entire corpus.
-                  The NMF algorithm is then applied to decompose the TF-IDF matrix into a set of topics. Each topic represents a collection of words that commonly occur together in the lyrics, capturing underlying themes within the music.<br><br>
-
-                  Non-negative Matrix Factorization (NMF) and TF-IDF (Term Frequency-Inverse Document Frequency) are popular techniques in topic modeling for several reasons. They offer interpretability, as NMF decomposes the TF-IDF matrix into two non-negative matrices representing topics and their associated word distributions. This results in clear and understandable topics composed of words that frequently co-occur within the corpus. Additionally, both NMF and TF-IDF are based on non-negative values, aligning well with the intuitive notion that topics and word frequencies cannot be negative.<br>
-                  Another advantage is their ability to handle noisy and sparse data efficiently. TF-IDF introduces sparsity by assigning low weights to common words, focusing on words that are most characteristic of individual documents or topics. This improves the discriminative power of the model, making it robust to variations in document lengths, vocabulary sizes, and word frequencies.<br>
-                  Furthermore, NMF and TF-IDF are scalable techniques suitable for analyzing large datasets. They can handle vast amounts of textual data efficiently, making them ideal for text mining and natural language processing applications where scalability is crucial.<br><br>
-                  Overall, the combination of NMF and TF-IDF provides a powerful framework for uncovering latent themes and patterns within text data, offering interpretability, robustness, and scalability for a wide range of applications.<br>
-                
-                  After identifying the topics, the code prints the top words associated with each topic, providing insights into the dominant themes present in the song lyrics.
-                  Finally, each song is categorized into one or more topics based on its thematic content, and the results are saved to a CSV file for further analysis.
-                  The same procedure is applied for all the album in order to obtain the topics for each song and for each album.
-
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <h4>Here is the code:</h4>
-                  <hr>
-
-                  <!-- Load mathjax -->
+<!-- Load mathjax -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_CHTML-full,Safe"> </script>
 <!-- MathJax configuration -->
 <script type="text/x-mathjax-config">
@@ -116,7 +40,7 @@ init_mathjax();
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><b>The provided code have been designed to analyze the collection of song lyrics of the &quot;Folklore&quot; album, and categorize them into thematic topics. It utilizes Natural Language Processing (NLP) techniques and machine learning algorithms to accomplish this task. Let's delve into the steps involved:</b></p>
+<p>The provided code hqw been designed to analyze the collection of song lyrics of the &quot;Folklore&quot; album, and categorize them into thematic topics. It utilizes Natural Language Processing (NLP) techniques and machine learning algorithms to accomplish this task. Let's delve into the steps involved:</p>
 
 </div>
 </div>
@@ -128,7 +52,7 @@ init_mathjax();
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><b>Data Acquisition and Preparation: Initially, the script imports necessary libraries, including pandas for data handling and sklearn for machine learning functionalities. It then reads a CSV file containing song lyrics into a pandas DataFrame (df), encoding it with Latin-1 encoding.</b></p>
+<p>Data Acquisition and Preparation: Initially, the script imports necessary libraries, including pandas for data handling and sklearn for machine learning functionalities. It then reads a CSV file containing song lyrics into a pandas DataFrame (df), encoding it with Latin-1 encoding.</p>
 
 </div>
 </div>
@@ -172,7 +96,7 @@ init_mathjax();
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><b>Text Preprocessing: To prepare the lyrics for analysis, the script groups them by song title, aggregates them into single strings, and sets display options to ensure full text visibility.</b></p>
+<p>Text Preprocessing: To prepare the lyrics for analysis, the script groups them by song title, aggregates them into single strings, and sets display options to ensure full text visibility.</p>
 
 </div>
 </div>
@@ -608,7 +532,7 @@ was high in the sky With Pennsylvania under me Are there still beautiful things?
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><b>Text Vectorization: The TF-IDF (Term Frequency-Inverse Document Frequency) vectorizer from sklearn is applied to convert the lyrics into a numerical representation. This process removes stopwords and ignores words appearing in less than 10% of the documents (songs).</b></p>
+<p>Text Vectorization: The TF-IDF (Term Frequency-Inverse Document Frequency) vectorizer from sklearn is applied to convert the lyrics into a numerical representation. This process removes stopwords and ignores words appearing in less than 10% of the documents (songs).</p>
 
 </div>
 </div>
@@ -652,7 +576,7 @@ was high in the sky With Pennsylvania under me Are there still beautiful things?
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><b>Topic Modeling with NMF: Non-negative Matrix Factorization (NMF), a dimensionality reduction technique, is utilized to extract latent topics from the TF-IDF matrix. The model is set to identify six topics within the lyrics.</b></p>
+<p>Topic Modeling with NMF: Non-negative Matrix Factorization (NMF), a dimensionality reduction technique, is utilized to extract latent topics from the TF-IDF matrix. The model is set to identify six topics within the lyrics.</p>
 
 </div>
 </div>
@@ -712,7 +636,7 @@ was high in the sky With Pennsylvania under me Are there still beautiful things?
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><b>Topic Interpretation: The script prints the top 10 most relevant words associated with each of the six identified topics, aiding in the interpretation of the thematic content.</b></p>
+<p>Topic Interpretation: The script prints the top 10 most relevant words associated with each of the six identified topics, aiding in the interpretation of the thematic conten</p>
 
 </div>
 </div>
@@ -798,7 +722,7 @@ Topic #6: single speak keep someone twenty minutes sleep make dream things
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><b>Topic Assignment to Songs: Each song is categorized into one or more topics based on its dominant themes inferred from the NMF model. A threshold of 0.1 is used to determine topic membership.</b></p>
+<p>Topic Assignment to Songs: Each song is categorized into one or more topics based on its dominant themes inferred from the NMF model. A threshold of 0.1 is used to determine topic membership.</p>
 
 </div>
 </div>
@@ -1089,7 +1013,7 @@ Topic #6: single speak keep someone twenty minutes sleep make dream things
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><b>Results Export: Finally, the script saves the categorized songs along with their corresponding topic assignments to a CSV file named 'speaknow_topics.csv' in the 'topics' directory.</b></p>
+<p>Results Export: Finally, the script saves the categorized songs along with their corresponding topic assignments to a CSV file named 'speaknow_topics.csv' in the 'topics' directory.</p>
 
 </div>
 </div>
@@ -1104,7 +1028,6 @@ Topic #6: single speak keep someone twenty minutes sleep make dream things
  <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">songs_csv</span> <span class="o">=</span> <span class="n">songs</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;topics/folklore_topics.csv&#39;</span><span class="p">)</span>
 </pre></div>
-<hr>
 
  </div>
 </div>
@@ -1112,347 +1035,3 @@ Topic #6: single speak keep someone twenty minutes sleep make dream things
 </div>
 
 </div>
-
-
-                </p>
-
-                <!-- Projects-->
-        <section class="projects-section bg-light" id="workflow">
-          <div class="container px-4 px-lg-5">
-              <!-- Featured Project Row-->
-              <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                  <!---<div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/version.jpeg" alt="..." /></div>-->
-                  <!--<div class="col-xl-4 col-lg-5">-->
-                      <div class="featured-text text-center text-lg-left">
-                          <h4><b>Results:</b></h4>
-                          <p class="text-black-50 mb-0"></p>
-                      </div>
-                  </div>
-              </div>
-              <!-- Project One Row-->
-              <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                  <div class="col-lg-6"><img class="img-fluid" src="assets/img/ce0a640118ce335e3bbcff2d9cecb793.jpg" alt="..." /></div>
-                  <div class="col-lg-6">
-                      <div class="bg-black text-center h-100 project">
-                          <div class="d-flex h-100">
-                              <div class="project-text w-100 my-auto text-center text-lg-left">
-                                  <h4 class="text-white"><b>Taylor Swift</b></h4><br>
-                                  <p class="mb-0 text-white-50">The retrieved topics are: <br><br>
-                                    The retrieved topics are:<br><br>
-                                    intimacy <br>
-                                    music <br>
-                                    appreciation <br>
-                                    nostalgia <br>
-                                    breakup <br>
-                                    expression <br>
-                                    <br>
-                                    <br>
-                                    The code is available <a href="taylorswift.html">here</a> <br>
-                                    <a href="debut_topics.html">Here</a> you can find the distribution of the topics for each song.
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <!-- Project Two Row-->
-              <div class="row gx-0 justify-content-center">
-                  <div class="col-lg-6"><img class="img-fluid" src="assets/img/scontrino_fearless.jpeg" alt="..." /></div>
-                  <div class="col-lg-6 order-lg-first">
-                      <div class="bg-black text-center h-100 project">
-                          <div class="d-flex h-100">
-                              <div class="project-text w-100 my-auto text-center text-lg-right">
-                                  <h4 class="text-white"><b>Fearless</b></h4><br>
-                                  <p class="mb-0 text-white-50">
-                                    The retrieved topics are:<br><br>
-                                    decision making <br>
-                                    regret <br>
-                                    love <br>
-                                    uncertainty <br>
-                                    conflict <br>
-                                    future <br>
-                                    <br>
-                                    <br>
-                                    The code is available <a href="fearless.html">here</a>. <br>
-                                    <a href="fearless_topics.html">Here</a> you can find the distribution of the topics for each song.
-  
-                                      </p>
-                                      </p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <!-- Project three Row-->
-
-              <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                  <div class="col-lg-6"><img class="img-fluid" src="assets/img/scontrino_speaknow.jpeg" alt="..." /></div>
-                  <div class="col-lg-6">
-                      <div class="bg-black text-center h-100 project">
-                          <div class="d-flex h-100">
-                              <div class="project-text w-100 my-auto text-center text-lg-left">
-                                  <h4 class="text-white"><b>Speak Now</b></h4><br>
-                                  <p class="mb-0 text-white-50">
-                                    The retrieved topics are:<br><br>
-                                    nature <br>
-                                    return and departure <br>
-                                    adventure <br>
-                                    reflection <br>
-                                    future <br>
-                                    persistence <br>
-                                    <br>
-                                    <br>
-                                    The code is available <a href="speaknow.html">here</a> <br>
-                                    <a href="speaknow_topics.html">Here</a> you can find the distribution of the topics for each song.
-  
-                              </p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <!--4-->
-              <div class="row gx-0 justify-content-center">
-                  <div class="col-lg-6"><img class="img-fluid" src="assets/img/scontrino_red.jpeg" alt="..." /></div>
-                  <div class="col-lg-6 order-lg-first">
-                      <div class="bg-black text-center h-100 project">
-                          <div class="d-flex h-100">
-                              <div class="project-text w-100 my-auto text-center text-lg-right">
-                                  <h4 class="text-white"><b>Red</b></h4><br>
-                                  <p class="mb-0 text-white-50">
-                                    The retrieved topics are:<br><br>
-                                    challenges <br>
-                                    nostalgia <br>
-                                    loneliness <br>
-                                    regret <br>
-                                    desire <br>
-                                    music <br>
-                                    <br>
-                                    <br>
-                                    The code is available <a href="red.html">here</a>. <br>
-                                    <a href="red_topics.html">Here</a> you can find the distribution of the topics for each song.
-
-                                  </p>
-                  
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-                            <!-- Project One Row-->
-                            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                              <div class="col-lg-6"><img class="img-fluid" src="assets/img/scontrino_1989.jpeg" alt="..." /></div>
-                              <div class="col-lg-6">
-                                  <div class="bg-black text-center h-100 project">
-                                      <div class="d-flex h-100">
-                                          <div class="project-text w-100 my-auto text-center text-lg-left">
-                                              <h4 class="text-white"><a href="1989.html"><b>1989</b></a></h4><br>
-                                              <p class="mb-0 text-white-50">
-                                                The retrieved topics are:<br><br>
-                                                relationships<br>
-                                                enjoying life<br>
-                                                turmoil<br>
-                                                moving-on<br>
-                                                romantic vibes<br>
-                                                music <br>
-                                                <br>
-                                                <br>
-                                                The code is available <a href="1989.html">here</a> <br>
-                                                <a href="1989_topics.html">Here</a> you can find the distribution of the topics for each song.
-                                          
-                                                
-                                                </p>
-            
-                                        
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <!-- Project Two Row-->
-                          <div class="row gx-0 justify-content-center">
-                              <div class="col-lg-6"><img class="img-fluid" src="assets/img/scontrino_reputation.jpeg" alt="..." /></div>
-                              <div class="col-lg-6 order-lg-first">
-                                  <div class="bg-black text-center h-100 project">
-                                      <div class="d-flex h-100">
-                                          <div class="project-text w-100 my-auto text-center text-lg-right">
-                                              <h4 class="text-white"><b>reputation</b></h4><br>
-                                              <p class="mb-0 text-white-50">
-                                                The retrieved topics are:<br><br>
-                                                fantasy<br>
-                                                enthusiasm<br>
-                                                expression<br>
-                                                being emotional<br>
-                                                reflection<br>
-                                                persistence<br>
-                                                <br>
-                                                <br>
-                                                The code is available <a href="reputation.html">here</a>. <br>
-                                                <a href="reputation_topics.html">Here</a> you can find the distribution of the topics for each song.
-                                                  </p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <!-- Project three Row-->
-            
-                          <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                              <div class="col-lg-6"><img class="img-fluid" src="assets/img/scontrino_lover.jpeg" alt="..." /></div>
-                              <div class="col-lg-6">
-                                  <div class="bg-black text-center h-100 project">
-                                      <div class="d-flex h-100">
-                                          <div class="project-text w-100 my-auto text-center text-lg-left">
-                                              <h4 class="text-white"><b>Lover</b></h4><br>
-                                              <p class="mb-0 text-white-50">The retrieved topics are:</a>
-                                                The retrieved topics are:<br><br>
-                                                relationships<br>
-                                                excitement<br>
-                                                desire<br>
-                                                devotion<br>
-                                                anger<br>
-                                                nostalgia<br>
-                                                <br>
-                                                <br>
-                                                The code is available <a href="lover.html">here</a>. <br>
-                                                <a href="lover_topics.html">Here</a> you can find the distribution of the topics for each song.
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <!--4-->
-                          <div class="row gx-0 justify-content-center">
-                              <div class="col-lg-6"><img class="img-fluid" src="assets/img/scontrino_folklore.jpeg" alt="..." /></div>
-                              <div class="col-lg-6 order-lg-first">
-                                  <div class="bg-black text-center h-100 project">
-                                      <div class="d-flex h-100">
-                                          <div class="project-text w-100 my-auto text-center text-lg-right">
-                                              <h4 class="text-white"><a href="sparql_queries.html"><b>folklore</b></a></h4><br>
-                                              <p class="mb-0 text-white-50">
-                                                The retrieved topics are: <br><br> 
-                                                frustration<br>
-                                                discovery<br>
-                                                pain<br>
-                                                desperation<br>
-                                                struggle<br>
-                                                reflection<br>
-                                                <br>
-                                                <br>
-                                                The code is available <a href="folklore.html">here</a>. <br>
-                                                <a href="folklore_topics.html">Here</a> you can find the distribution of the topics for each song.
-                                            
-                                                </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                         <!-- Project One Row-->
-              <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid" src="assets/img/scontrino_evermore.jpeg" alt="..." /></div>
-                <div class="col-lg-6">
-                    <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <h4 class="text-white"><b>evermore</b></h4><br>
-                                <p class="mb-0 text-white-50">
-                                  The retrieved topics are: <br><br> struggle, nostalgia, emotional experience, suffering, reflection, frustration 
-                                  struggle<br>
-                                  nostalgia<br>
-                                  being emotional<br>
-                                  suffering<br>
-                                  reflection<br>
-                                  frustration<br>
-                                  <br>
-                                  <br>
-                                  The code is available <a href="evermore.html">here</a>. <br>
-                                  <a href="evermore_topics.html">Here</a> you can find the distribution of the topics for each song.
-                              
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Project Two Row-->
-            <div class="row gx-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid" src="assets/img/scontrino_midnights.jpeg" alt="..." /></div>
-                <div class="col-lg-6 order-lg-first">
-                    <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <h4 class="text-white"><b>Midnights</b></h4><br>
-                                <p class="mb-0 text-white-50">
-                                  The retrieved topics are: <br><br>
-                                  memories, family, aspirations, companionship, seeking understanding, reflection
-                                  <br>
-                                  memories<br>
-                                  family<br>
-                                  aspirations<br>
-                                  companionship<br>
-                                  seeking understanding<br>
-                                  reflection <br>
-                                  <br>
-                                  <br>
-                                  The code is available <a href="midnights.html">here</a>. <br>
-                                  <a href="midnights_topics.html">Here</a> you can find the distribution of the topics for each song.
-                                  
-
-
-                                    </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Project three Row-->
-
-            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid" src="assets/img/scontrino_ttps.jpeg" alt="..." /></div>
-                <div class="col-lg-6">
-                    <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <h4 class="text-white"><b>THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY.</b></h4><br>
-                                <p class="mb-0 text-white-50">The retrieved topics are: <br><br>
-                                  turmoil<br>
-                                  heartache<br>
-                                  reminescence<br>
-                                  desire<br>
-                                  reconciliation<br>
-                                  intensity<br>
-                                  <br>
-                                  <br>
-                                
-                                  The code is available <a href="ttps.html">here</a>. <br>
-                                  <a href="ttps_topics.html">Here</a> you can find the distribution of the topics for each song.
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            </div>
-  
-          </div>
-      </section>
-
-        <!-- Footer-->
-        
-
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; ERAS 2024</div>
-        <div class="back-to-top">
-            <a href="#top">Back To Top</a>
-        </div>
-    </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
-</html>

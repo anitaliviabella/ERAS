@@ -1,0 +1,3896 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ERAS-ontology#"
+     xml:base="http://www.semanticweb.org/ERAS-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ERAS-ontology="http://www.semanticweb.org/ERAS-ontology/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ERAS-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/belongsToAlbum -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ERAS-ontology/belongsToAlbum">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ERAS-ontology/Album"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/belongsToLabel -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ERAS-ontology/belongsToLabel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ERAS-ontology/Album"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ERAS-ontology/Genre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ERAS-ontology/Label"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/hasArtist -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ERAS-ontology/hasArtist">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ERAS-ontology/Album"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/hasDuration -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ERAS-ontology/hasDuration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ERAS-ontology/Album"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/hasGenre -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ERAS-ontology/hasGenre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ERAS-ontology/Album"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ERAS-ontology/Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/hasTopic -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ERAS-ontology/hasTopic">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ERAS-ontology/Album"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/representsTopic -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ERAS-ontology/representsTopic">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ERAS-ontology/Genre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/has_duration -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ERAS-ontology/has_duration"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/has_name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ERAS-ontology/has_name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/has_release_year -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ERAS-ontology/has_release_year"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/has_title -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ERAS-ontology/has_title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Album -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ERAS-ontology/Album"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Artist -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Genre -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ERAS-ontology/Genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Label -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ERAS-ontology/Label"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Song -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ERAS-ontology/Song"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Topic -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#So_It_Goes... -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#So_It_Goes...">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Reputation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/being_emotional"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/fantasy"/>
+        <ERAS-ontology:has_title>So It Goes</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#&apos;tis_the_damn_season -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#&apos;tis_the_damn_season">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Evermore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/suffering"/>
+        <ERAS-ontology:has_title>&apos;tis the damn season</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#...Ready_For_It? -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#...Ready_For_It?">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Reputation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/fantasy"/>
+        <ERAS-ontology:has_title>...Ready For It?</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#1989 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#1989">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Album"/>
+        <ERAS-ontology:belongsToLabel rdf:resource="http://www.semanticweb.org/ERAS-ontology/Big_Machine"/>
+        <ERAS-ontology:hasArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Dance_pop"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Pop"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Synth_pop"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/enjoying_life"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/moving_on"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/relationships"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/romantic_vibes"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/turmoil"/>
+        <ERAS-ontology:has_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48.42</ERAS-ontology:has_duration>
+        <ERAS-ontology:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</ERAS-ontology:has_release_year>
+        <ERAS-ontology:has_title>1989</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#22 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#22">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/challenges"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/music"/>
+        <ERAS-ontology:has_title rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#Brendon_Urie_of_Panic!_At_The_Disco -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#Brendon_Urie_of_Panic!_At_The_Disco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+        <ERAS-ontology:has_name>Brendon Urie</ERAS-ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#Contemporary_R&amp;B -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#Contemporary_R&amp;B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Genre"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/being_emotional"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/enthusiasm"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/expression"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/fantasy"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/persistence"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#Don&apos;t_Blame_Me -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#Don&apos;t_Blame_Me">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Reputation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:has_title>Don&apos;t Blame Me</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#Don&apos;t_You -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#Don&apos;t_You">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/decision-making"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/love"/>
+        <ERAS-ontology:has_title>Don&apos;t You</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#Florida!!! -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#Florida!!!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasFeaturedArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Florence_and_The_Machine"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/intensity"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/turmoil"/>
+        <ERAS-ontology:has_title>Florida!!!</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#Forever_&amp;_Always -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#Forever_&amp;_Always">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/regret"/>
+        <ERAS-ontology:has_title>Forever &amp; Always</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#Forever_&amp;_Always_(Piano_Version) -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#Forever_&amp;_Always_(Piano_Version)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/regret"/>
+        <ERAS-ontology:has_title>Forever &amp; Always</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#Guilty_as_Sin? -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#Guilty_as_Sin?">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/turmoil"/>
+        <ERAS-ontology:has_title>Guilty as Sin?</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#How_Did_It_End? -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#How_Did_It_End?">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reconciliation"/>
+        <ERAS-ontology:has_title>How Did It End</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#I&apos;m_Only_Me_When_I&apos;m_With_You -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#I&apos;m_Only_Me_When_I&apos;m_With_You">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Debut"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:has_title>I&apos;m Only Me When I&apos;m With You</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#I_Can_Fix_Him_(No_Really_I_Can) -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#I_Can_Fix_Him_(No_Really_I_Can)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:has_title>I Can Fix Him (No Really I Can)</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#I_Look_in_People&apos;s_Windows -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#I_Look_in_People&apos;s_Windows">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reminescence"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/turmoil"/>
+        <ERAS-ontology:has_title>I Look In People&apos;s Window</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#It&apos;s_Nice_To_Have_A_Friend -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#It&apos;s_Nice_To_Have_A_Friend">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Lover"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/excitement"/>
+        <ERAS-ontology:has_title>It&apos;s Nice To Have A Friend</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#ME! -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#ME!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Lover"/>
+        <ERAS-ontology:hasFeaturedArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology#Brendon_Urie_of_Panic!_At_The_Disco"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/excitement"/>
+        <ERAS-ontology:has_title>ME!</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#Mary&apos;s_Song_(Oh_My_My_My) -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#Mary&apos;s_Song_(Oh_My_My_My)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Debut"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/appreciation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/expression"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:has_title>Mary&apos;s Song (Oh My My My)</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#Miss_Americana_&amp;_The_Heartbreak_Prince -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#Miss_Americana_&amp;_The_Heartbreak_Prince">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Lover"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/anger"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/relationships"/>
+        <ERAS-ontology:has_title>Miss Americana &amp; The Heartbreak Prince</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#New_Year&apos;s_Day -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#New_Year&apos;s_Day">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Reputation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/persistence"/>
+        <ERAS-ontology:has_title>New Year&apos;s Day</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#Question...? -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#Question...?">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Midnights"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/memories"/>
+        <ERAS-ontology:has_title>Question...?</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#Red_(Original_Demo_Recording) -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#Red_(Original_Demo_Recording)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:has_title>Red (Original Demo Recording)</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#Should&apos;ve_Said_No -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#Should&apos;ve_Said_No">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Debut"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/expression"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/intimacy"/>
+        <ERAS-ontology:has_title>Should&apos;ve Said No</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#So_Long,_London -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#So_Long,_London">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reconciliation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reminescence"/>
+        <ERAS-ontology:has_title>So Long, London</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#Soon_You&apos;ll_Get_Better -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#Soon_You&apos;ll_Get_Better">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Lover"/>
+        <ERAS-ontology:hasFeaturedArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Chicks"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/excitement"/>
+        <ERAS-ontology:has_title>Soon You&apos;ll Get Better</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#State_of_Grace_(Acoustic) -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#State_of_Grace_(Acoustic)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/loneliness"/>
+        <ERAS-ontology:has_title>State of Grace (Acoustic)</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#That&apos;s_When -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#That&apos;s_When">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasFeaturedArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Keith_Urban"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/conflict"/>
+        <ERAS-ontology:has_title>That&apos;s When</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#This_Is_Why_We_Can&apos;t_Have_Nice_Things -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#This_Is_Why_We_Can&apos;t_Have_Nice_Things">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Reputation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/fantasy"/>
+        <ERAS-ontology:has_title>This Is Why We Can&apos;t Have Nice Things</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#Treacherous_(Original_Demo_Recording) -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#Treacherous_(Original_Demo_Recording)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/loneliness"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/regret"/>
+        <ERAS-ontology:has_title>Treacherous (Original Demo Recording)</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#Who&apos;s_Afraid_of_Little_Old_Me? -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#Who&apos;s_Afraid_of_Little_Old_Me?">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/heartache"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/intensity"/>
+        <ERAS-ontology:has_title>Who&apos;s Afraid of Little Old Me</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#You&apos;re_Not_Sorry -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#You&apos;re_Not_Sorry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/uncertainty"/>
+        <ERAS-ontology:has_title>You&apos;re Not Sorry</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#You&apos;re_On_Your_Own,_Kid -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#You&apos;re_On_Your_Own,_Kid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Midnights"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/companionship"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/memories"/>
+        <ERAS-ontology:has_title>You&apos;re On Your Own, Kid</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology#it&apos;s_time_to_go -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology#it&apos;s_time_to_go">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Evermore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/suffering"/>
+        <ERAS-ontology:has_title>it&apos;s time to go</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/A_Perfectly_Good_Heart -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/A_Perfectly_Good_Heart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Debut"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/breakup"/>
+        <ERAS-ontology:has_title>A Perfectly Good Heart</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/A_Place_in_this_World -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/A_Place_in_this_World">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Debut"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/appreciation"/>
+        <ERAS-ontology:has_title>A Place in this World</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Afterglow -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Afterglow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Lover"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/devotion"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/excitement"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:has_title>Afterglow</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/All_Too_Well -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/All_Too_Well">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/regret"/>
+        <ERAS-ontology:has_title>All Too Well</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/All_You_Had_To_Do_Was_Stay -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/All_You_Had_To_Do_Was_Stay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology#1989"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/moving_on"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/relationships"/>
+        <ERAS-ontology:has_title>All You Had To Do Was Stay</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Alternative_rock -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Alternative_rock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Genre"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/being_emotional"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desperation"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/discovery"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/frustration"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/pain"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/struggle"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/suffering"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Anti-Hero -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Anti-Hero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Midnights"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/family"/>
+        <ERAS-ontology:has_title>Anti-Hero</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Back_To_December -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Back_To_December">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Speak_Now"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nature"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/persistence"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/return_and_departure"/>
+        <ERAS-ontology:has_title>Back To December</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Bad_Blood -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Bad_Blood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology#1989"/>
+        <ERAS-ontology:hasFeaturedArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Kendrick_Lamar"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/romantic_vibes"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/turmoil"/>
+        <ERAS-ontology:has_title>Bad Blood</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Baroque_pop -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Baroque_pop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Genre"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/being_emotional"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/frustration"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/struggle"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/suffering"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Begin_Again -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Begin_Again">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/music"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/regret"/>
+        <ERAS-ontology:has_title>Begin Again</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Bejeweled -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Bejeweled">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Midnights"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/memories"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:has_title>Bejeweled</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Better_Than_Revenge -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Better_Than_Revenge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Speak_Now"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:has_title>Better Than Revenge</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Big_Machine -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Big_Machine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Label"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Black_Space -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Black_Space">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology#1989"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/moving_on"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/romantic_vibes"/>
+        <ERAS-ontology:has_title>Black Space</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Bon_Iver -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Bon_Iver">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+        <ERAS-ontology:has_name>Bon Iver</ERAS-ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Breathe -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Breathe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasFeaturedArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Colbie_Caillat"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/decision-making"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/future"/>
+        <ERAS-ontology:has_title>Breathe</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/But_Daddy_I_Love_Him -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/But_Daddy_I_Love_Him">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/intensity"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/turmoil"/>
+        <ERAS-ontology:has_title>But Daddy I Love Him</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Bye_Bye_Baby -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Bye_Bye_Baby">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/future"/>
+        <ERAS-ontology:has_title>Bye Bye Baby</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Call_It_What_You_Want -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Call_It_What_You_Want">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Reputation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/enthusiasm"/>
+        <ERAS-ontology:has_title>Call It What You Want</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Cassandra -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Cassandra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/heartache"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/intensity"/>
+        <ERAS-ontology:has_title>Cassandra</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Change -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Change">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/conflict"/>
+        <ERAS-ontology:has_title>Change</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Chillout -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Chillout">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Genre"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/aspirations"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/companionship"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/family"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/memories"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/seeking_understanding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Chloe_or_Sam_or_Sophia_or_Marcus -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Chloe_or_Sam_or_Sophia_or_Marcus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/heartache"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/intensity"/>
+        <ERAS-ontology:has_title>Chloe or Sam or Sophia or Marcus</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Chris_Stapleton -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Chris_Stapleton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+        <ERAS-ontology:has_name>Chris_Stapleton</ERAS-ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Clara_Bow -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Clara_Bow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/intensity"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/turmoil"/>
+        <ERAS-ontology:has_title>Clara Bow</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Clean -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Clean">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology#1989"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/turmoil"/>
+        <ERAS-ontology:has_title>Clean</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Colbie_Caillat -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Colbie_Caillat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+        <ERAS-ontology:has_name>Colbie Caillat</ERAS-ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Cold_as_You -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Cold_as_You">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Debut"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/appreciation"/>
+        <ERAS-ontology:has_title>Cold As You</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Come_Back...Be_Here -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Come_Back...Be_Here">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/intensity"/>
+        <ERAS-ontology:has_title>Come Back Be Here</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Come_In_With_The_Rain -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Come_In_With_The_Rain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/decision-making"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/uncertainty"/>
+        <ERAS-ontology:has_title>Come In With The Rain</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Cornelia_Street -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Cornelia_Street">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Lover"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:has_title>Cornelia Street</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Country_pop -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Country_pop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Genre"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/adventure"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/appreciation"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/breakup"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/challenges"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/conflict"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/decision-making"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/expression"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/future"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/intimacy"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/loneliness"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/love"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/music"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nature"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/persistence"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/regret"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/return_and_departure"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/uncertainty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Cruel_Summer -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Cruel_Summer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Lover"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/excitement"/>
+        <ERAS-ontology:has_title>Cruel Summer</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Dance_pop -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Dance_pop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Genre"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/enjoying_life"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/moving_on"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/relationships"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/romantic_vibes"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/turmoil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Dancing_With_Our_Hands_Tied -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Dancing_With_Our_Hands_Tied">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Reputation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/expression"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/persistence"/>
+        <ERAS-ontology:has_title>Dancing With Our Hands Tied</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Daylight -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Daylight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Lover"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/devotion"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/relationships"/>
+        <ERAS-ontology:has_title>Daylight</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Dear_John -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Dear_John">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Speak_Now"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/persistence"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/return_and_departure"/>
+        <ERAS-ontology:has_title>Dear John</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Death_By_A_Thousand_Cuts -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Death_By_A_Thousand_Cuts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Lover"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/devotion"/>
+        <ERAS-ontology:has_title>Death By A Thousand Cuts</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Debut -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Debut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Album"/>
+        <ERAS-ontology:belongsToLabel rdf:resource="http://www.semanticweb.org/ERAS-ontology/Big_Machine"/>
+        <ERAS-ontology:hasArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Country_pop"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/appreciation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/breakup"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/expression"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/intimacy"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/music"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:has_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">53.30</ERAS-ontology:has_duration>
+        <ERAS-ontology:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2006</ERAS-ontology:has_release_year>
+        <ERAS-ontology:has_title>Taylor Swift</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Delicate -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Delicate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Reputation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/enthusiasm"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/fantasy"/>
+        <ERAS-ontology:has_title>Delicate</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Down_Bad -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Down_Bad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/intensity"/>
+        <ERAS-ontology:has_title>Down Bad</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Dress -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Dress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Reputation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/enthusiasm"/>
+        <ERAS-ontology:has_title>Dress</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Ed_Sheeran -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Ed_Sheeran">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+        <ERAS-ontology:has_name>Ed Sheeran</ERAS-ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Elettropop -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Elettropop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Genre"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/anger"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/aspirations"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/being_emotional"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/companionship"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/devotion"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/enthusiasm"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/excitement"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/expression"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/family"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/fantasy"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/memories"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/persistence"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/relationships"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/seeking_understanding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Enchanted -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Enchanted">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Speak_Now"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/adventure"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nature"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/persistence"/>
+        <ERAS-ontology:has_title>Enchanted</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/End_Game -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/End_Game">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Reputation"/>
+        <ERAS-ontology:hasFeaturedArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Ed_Sheeran"/>
+        <ERAS-ontology:hasFeaturedArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Future"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/expression"/>
+        <ERAS-ontology:has_title>End Game</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Evermore -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Evermore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Album"/>
+        <ERAS-ontology:belongsToLabel rdf:resource="http://www.semanticweb.org/ERAS-ontology/Republic"/>
+        <ERAS-ontology:belongsToLabel rdf:resource="http://www.semanticweb.org/ERAS-ontology/Taylor_Swift_Productions"/>
+        <ERAS-ontology:hasArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Alternative_rock"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Baroque_pop"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Folk_pop"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/being_emotional"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/frustration"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/struggle"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/suffering"/>
+        <ERAS-ontology:has_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60.38</ERAS-ontology:has_duration>
+        <ERAS-ontology:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</ERAS-ontology:has_release_year>
+        <ERAS-ontology:has_title>evermore</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Everything_Has_Changed -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Everything_Has_Changed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasFeaturedArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Ed_Sheeran"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:has_title>Everything Has Changed</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Experimental_pop -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Experimental_pop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Genre"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/aspirations"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/companionship"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/family"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/memories"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/seeking_understanding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/False_God -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/False_God">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Lover"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/devotion"/>
+        <ERAS-ontology:has_title>False God</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Fearless -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Fearless">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Album"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToLabel rdf:resource="http://www.semanticweb.org/ERAS-ontology/Big_Machine"/>
+        <ERAS-ontology:hasArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Country_pop"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/conflict"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/decision-making"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/future"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/love"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/regret"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/uncertainty"/>
+        <ERAS-ontology:has_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">53.41</ERAS-ontology:has_duration>
+        <ERAS-ontology:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</ERAS-ontology:has_release_year>
+        <ERAS-ontology:has_title>Fearless</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Fifteen -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Fifteen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/decision-making"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/love"/>
+        <ERAS-ontology:has_title>Fifteen</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Florence_and_The_Machine -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Florence_and_The_Machine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+        <ERAS-ontology:has_name>Florence and The Machine</ERAS-ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Folk_pop -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Folk_pop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Genre"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/aspirations"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/being_emotional"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/companionship"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/family"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/frustration"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/memories"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/seeking_understanding"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/struggle"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/suffering"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Folklore -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Folklore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Album"/>
+        <ERAS-ontology:belongsToLabel rdf:resource="http://www.semanticweb.org/ERAS-ontology/Republic"/>
+        <ERAS-ontology:belongsToLabel rdf:resource="http://www.semanticweb.org/ERAS-ontology/Taylor_Swift_Productions"/>
+        <ERAS-ontology:hasArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Alternative_rock"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Folktronica"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Indie_folk"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desperation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/discovery"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/frustration"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/pain"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/struggle"/>
+        <ERAS-ontology:has_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">63.29</ERAS-ontology:has_duration>
+        <ERAS-ontology:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</ERAS-ontology:has_release_year>
+        <ERAS-ontology:has_title>folklore</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Folktronica -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Folktronica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Genre"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desperation"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/discovery"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/frustration"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/pain"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/struggle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Fortnight -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Fortnight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasFeaturedArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Post_Malone"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reconciliation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/turmoil"/>
+        <ERAS-ontology:has_title>Fortnight</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Fresh_Out_The_Slammer -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Fresh_Out_The_Slammer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/heartache"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reconciliation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reminescence"/>
+        <ERAS-ontology:has_title>Fresh Out The Slammer</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Future -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Future">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+        <ERAS-ontology:has_title>Future</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Gary_Lightbody -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Gary_Lightbody">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+        <ERAS-ontology:has_name>Gary Lightbody</ERAS-ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Gateway_Car -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Gateway_Car">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Reputation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/being_emotional"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/expression"/>
+        <ERAS-ontology:has_title>Gateway Car</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Girl_at_Home -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Girl_at_Home">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:has_title>Girl at Home</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Gorgeous -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Gorgeous">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Reputation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/being_emotional"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:has_title>Gorgeous</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/HAIM -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/HAIM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+        <ERAS-ontology:has_name>HAIM</ERAS-ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Haunted -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Haunted">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Speak_Now"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/return_and_departure"/>
+        <ERAS-ontology:has_title>Haunted</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Hey_Stephen -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Hey_Stephen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/love"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/uncertainty"/>
+        <ERAS-ontology:has_title>Hey Stephen</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Holy_Ground -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Holy_Ground">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/music"/>
+        <ERAS-ontology:has_title>Holy Ground</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/How_You_Get_The_Girl -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/How_You_Get_The_Girl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology#1989"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:has_title>How You Get The Girl</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/I_Almost_Do -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/I_Almost_Do">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/music"/>
+        <ERAS-ontology:has_title>I Almost Do</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/I_Bet_You_Think_About_Me -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/I_Bet_You_Think_About_Me">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasFeaturedArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Chris_Stapleton"/>
+        <ERAS-ontology:has_name>I Bet You Think About Me</ERAS-ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/I_Can_Do_It_With_a_Broken_Heart -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/I_Can_Do_It_With_a_Broken_Heart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/heartache"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/turmoil"/>
+        <ERAS-ontology:has_title>I Can Do It WIth a Broken Heart</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/I_Did_Something_Bad -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/I_Did_Something_Bad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Reputation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/being_emotional"/>
+        <ERAS-ontology:has_title>I Did Something Bad</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/I_Forgot_That_You_Existed -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/I_Forgot_That_You_Existed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Lover"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/anger"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/devotion"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/excitement"/>
+        <ERAS-ontology:has_title>I Forgot That You Existed</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/I_Hate_It_Here -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/I_Hate_It_Here">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/turmoil"/>
+        <ERAS-ontology:has_title>I Hate It Here</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/I_Knew_You_Were_Trouble -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/I_Knew_You_Were_Trouble">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:has_title>I Knew You Were Trouble</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/I_Know_Places -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/I_Know_Places">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology#1989"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/relationships"/>
+        <ERAS-ontology:has_title>I Know Places</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/I_Think_He_Knows -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/I_Think_He_Knows">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Lover"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/relationships"/>
+        <ERAS-ontology:has_title>I Think He Knows</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/I_Wish_You_Would -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/I_Wish_You_Would">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology#1989"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/relationships"/>
+        <ERAS-ontology:has_title>I Wish You Would</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Ice_Spice -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Ice_Spice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/If_This_Was_a_Movie -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/If_This_Was_a_Movie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Speak_Now"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/return_and_departure"/>
+        <ERAS-ontology:has_title>If This Was a Movie</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Indie_folk -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Indie_folk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Genre"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desperation"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/discovery"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/frustration"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/pain"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/struggle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Innocent -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Innocent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Speak_Now"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/persistence"/>
+        <ERAS-ontology:has_title>Innocent</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Invisible -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Invisible">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Debut"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/appreciation"/>
+        <ERAS-ontology:has_title>Invisible</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Jump_Then_Fall -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Jump_Then_Fall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/love"/>
+        <ERAS-ontology:has_title>Jump Then Fall</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Karma -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Karma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Midnights"/>
+        <ERAS-ontology:hasFeaturedArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Ice_Spice"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/companionship"/>
+        <ERAS-ontology:has_title>Karma</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Keith_Urban -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Keith_Urban">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+        <ERAS-ontology:has_name>Keith Urban</ERAS-ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Kendrick_Lamar -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Kendrick_Lamar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+        <ERAS-ontology:has_name>Kendrick Lamar</ERAS-ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/King_Of_My_Heart -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/King_Of_My_Heart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Reputation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/expression"/>
+        <ERAS-ontology:has_title>King Of My Heart</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Labyrinth -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Labyrinth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Midnights"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/aspirations"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/companionship"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:has_title>Labyrinth</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Lana_Del_Rey -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Lana_Del_Rey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+        <ERAS-ontology:has_name>Lana Del Rey</ERAS-ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Last_Kiss -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Last_Kiss">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Speak_Now"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/adventure"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/persistence"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:has_title>Last Kiss</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Lavander_Haze -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Lavander_Haze">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Midnights"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/seeking_understanding"/>
+        <ERAS-ontology:has_title>Lavander Haze</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/London_Boy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/London_Boy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Lover"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/devotion"/>
+        <ERAS-ontology:has_title>London Boy</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Long_Live -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Long_Live">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Speak_Now"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/persistence"/>
+        <ERAS-ontology:has_title>Long Live</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Look_What_You_Made_Me_Do -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Look_What_You_Made_Me_Do">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Reputation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:has_title>Look What You Made Me Do</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Love_Story -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Love_Story">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/conflict"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/future"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/love"/>
+        <ERAS-ontology:has_title>Love Story</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Lover -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Lover">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Album"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToLabel rdf:resource="http://www.semanticweb.org/ERAS-ontology/Republic"/>
+        <ERAS-ontology:belongsToLabel rdf:resource="http://www.semanticweb.org/ERAS-ontology/Taylor_Swift_Productions"/>
+        <ERAS-ontology:hasArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Elettropop"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Pop_rock"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Synth_pop"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/anger"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/devotion"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/excitement"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/relationships"/>
+        <ERAS-ontology:has_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">61.48</ERAS-ontology:has_duration>
+        <ERAS-ontology:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</ERAS-ontology:has_release_year>
+        <ERAS-ontology:has_title>Lover</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Maren_Morris -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Maren_Morris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+        <ERAS-ontology:has_name>Maren Morris</ERAS-ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Maroon -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Maroon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Midnights"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/seeking_understanding"/>
+        <ERAS-ontology:has_title>Maroon</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Mastermind -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Mastermind">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Midnights"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/aspirations"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/memories"/>
+        <ERAS-ontology:has_title>Masterming</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Mean -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Mean">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Speak_Now"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/future"/>
+        <ERAS-ontology:has_title>Mean</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Midnight_Rain -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Midnight_Rain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Midnights"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/family"/>
+        <ERAS-ontology:has_title>Midnight Rain</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Midnights -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Midnights">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Album"/>
+        <ERAS-ontology:belongsToLabel rdf:resource="http://www.semanticweb.org/ERAS-ontology/Republic"/>
+        <ERAS-ontology:belongsToLabel rdf:resource="http://www.semanticweb.org/ERAS-ontology/Taylor_Swift_Productions"/>
+        <ERAS-ontology:hasArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Chillout"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Elettropop"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Experimental_pop"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Folk_pop"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/aspirations"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/companionship"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/family"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/memories"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/seeking_understanding"/>
+        <ERAS-ontology:has_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44.08</ERAS-ontology:has_duration>
+        <ERAS-ontology:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2022</ERAS-ontology:has_release_year>
+        <ERAS-ontology:has_title>Midnights</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Mine -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Mine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Speak_Now"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nature"/>
+        <ERAS-ontology:has_title>Mine</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Mr.Perfectly_Fine -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Mr.Perfectly_Fine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/uncertainty"/>
+        <ERAS-ontology:has_title>Mr. Perfeclty Fine</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/My_Boy_Only_Breaks_His_Favorit_Toys -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/My_Boy_Only_Breaks_His_Favorit_Toys">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reminescence"/>
+        <ERAS-ontology:has_title>My Boy Only Breaks His Favorite Toys</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Never_Grow_Up -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Never_Grow_Up">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Speak_Now"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/future"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nature"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/persistence"/>
+        <ERAS-ontology:has_title>Never Grow Up</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/New_Romantics -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/New_Romantics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology#1989"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/enjoying_life"/>
+        <ERAS-ontology:has_title>New Romantics</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Our_Song -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Our_Song">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Debut"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/expression"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/music"/>
+        <ERAS-ontology:has_title>Our_Song</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Ours -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Ours">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Speak_Now"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nature"/>
+        <ERAS-ontology:has_title>Ours</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Out_of_the_Woods -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Out_of_the_Woods">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology#1989"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/enjoying_life"/>
+        <ERAS-ontology:has_title>Out_of_the_Woods</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Paper_Rings -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Paper_Rings">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Lover"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/relationships"/>
+        <ERAS-ontology:has_title>Paper Rings</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Peter -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Peter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/heartache"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reconciliation"/>
+        <ERAS-ontology:has_title>peter</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Picture_to_Burn -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Picture_to_Burn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Debut"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:has_title>Picture to Burn</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Pop -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Pop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Genre"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/enjoying_life"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/moving_on"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/relationships"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/romantic_vibes"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/turmoil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Pop_rock -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Pop_rock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Genre"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/anger"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/challenges"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/devotion"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/excitement"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/loneliness"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/music"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/regret"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/relationships"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Post_Malone -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Post_Malone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+        <ERAS-ontology:has_name>Post Malone</ERAS-ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Red -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Red">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Album"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToLabel rdf:resource="http://www.semanticweb.org/ERAS-ontology/Big_Machine"/>
+        <ERAS-ontology:hasArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Country_pop"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Pop_rock"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/challenges"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/loneliness"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/music"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/regret"/>
+        <ERAS-ontology:has_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65.11</ERAS-ontology:has_duration>
+        <ERAS-ontology:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</ERAS-ontology:has_release_year>
+        <ERAS-ontology:has_title>Red</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Republic -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Republic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Label"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Reputation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Reputation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Album"/>
+        <ERAS-ontology:belongsToLabel rdf:resource="http://www.semanticweb.org/ERAS-ontology/Big_Machine"/>
+        <ERAS-ontology:hasArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology#Contemporary_R&amp;B"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Elettropop"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/being_emotional"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/enthusiasm"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/expression"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/fantasy"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/persistence"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:has_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">55.38</ERAS-ontology:has_duration>
+        <ERAS-ontology:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</ERAS-ontology:has_release_year>
+        <ERAS-ontology:has_title>reputation</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Robin -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Robin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:has_title>Robin</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Sad_Beautiful_Tragic -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Sad_Beautiful_Tragic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/music"/>
+        <ERAS-ontology:has_title>Sad Beautiful Tragic</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Shake_It_Off -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Shake_It_Off">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology#1989"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/moving_on"/>
+        <ERAS-ontology:has_title>Shake It Off</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Snow_On_the_Beach -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Snow_On_the_Beach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Midnights"/>
+        <ERAS-ontology:hasFeaturedArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Lana_Del_Rey"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/aspirations"/>
+        <ERAS-ontology:has_title>Snow On The Beach</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/So_High_School -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/So_High_School">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:has_title>So High School</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Sparks_Fly -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Sparks_Fly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Speak_Now"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/adventure"/>
+        <ERAS-ontology:has_title>Sparks Fly</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Speak_Now -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Speak_Now">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Album"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToLabel rdf:resource="http://www.semanticweb.org/ERAS-ontology/Big_Machine"/>
+        <ERAS-ontology:hasArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Country_pop"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/adventure"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/future"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nature"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/persistence"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/return_and_departure"/>
+        <ERAS-ontology:has_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">67.29</ERAS-ontology:has_duration>
+        <ERAS-ontology:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</ERAS-ontology:has_release_year>
+        <ERAS-ontology:has_title>Speak Now</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Starlight -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Starlight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/challenges"/>
+        <ERAS-ontology:has_title>Starlight</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/State_Of_Grace -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/State_Of_Grace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/loneliness"/>
+        <ERAS-ontology:has_title>State Of Grace</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Stay_Beautiful -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Stay_Beautiful">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Debut"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/appreciation"/>
+        <ERAS-ontology:has_title>Stay Beautiful</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Stay_Stay_Stay -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Stay_Stay_Stay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/music"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/regret"/>
+        <ERAS-ontology:has_title>Stay Stay Stay</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Style -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Style">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology#1989"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/moving_on"/>
+        <ERAS-ontology:has_title>Style</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Superman -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Superman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Speak_Now"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/adventure"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/return_and_departure"/>
+        <ERAS-ontology:has_title>Superman</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Superstar -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Superstar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/conflict"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/love"/>
+        <ERAS-ontology:has_title>Superstar</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Sweet_Nothing -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Sweet_Nothing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Midnights"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:has_title>Sweet Nothing</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Synth_pop -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Synth_pop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Genre"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/anger"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/devotion"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/enjoying_life"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/excitement"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/heartache"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/intensity"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/moving_on"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reconciliation"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/relationships"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reminescence"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/romantic_vibes"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/turmoil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Taylor_Swift -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Taylor_Swift">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+        <ERAS-ontology:has_name>Taylor Swift</ERAS-ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Taylor_Swift_Productions -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Taylor_Swift_Productions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Label"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Teadrops_on_My_Guitar -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Teadrops_on_My_Guitar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Debut"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/music"/>
+        <ERAS-ontology:has_title>Teadrops On My Guitar</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Teadrops_on_My_Guitar_-_Pop_Version -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Teadrops_on_My_Guitar_-_Pop_Version">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Debut"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/music"/>
+        <ERAS-ontology:has_title>Teadrops on My Guitar - Pop Version</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Tell_Me_Why -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Tell_Me_Why">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/decision-making"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/future"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/uncertainty"/>
+        <ERAS-ontology:has_title>Tell Me Why</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/The_Albatross -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/The_Albatross">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/heartache"/>
+        <ERAS-ontology:has_title>The Albatross</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/The_Alchemy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/The_Alchemy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/heartache"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reconciliation"/>
+        <ERAS-ontology:has_title>The Alchemy</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/The_Archer -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/The_Archer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Lover"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/relationships"/>
+        <ERAS-ontology:has_title>The Archer</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/The_Best_Day -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/The_Best_Day">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/decision-making"/>
+        <ERAS-ontology:has_title>The Best Day</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/The_Black_Dog -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/The_Black_Dog">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reconciliation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/turmoil"/>
+        <ERAS-ontology:has_title>The Black Dog</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/The_Bolter -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/The_Bolter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/intensity"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reminescence"/>
+        <ERAS-ontology:has_title>The Bolter</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/The_Chicks -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/The_Chicks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+        <ERAS-ontology:has_name>The Chicks</ERAS-ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/The_Last_Time -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/The_Last_Time">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasFeaturedArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Gary_Lightbody"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/regret"/>
+        <ERAS-ontology:has_title>The Last Time</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/The_Lucky_One -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/The_Lucky_One">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:has_title>The Lucky One</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/The_Man -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/The_Man">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Lover"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/anger"/>
+        <ERAS-ontology:has_title>The Man</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/The_Manuscript -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/The_Manuscript">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/heartache"/>
+        <ERAS-ontology:has_title>The Manuscript</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/The_Moment_I_Knew -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/The_Moment_I_Knew">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:has_title>The Moment I Knew</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/The_National -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/The_National">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Artist"/>
+        <ERAS-ontology:has_name>The National</ERAS-ontology:has_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/The_Other_Side_of_The_Door -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/The_Other_Side_of_The_Door">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/conflict"/>
+        <ERAS-ontology:has_title>The Other Side of The Door</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/The_Outside -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/The_Outside">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Debut"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/appreciation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/intimacy"/>
+        <ERAS-ontology:has_title>The Outside</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/The_Prophecy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/The_Prophecy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/intensity"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reconciliation"/>
+        <ERAS-ontology:has_title>The Prophecy</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/The_Smallest_Man_Who_Ever_Lived -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/The_Smallest_Man_Who_Ever_Lived">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:has_title>The Smallest Man Who Ever Lived</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/The_Story_of_Us -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/The_Story_of_Us">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Speak_Now"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/adventure"/>
+        <ERAS-ontology:has_title>The Story of Us</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Album"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToLabel rdf:resource="http://www.semanticweb.org/ERAS-ontology/Republic"/>
+        <ERAS-ontology:hasArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"/>
+        <ERAS-ontology:hasGenre rdf:resource="http://www.semanticweb.org/ERAS-ontology/Synth_pop"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/heartache"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/intensity"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reconciliation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reminescence"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/turmoil"/>
+        <ERAS-ontology:has_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">121.54</ERAS-ontology:has_duration>
+        <ERAS-ontology:has_release_year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</ERAS-ontology:has_release_year>
+        <ERAS-ontology:has_title>The Tortured Poets Department</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/The_Way_I_Loved_You -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/The_Way_I_Loved_You">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/love"/>
+        <ERAS-ontology:has_title>The Way I Loved You</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/This_Love -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/This_Love">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology#1989"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/romantic_vibes"/>
+        <ERAS-ontology:has_title>This Love</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Tied_Together_with_a_Smile -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Tied_Together_with_a_Smile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Debut"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/intimacy"/>
+        <ERAS-ontology:has_title>Tied Together with a Smile</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Tim_McGraw -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Tim_McGraw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Debut"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/expression"/>
+        <ERAS-ontology:has_title>Tim McGraw</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Today_Was_A_Fairytale -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Today_Was_A_Fairytale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/love"/>
+        <ERAS-ontology:has_title>Today Was A Fairytale</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Treacherous -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Treacherous">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/loneliness"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/regret"/>
+        <ERAS-ontology:has_title>Treacherous</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Untouchable -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Untouchable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/future"/>
+        <ERAS-ontology:has_title>Untouchable</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Vigilante_Shit -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Vigilante_Shit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Midnights"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/companionship"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/family"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/memories"/>
+        <ERAS-ontology:has_title>Vigilante Shit</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/We_Are_Never_Ever_Getting_Back_Together -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/We_Are_Never_Ever_Getting_Back_Together">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Red"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/challenges"/>
+        <ERAS-ontology:has_title>We Are Never Ever Getting Back Together</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/We_Were_Happy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/We_Were_Happy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/love"/>
+        <ERAS-ontology:has_title>We Were Happy</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Welcome_To_New_York -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Welcome_To_New_York">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology#1989"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/romantic_vibes"/>
+        <ERAS-ontology:has_title>Welcome To New York</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/White_Horse -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/White_Horse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/decision-making"/>
+        <ERAS-ontology:has_title>White Horse</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Wildest_Dreams -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Wildest_Dreams">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology#1989"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:has_title>Wildest Dreams</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/Wonderland -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/Wonderland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology#1989"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/enjoying_life"/>
+        <ERAS-ontology:has_title>Wonderland</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/You_All_Over_Me -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/You_All_Over_Me">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasFeaturedArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Maren_Morris"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/uncertainty"/>
+        <ERAS-ontology:has_title>You All Over Me</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/You_Are_In_Love -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/You_Are_In_Love">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology#1989"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/romantic_vibes"/>
+        <ERAS-ontology:has_title>You Are In Love</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/You_Belong_With_Me -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/You_Belong_With_Me">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Fearless"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/decision-making"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/future"/>
+        <ERAS-ontology:has_title>You Belong With Me</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/You_Need_To_Calm_Down -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/You_Need_To_Calm_Down">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Lover"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desire"/>
+        <ERAS-ontology:has_title>You Need To Calm Down</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/adventure -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/adventure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/anger -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/anger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/appreciation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/appreciation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/aspirations -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/aspirations">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/august -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/august">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Folklore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/pain"/>
+        <ERAS-ontology:has_title>august</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/being_emotional -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/being_emotional">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/betty -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/betty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Folklore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desperation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/frustration"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/struggle"/>
+        <ERAS-ontology:has_title>betty</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/breakup -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/breakup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/cardigan -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/cardigan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Folklore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/discovery"/>
+        <ERAS-ontology:has_title>cardigan</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/challenges -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/challenges">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/champagne_problems -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/champagne_problems">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Evermore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/being_emotional"/>
+        <ERAS-ontology:has_title>champagne problems</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/closure -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/closure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Evermore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/struggle"/>
+        <ERAS-ontology:has_title>closure</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/companionship -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/companionship">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/coney_island -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/coney_island">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Evermore"/>
+        <ERAS-ontology:hasFeaturedArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_National"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/being_emotional"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/struggle"/>
+        <ERAS-ontology:has_title>coney island</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/conflict -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/conflict">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/cowboy_like_me -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/cowboy_like_me">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Evermore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:has_title>cowboy like me</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/decision-making -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/decision-making">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/desire -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/desire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/desperation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/desperation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/devotion -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/devotion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/discovery -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/discovery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/dorothea -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/dorothea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Evermore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:has_title>dorothea</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/enjoying_life -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/enjoying_life">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/enthusiasm -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/enthusiasm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/epiphany -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/epiphany">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Folklore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:has_title>Epiphany</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/evermore -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/evermore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Evermore"/>
+        <ERAS-ontology:hasFeaturedArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Bon_Iver"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/suffering"/>
+        <ERAS-ontology:has_title>evermore</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/excitement -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/excitement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/exile -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/exile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Folklore"/>
+        <ERAS-ontology:hasFeaturedArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/Bon_Iver"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/pain"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/struggle"/>
+        <ERAS-ontology:has_title>exile</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/expression -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/expression">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/family -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/family">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/fantasy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/fantasy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/frustration -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/frustration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/future -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/future">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/gold_rush -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/gold_rush">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Evermore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/frustration"/>
+        <ERAS-ontology:has_title>gold rush</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/happiness -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/happiness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/evermore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/being_emotional"/>
+        <ERAS-ontology:has_title>happiness</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/heartache -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/heartache">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/hoax -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/hoax">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Folklore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/discovery"/>
+        <ERAS-ontology:has_title>hoax</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/illicit_affairs -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/illicit_affairs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Folklore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desperation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/frustration"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:has_title>illicit affairs</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/imgonnagetyouback -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/imgonnagetyouback">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reconciliation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/turmoil"/>
+        <ERAS-ontology:has_title>imgonnagetyouback</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/intensity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/intensity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/intimacy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/intimacy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/invisible_string -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/invisible_string">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Folklore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/struggle"/>
+        <ERAS-ontology:has_title>invisible string</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/ivy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/ivy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/ivy"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/suffering"/>
+        <ERAS-ontology:has_title>ivy</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/loml -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/loml">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/heartache"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reminescence"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/turmoil"/>
+        <ERAS-ontology:has_title>loml</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/loneliness -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/loneliness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/long_story_short -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/long_story_short">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Evermore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/frustration"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/struggle"/>
+        <ERAS-ontology:has_title>long story short</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/love -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/love">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/mad_woman -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/mad_woman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Folklore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desperation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/struggle"/>
+        <ERAS-ontology:has_title>mad woman</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/marjorie -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/marjorie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Evermore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:has_title>marjorie</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/memories -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/memories">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/mirrorball -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/mirrorball">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Folklore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desperation"/>
+        <ERAS-ontology:has_title>Mirrorball</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/moving_on -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/moving_on">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/music -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/music">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/my_tears_ricochet -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/my_tears_ricochet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Folklore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/frustration"/>
+        <ERAS-ontology:has_title>my tears ricochet</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/nature -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/nature">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/no_body_no_crime -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/no_body_no_crime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/evermore"/>
+        <ERAS-ontology:hasFeaturedArtist rdf:resource="http://www.semanticweb.org/ERAS-ontology/HAIM"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/suffering"/>
+        <ERAS-ontology:has_title>no body no crime</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/nostalgia -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/nostalgia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/pain -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/pain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/peace -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/peace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Folklore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/discovery"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/pain"/>
+        <ERAS-ontology:has_title>peace</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/persistence -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/persistence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/reconciliation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/reconciliation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/reflection -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/reflection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/regret -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/regret">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/relationships -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/relationships">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+        <ERAS-ontology:representsTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/turmoil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/reminescence -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/reminescence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/return_and_departure -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/return_and_departure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/right_were_you_left_me -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/right_were_you_left_me">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Evermore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/nostalgia"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/struggle"/>
+        <ERAS-ontology:has_title>right were you left me</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/romantic_vibes -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/romantic_vibes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/seeking_understanding -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/seeking_understanding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/seven -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/seven">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Folklore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/frustration"/>
+        <ERAS-ontology:has_title>seven</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/struggle -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/struggle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/suffering -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/suffering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/thanK_you_aIMee -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/thanK_you_aIMee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/intensity"/>
+        <ERAS-ontology:has_title>thanK you aIMee</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/the1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/the1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Folklore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desperation"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/pain"/>
+        <ERAS-ontology:has_title>the1</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/the_lakes -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/the_lakes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Folklore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/frustration"/>
+        <ERAS-ontology:has_title>the lakes</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/the_last_great_american_dynasty -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/the_last_great_american_dynasty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Folklore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/struggle"/>
+        <ERAS-ontology:has_title>the last great american dynasty</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/this_is_me_trying -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/this_is_me_trying">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Folklore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/desperation"/>
+        <ERAS-ontology:has_title>this is me trying</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/tolerate_it -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/tolerate_it">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Evermore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/frustration"/>
+        <ERAS-ontology:has_title>tolerate it</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/turmoil -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/turmoil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/uncertainty -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/uncertainty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ERAS-ontology/willow -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ERAS-ontology/willow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ERAS-ontology/Song"/>
+        <ERAS-ontology:belongsToAlbum rdf:resource="http://www.semanticweb.org/ERAS-ontology/Evermore"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/reflection"/>
+        <ERAS-ontology:hasTopic rdf:resource="http://www.semanticweb.org/ERAS-ontology/struggle"/>
+        <ERAS-ontology:has_title>willow</ERAS-ontology:has_title>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,4684 @@
+[ {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#'tis_the_damn_season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Evermore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/suffering"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "'tis the damn season"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#...Ready_For_It?",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Reputation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/fantasy"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "...Ready For It?"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#1989",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToLabel" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Big_Machine"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasGenre" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Dance_pop"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Pop"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Synth_pop"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/enjoying_life"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/moving_on"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/relationships"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/romantic_vibes"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/turmoil"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_duration" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "48.42"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_release_year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2014"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "1989"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Album"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/challenges"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/music"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "22"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#Brendon_Urie_of_Panic!_At_The_Disco",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/has_name" : [ {
+    "@value" : "Brendon Urie"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#Contemporary_R&B",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/representsTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/being_emotional"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/enthusiasm"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/expression"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/fantasy"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/persistence"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#Don't_Blame_Me",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Reputation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Don't Blame Me"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#Don't_You",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/decision-making"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/love"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Don't You"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#Florida!!!",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Florence_and_The_Machine"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/intensity"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/turmoil"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Florida!!!"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#Forever_&_Always",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/regret"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Forever & Always"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#Forever_&_Always_(Piano_Version)",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/regret"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Forever & Always"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#Guilty_as_Sin?",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/turmoil"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Guilty as Sin?"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#How_Did_It_End?",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reconciliation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "How Did It End"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#I'm_Only_Me_When_I'm_With_You",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Debut"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "I'm Only Me When I'm With You"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#I_Can_Fix_Him_(No_Really_I_Can)",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "I Can Fix Him (No Really I Can)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#I_Look_in_People's_Windows",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reminescence"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/turmoil"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "I Look In People's Window"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#It's_Nice_To_Have_A_Friend",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Lover"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/excitement"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "It's Nice To Have A Friend"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#ME!",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Lover"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology#Brendon_Urie_of_Panic!_At_The_Disco"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/excitement"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "ME!"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#Mary's_Song_(Oh_My_My_My)",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Debut"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/appreciation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/expression"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Mary's Song (Oh My My My)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#Miss_Americana_&_The_Heartbreak_Prince",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Lover"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/anger"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/relationships"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Miss Americana & The Heartbreak Prince"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#New_Year's_Day",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Reputation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/persistence"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "New Year's Day"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#Question...?",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Midnights"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/memories"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Question...?"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#Red_(Original_Demo_Recording)",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Red (Original Demo Recording)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#Should've_Said_No",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Debut"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/expression"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/intimacy"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Should've Said No"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#So_It_Goes...",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Reputation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/being_emotional"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/fantasy"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "So It Goes"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#So_Long,_London",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reconciliation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reminescence"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "So Long, London"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#Soon_You'll_Get_Better",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Lover"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Chicks"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/excitement"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Soon You'll Get Better"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#State_of_Grace_(Acoustic)",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/loneliness"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "State of Grace (Acoustic)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#That's_When",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Keith_Urban"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/conflict"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "That's When"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#This_Is_Why_We_Can't_Have_Nice_Things",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Reputation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/fantasy"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "This Is Why We Can't Have Nice Things"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#Treacherous_(Original_Demo_Recording)",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/loneliness"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/regret"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Treacherous (Original Demo Recording)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#Who's_Afraid_of_Little_Old_Me?",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/heartache"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/intensity"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Who's Afraid of Little Old Me"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#You're_Not_Sorry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/uncertainty"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "You're Not Sorry"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#You're_On_Your_Own,_Kid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Midnights"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/companionship"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/memories"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "You're On Your Own, Kid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology#it's_time_to_go",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Evermore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/suffering"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "it's time to go"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/A_Perfectly_Good_Heart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Debut"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/breakup"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "A Perfectly Good Heart"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/A_Place_in_this_World",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Debut"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/appreciation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "A Place in this World"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Afterglow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Lover"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/devotion"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/excitement"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Afterglow"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Album",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/All_Too_Well",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/regret"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "All Too Well"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/All_You_Had_To_Do_Was_Stay",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology#1989"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/moving_on"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/relationships"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "All You Had To Do Was Stay"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Alternative_rock",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/representsTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/being_emotional"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desperation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/discovery"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/frustration"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/pain"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/struggle"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/suffering"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Anti-Hero",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Midnights"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/family"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Anti-Hero"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Back_To_December",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Speak_Now"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nature"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/persistence"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/return_and_departure"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Back To December"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Bad_Blood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology#1989"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Kendrick_Lamar"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/romantic_vibes"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/turmoil"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Bad Blood"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Baroque_pop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/representsTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/being_emotional"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/frustration"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/struggle"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/suffering"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Begin_Again",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/music"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/regret"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Begin Again"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Bejeweled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Midnights"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/memories"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Bejeweled"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Better_Than_Revenge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Speak_Now"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Better Than Revenge"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Big_Machine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Label"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Black_Space",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology#1989"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/moving_on"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/romantic_vibes"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Black Space"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Bon_Iver",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/has_name" : [ {
+    "@value" : "Bon Iver"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Breathe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Colbie_Caillat"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/decision-making"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/future"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Breathe"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/But_Daddy_I_Love_Him",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/intensity"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/turmoil"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "But Daddy I Love Him"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Bye_Bye_Baby",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/future"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Bye Bye Baby"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Call_It_What_You_Want",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Reputation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/enthusiasm"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Call It What You Want"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Cassandra",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/heartache"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/intensity"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Cassandra"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Change",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/conflict"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Change"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Chillout",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/representsTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/aspirations"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/companionship"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/family"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/memories"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/seeking_understanding"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Chloe_or_Sam_or_Sophia_or_Marcus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/heartache"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/intensity"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Chloe or Sam or Sophia or Marcus"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Chris_Stapleton",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/has_name" : [ {
+    "@value" : "Chris_Stapleton"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Clara_Bow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/intensity"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/turmoil"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Clara Bow"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Clean",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology#1989"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/turmoil"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Clean"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Colbie_Caillat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/has_name" : [ {
+    "@value" : "Colbie Caillat"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Cold_as_You",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Debut"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/appreciation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Cold As You"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Come_Back...Be_Here",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/intensity"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Come Back Be Here"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Come_In_With_The_Rain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/decision-making"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/uncertainty"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Come In With The Rain"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Cornelia_Street",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Lover"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Cornelia Street"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Country_pop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/representsTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/adventure"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/appreciation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/breakup"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/challenges"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/conflict"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/decision-making"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/expression"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/future"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/intimacy"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/loneliness"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/love"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/music"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nature"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/persistence"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/regret"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/return_and_departure"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/uncertainty"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Cruel_Summer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Lover"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/excitement"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Cruel Summer"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Dance_pop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/representsTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/enjoying_life"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/moving_on"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/relationships"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/romantic_vibes"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/turmoil"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Dancing_With_Our_Hands_Tied",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Reputation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/expression"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/persistence"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Dancing With Our Hands Tied"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Daylight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Lover"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/devotion"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/relationships"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Daylight"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Dear_John",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Speak_Now"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/persistence"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/return_and_departure"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Dear John"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Death_By_A_Thousand_Cuts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Lover"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/devotion"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Death By A Thousand Cuts"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Debut",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToLabel" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Big_Machine"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasGenre" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Country_pop"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/appreciation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/breakup"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/expression"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/intimacy"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/music"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_duration" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "53.30"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_release_year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2006"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Taylor Swift"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Album"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Delicate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Reputation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/enthusiasm"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/fantasy"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Delicate"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Down_Bad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/intensity"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Down Bad"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Dress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Reputation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/enthusiasm"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Dress"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Ed_Sheeran",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/has_name" : [ {
+    "@value" : "Ed Sheeran"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Elettropop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/representsTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/anger"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/aspirations"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/being_emotional"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/companionship"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/devotion"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/enthusiasm"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/excitement"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/expression"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/family"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/fantasy"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/memories"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/persistence"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/relationships"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/seeking_understanding"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Enchanted",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Speak_Now"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/adventure"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nature"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/persistence"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Enchanted"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/End_Game",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Reputation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Ed_Sheeran"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Future"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/expression"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "End Game"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Evermore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToLabel" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Republic"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Taylor_Swift_Productions"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasGenre" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Alternative_rock"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Baroque_pop"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Folk_pop"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/being_emotional"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/frustration"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/struggle"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/suffering"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_duration" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "60.38"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_release_year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2020"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "evermore"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Album"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Everything_Has_Changed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Ed_Sheeran"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Everything Has Changed"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Experimental_pop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/representsTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/aspirations"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/companionship"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/family"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/memories"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/seeking_understanding"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/False_God",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Lover"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/devotion"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "False God"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToLabel" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Big_Machine"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasGenre" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Country_pop"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/conflict"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/decision-making"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/future"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/love"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/regret"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/uncertainty"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_duration" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "53.41"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_release_year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2008"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Fearless"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Album"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Fifteen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/decision-making"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/love"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Fifteen"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Florence_and_The_Machine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/has_name" : [ {
+    "@value" : "Florence and The Machine"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Folk_pop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/representsTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/aspirations"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/being_emotional"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/companionship"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/family"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/frustration"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/memories"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/seeking_understanding"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/struggle"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/suffering"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Folklore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToLabel" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Republic"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Taylor_Swift_Productions"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasGenre" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Alternative_rock"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Folktronica"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Indie_folk"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desperation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/discovery"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/frustration"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/pain"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/struggle"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_duration" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "63.29"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_release_year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2020"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "folklore"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Album"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Folktronica",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/representsTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desperation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/discovery"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/frustration"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/pain"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/struggle"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Fortnight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Post_Malone"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reconciliation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/turmoil"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Fortnight"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Fresh_Out_The_Slammer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/heartache"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reconciliation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reminescence"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Fresh Out The Slammer"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Future",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Future"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Gary_Lightbody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/has_name" : [ {
+    "@value" : "Gary Lightbody"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Gateway_Car",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Reputation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/being_emotional"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/expression"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Gateway Car"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Genre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Girl_at_Home",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Girl at Home"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Gorgeous",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Reputation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/being_emotional"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Gorgeous"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/HAIM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/has_name" : [ {
+    "@value" : "HAIM"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Haunted",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Speak_Now"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/return_and_departure"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Haunted"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Hey_Stephen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/love"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/uncertainty"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Hey Stephen"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Holy_Ground",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/music"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Holy Ground"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/How_You_Get_The_Girl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology#1989"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "How You Get The Girl"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/I_Almost_Do",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/music"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "I Almost Do"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/I_Bet_You_Think_About_Me",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Chris_Stapleton"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_name" : [ {
+    "@value" : "I Bet You Think About Me"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/I_Can_Do_It_With_a_Broken_Heart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/heartache"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/turmoil"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "I Can Do It WIth a Broken Heart"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/I_Did_Something_Bad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Reputation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/being_emotional"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "I Did Something Bad"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/I_Forgot_That_You_Existed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Lover"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/anger"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/devotion"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/excitement"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "I Forgot That You Existed"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/I_Hate_It_Here",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/turmoil"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "I Hate It Here"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/I_Knew_You_Were_Trouble",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "I Knew You Were Trouble"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/I_Know_Places",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology#1989"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/relationships"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "I Know Places"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/I_Think_He_Knows",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Lover"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/relationships"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "I Think He Knows"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/I_Wish_You_Would",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology#1989"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/relationships"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "I Wish You Would"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Ice_Spice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/If_This_Was_a_Movie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Speak_Now"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/return_and_departure"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "If This Was a Movie"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Indie_folk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/representsTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desperation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/discovery"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/frustration"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/pain"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/struggle"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Innocent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Speak_Now"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/persistence"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Innocent"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Invisible",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Debut"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/appreciation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Invisible"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Jump_Then_Fall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/love"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Jump Then Fall"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Karma",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Midnights"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Ice_Spice"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/companionship"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Karma"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Keith_Urban",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/has_name" : [ {
+    "@value" : "Keith Urban"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Kendrick_Lamar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/has_name" : [ {
+    "@value" : "Kendrick Lamar"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/King_Of_My_Heart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Reputation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/expression"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "King Of My Heart"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Labyrinth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Midnights"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/aspirations"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/companionship"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Labyrinth"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Lana_Del_Rey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/has_name" : [ {
+    "@value" : "Lana Del Rey"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Last_Kiss",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Speak_Now"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/adventure"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/persistence"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Last Kiss"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Lavander_Haze",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Midnights"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/seeking_understanding"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Lavander Haze"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/London_Boy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Lover"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/devotion"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "London Boy"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Long_Live",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Speak_Now"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/persistence"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Long Live"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Look_What_You_Made_Me_Do",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Reputation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Look What You Made Me Do"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Love_Story",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/conflict"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/future"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/love"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Love Story"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Lover",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToLabel" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Republic"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Taylor_Swift_Productions"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasGenre" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Elettropop"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Pop_rock"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Synth_pop"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/anger"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/devotion"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/excitement"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/relationships"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_duration" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "61.48"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_release_year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2019"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Lover"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Album"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Maren_Morris",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/has_name" : [ {
+    "@value" : "Maren Morris"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Maroon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Midnights"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/seeking_understanding"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Maroon"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Mastermind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Midnights"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/aspirations"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/memories"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Masterming"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Mean",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Speak_Now"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/future"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Mean"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Midnight_Rain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Midnights"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/family"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Midnight Rain"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Midnights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToLabel" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Republic"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Taylor_Swift_Productions"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasGenre" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Chillout"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Elettropop"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Experimental_pop"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Folk_pop"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/aspirations"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/companionship"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/family"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/memories"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/seeking_understanding"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_duration" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "44.08"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_release_year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2022"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Midnights"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Album"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Mine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Speak_Now"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nature"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Mine"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Mr.Perfectly_Fine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/uncertainty"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Mr. Perfeclty Fine"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/My_Boy_Only_Breaks_His_Favorit_Toys",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reminescence"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "My Boy Only Breaks His Favorite Toys"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Never_Grow_Up",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Speak_Now"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/future"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nature"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/persistence"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Never Grow Up"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/New_Romantics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology#1989"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/enjoying_life"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "New Romantics"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Our_Song",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Debut"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/expression"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/music"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Our_Song"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Ours",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Speak_Now"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nature"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Ours"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Out_of_the_Woods",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology#1989"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/enjoying_life"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Out_of_the_Woods"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Paper_Rings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Lover"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/relationships"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Paper Rings"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Peter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/heartache"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reconciliation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "peter"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Picture_to_Burn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Debut"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Picture to Burn"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Pop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/representsTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/enjoying_life"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/moving_on"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/relationships"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/romantic_vibes"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/turmoil"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Pop_rock",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/representsTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/anger"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/challenges"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/devotion"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/excitement"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/loneliness"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/music"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/regret"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/relationships"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Post_Malone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/has_name" : [ {
+    "@value" : "Post Malone"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Red",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToLabel" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Big_Machine"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasGenre" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Country_pop"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Pop_rock"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/challenges"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/loneliness"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/music"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/regret"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_duration" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "65.11"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_release_year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2012"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Red"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Album"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Republic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Label"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Reputation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToLabel" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Big_Machine"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasGenre" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology#Contemporary_R&B"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Elettropop"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/being_emotional"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/enthusiasm"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/expression"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/fantasy"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/persistence"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_duration" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "55.38"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_release_year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2017"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "reputation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Album"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Robin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Robin"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Sad_Beautiful_Tragic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/music"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Sad Beautiful Tragic"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Shake_It_Off",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology#1989"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/moving_on"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Shake It Off"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Snow_On_the_Beach",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Midnights"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Lana_Del_Rey"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/aspirations"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Snow On The Beach"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/So_High_School",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "So High School"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Song",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Sparks_Fly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Speak_Now"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/adventure"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Sparks Fly"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Speak_Now",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToLabel" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Big_Machine"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasGenre" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Country_pop"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/adventure"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/future"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nature"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/persistence"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/return_and_departure"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_duration" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "67.29"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_release_year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2010"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Speak Now"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Album"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Starlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/challenges"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Starlight"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/State_Of_Grace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/loneliness"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "State Of Grace"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Stay_Beautiful",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Debut"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/appreciation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Stay Beautiful"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Stay_Stay_Stay",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/music"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/regret"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Stay Stay Stay"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Style",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology#1989"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/moving_on"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Style"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Superman",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Speak_Now"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/adventure"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/return_and_departure"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Superman"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Superstar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/conflict"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/love"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Superstar"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Sweet_Nothing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Midnights"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Sweet Nothing"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Synth_pop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/representsTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/anger"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/devotion"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/enjoying_life"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/excitement"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/heartache"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/intensity"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/moving_on"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reconciliation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/relationships"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reminescence"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/romantic_vibes"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/turmoil"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Taylor_Swift",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/has_name" : [ {
+    "@value" : "Taylor Swift"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Taylor_Swift_Productions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Label"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Teadrops_on_My_Guitar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Debut"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/music"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Teadrops On My Guitar"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Teadrops_on_My_Guitar_-_Pop_Version",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Debut"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/music"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Teadrops on My Guitar - Pop Version"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Tell_Me_Why",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/decision-making"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/future"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/uncertainty"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Tell Me Why"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Albatross",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/heartache"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "The Albatross"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Alchemy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/heartache"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reconciliation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "The Alchemy"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Archer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Lover"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/relationships"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "The Archer"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Best_Day",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/decision-making"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "The Best Day"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Black_Dog",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reconciliation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/turmoil"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "The Black Dog"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Bolter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/intensity"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reminescence"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "The Bolter"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Chicks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/has_name" : [ {
+    "@value" : "The Chicks"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Last_Time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Gary_Lightbody"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/regret"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "The Last Time"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Lucky_One",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "The Lucky One"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Man",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Lover"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/anger"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "The Man"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Manuscript",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/heartache"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "The Manuscript"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Moment_I_Knew",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "The Moment I Knew"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/The_National",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/has_name" : [ {
+    "@value" : "The National"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Other_Side_of_The_Door",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/conflict"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "The Other Side of The Door"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Outside",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Debut"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/appreciation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/intimacy"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "The Outside"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Prophecy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/intensity"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reconciliation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "The Prophecy"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Smallest_Man_Who_Ever_Lived",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "The Smallest Man Who Ever Lived"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Story_of_Us",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Speak_Now"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/adventure"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "The Story of Us"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToLabel" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Republic"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Taylor_Swift"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasGenre" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Synth_pop"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/heartache"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/intensity"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reconciliation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reminescence"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/turmoil"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_duration" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "121.54"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_release_year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2024"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "The Tortured Poets Department"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Album"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Way_I_Loved_You",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/love"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "The Way I Loved You"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/This_Love",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology#1989"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/romantic_vibes"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "This Love"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Tied_Together_with_a_Smile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Debut"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/intimacy"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Tied Together with a Smile"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Tim_McGraw",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Debut"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/expression"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Tim McGraw"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Today_Was_A_Fairytale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/love"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Today Was A Fairytale"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Treacherous",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/loneliness"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/regret"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Treacherous"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Untouchable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/future"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Untouchable"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Vigilante_Shit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Midnights"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/companionship"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/family"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/memories"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Vigilante Shit"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/We_Are_Never_Ever_Getting_Back_Together",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Red"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/challenges"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "We Are Never Ever Getting Back Together"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/We_Were_Happy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/love"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "We Were Happy"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Welcome_To_New_York",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology#1989"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/romantic_vibes"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Welcome To New York"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/White_Horse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/decision-making"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "White Horse"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Wildest_Dreams",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology#1989"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Wildest Dreams"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/Wonderland",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology#1989"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/enjoying_life"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Wonderland"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/You_All_Over_Me",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Maren_Morris"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/uncertainty"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "You All Over Me"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/You_Are_In_Love",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology#1989"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/romantic_vibes"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "You Are In Love"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/You_Belong_With_Me",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Fearless"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/decision-making"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/future"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "You Belong With Me"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/You_Need_To_Calm_Down",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Lover"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desire"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "You Need To Calm Down"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/adventure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/anger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/appreciation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/aspirations",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/august",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Folklore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/pain"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "august"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/being_emotional",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Album"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/belongsToLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Album"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Genre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Label"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/betty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Folklore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desperation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/frustration"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/struggle"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "betty"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/breakup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/cardigan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Folklore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/discovery"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "cardigan"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/challenges",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/champagne_problems",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Evermore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/being_emotional"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "champagne problems"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/closure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Evermore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/struggle"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "closure"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/companionship",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/coney_island",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Evermore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_National"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/being_emotional"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/struggle"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "coney island"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/conflict",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/cowboy_like_me",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Evermore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "cowboy like me"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/decision-making",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/desire",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/desperation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/devotion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/discovery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/dorothea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Evermore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "dorothea"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/enjoying_life",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/enthusiasm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/epiphany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Folklore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Epiphany"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/evermore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Evermore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Bon_Iver"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/suffering"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "evermore"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/excitement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/exile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Folklore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Bon_Iver"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/pain"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/struggle"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "exile"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/expression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/family",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/fantasy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/frustration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/representsTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/future",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/gold_rush",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Evermore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/frustration"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "gold rush"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/happiness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/evermore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/being_emotional"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "happiness"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/hasArtist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/hasDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Album"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Artist"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/hasGenre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/hasTopic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/has_duration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/has_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/has_release_year",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/has_title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/heartache",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/hoax",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Folklore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/discovery"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "hoax"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/illicit_affairs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Folklore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desperation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/frustration"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "illicit affairs"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/imgonnagetyouback",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reconciliation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/turmoil"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "imgonnagetyouback"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/intensity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/intimacy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/invisible_string",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Folklore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/struggle"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "invisible string"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/ivy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/ivy"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/suffering"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "ivy"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/loml",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/heartache"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reminescence"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/turmoil"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "loml"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/loneliness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/long_story_short",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Evermore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/frustration"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/struggle"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "long story short"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/love",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/mad_woman",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Folklore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desperation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/struggle"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "mad woman"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/marjorie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Evermore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "marjorie"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/memories",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/mirrorball",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Folklore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desperation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "Mirrorball"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/moving_on",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/music",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/my_tears_ricochet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Folklore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/frustration"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "my tears ricochet"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/nature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/no_body_no_crime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/evermore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasFeaturedArtist" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/HAIM"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/suffering"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "no body no crime"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/pain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/peace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Folklore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/discovery"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/pain"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "peace"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/persistence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/reconciliation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/regret",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/relationships",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/representsTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/turmoil"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/reminescence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/representsTopic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Genre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/return_and_departure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/right_were_you_left_me",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Evermore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/nostalgia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/struggle"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "right were you left me"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/romantic_vibes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/seeking_understanding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/seven",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Folklore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/frustration"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "seven"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/struggle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/suffering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/thanK_you_aIMee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/The_Tortured_Poets_Department"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/intensity"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "thanK you aIMee"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/the1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Folklore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desperation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/pain"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "the1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/the_lakes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Folklore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/frustration"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "the lakes"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/the_last_great_american_dynasty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Folklore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/struggle"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "the last great american dynasty"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/this_is_me_trying",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Folklore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/desperation"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "this is me trying"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/tolerate_it",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Evermore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/frustration"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "tolerate it"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/turmoil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/uncertainty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ERAS-ontology/willow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ERAS-ontology/belongsToAlbum" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Evermore"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/hasTopic" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/reflection"
+  }, {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/struggle"
+  } ],
+  "http://www.semanticweb.org/ERAS-ontology/has_title" : [ {
+    "@value" : "willow"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ERAS-ontology/Song"
+  } ]
+} ]
