@@ -46,16 +46,51 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <section class="about-section text-center" id="about">
+ <!-- Projects-->
+ <section class="projects-section bg-light" id="projects">
+    <div class="container px-4 px-lg-5">
+        <h2>Desing on Protégé</h2>
+        <br>
+        <p> After the extraction's results, the software <a href="https://protege.stanford.edu">Protégé</a> has been used to build the ontology. <br> <br>
+            The ontology is made up of: <br>
 
-        </section>
-        <!-- Projects-->
-        <section class="projects-section bg-light" id="projects">
-            <div class="container px-4 px-lg-5">
-            
+            <ul>
+                <b>6 Classes:
+                </b>
+            <li>Album</li> - to represent the albums.
+            <li>Artist</li> - to represent the artists, comprehending the featuring.
+            <li>Genre</li> - to represent the genres of all the albums. 
+            <li>Label</li> - to represent the labels involved in the album's production.
+            <li>Song</li> - to represent the songs.
+            <li>Topic</li> - to represent  the retrieved topics.
+            </ul> <br>
+            <ul>
+                <b>8 Object properties:</b>
+            <li>belongsToAlbum</li> - to describe the relationship between songs and the albums they belong to.
+            <li>belongsToLabel</li> - to describe the relationship between the albums and the labels they belong to.
+            <li>hasArtist</li> - to describe the relation between songs, albums and the artist.
+            <li>hasFeaturedArtist</li> - to describe the relation between songs and featured artists.
+            <li>hasGenre</li> - to describe the relation between albums and genres.
+            <li>hasTopic</li> - to describe the relation between songs, albums and topics.
+            <li>representsTopic</li> - to describe the relation between genres and topics.
+            </ul><br>
+            <ul>
+                <b>4 Data properties</b>
+            <li>has_duration</li> - duration of songs and albums.
+            <li>has_name</li> - names of the artist and featured artists.
+            <li>has_release_date</li> - release date of albums.
+            <li>has_title</li> - titles of songs and albums.
+            </ul>
+            <br>
+        
+            The full and detailed ontology documentation is available <a href="jar_anita/documentation/index-en.html">here.</a><br>
+            Turtle file available <a href="ontology/ERAS-ontology_def.ttl" dowload="ERAS-ontology_def.ttl">here</a>.
 
-            </div>
-        </section>
+        </p>
+        </div>
+</section>
+
+  
         <!-- Footer-->
         
 

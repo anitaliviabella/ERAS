@@ -53,25 +53,21 @@
                 <h2>Topic modeling</h2>
                 <br>
                 <p>
-                  This python code is designed to analyze the collection of song lyrics of the album <I>folklore</I> and categorize them into thematic topics using a technique called Non-negative Matrix Factorization (NMF).<br>
-                  The process begins by reading the lyrics from a CSV file and preprocessing them to remove irrelevant words. Stopwords, common words like "the" or "and," are eliminated to focus on meaningful content.<br>
-                  Next, the lyrics are converted into a numerical representation using TF-IDF (Term Frequency-Inverse Document Frequency) vectorization. This step assigns weights to words based on their importance in individual songs and across the entire corpus.
-                  The NMF algorithm is then applied to decompose the TF-IDF matrix into a set of topics. Each topic represents a collection of words that commonly occur together in the lyrics, capturing underlying themes within the music.<br><br>
+                  The following python code is designed to analyze the collection of song lyrics of the album <I>folklore</I> and categorize them into thematic topics using a technique called <a href="https://en.wikipedia.org/wiki/Non-negative_matrix_factorization">Non-negative Matrix Factorization (NMF).</a><br>
+                  The process begins by reading the lyrics from CSV files and preprocessing them to remove irrelevant words. Stopwords, common words like "the" or "and," are eliminated to focus on meaningful content.<br>
+                  Next, the lyrics are converted into a numerical representation using  <a href="https://en.wikipedia.org/wiki/Tf–idf">TF-IDF (Term Frequency-Inverse Document Frequency)</a> vectorization. This step assigns weights to words based on their importance in individual songs and across the entire corpus.
+                  The NMF algorithm is then applied to decompose the TF-IDF matrix into a set of topics. Each topic represents a collection of words that commonly occur together in the lyrics, capturing underlying themes within the music.<br>
+                  Each song is categorized into one or more topics based on its thematic content, and the results are saved to a CSV file for further analysis.
+                  The same procedure is applied for all the 11 albums in order to obtain the topics for each song and, consequently, for each album. <br><br>
+             
 
-                  Non-negative Matrix Factorization (NMF) and TF-IDF (Term Frequency-Inverse Document Frequency) are popular techniques in topic modeling for several reasons. They offer interpretability, as NMF decomposes the TF-IDF matrix into two non-negative matrices representing topics and their associated word distributions. This results in clear and understandable topics composed of words that frequently co-occur within the corpus. Additionally, both NMF and TF-IDF are based on non-negative values, aligning well with the intuitive notion that topics and word frequencies cannot be negative.<br>
-                  Another advantage is their ability to handle noisy and sparse data efficiently. TF-IDF introduces sparsity by assigning low weights to common words, focusing on words that are most characteristic of individual documents or topics. This improves the discriminative power of the model, making it robust to variations in document lengths, vocabulary sizes, and word frequencies.<br>
-                  Furthermore, NMF and TF-IDF are scalable techniques suitable for analyzing large datasets. They can handle vast amounts of textual data efficiently, making them ideal for text mining and natural language processing applications where scalability is crucial.<br><br>
-                  Overall, the combination of NMF and TF-IDF provides a powerful framework for uncovering latent themes and patterns within text data, offering interpretability, robustness, and scalability for a wide range of applications.<br>
-                
-                  After identifying the topics, the code prints the top words associated with each topic, providing insights into the dominant themes present in the song lyrics.
-                  Finally, each song is categorized into one or more topics based on its thematic content, and the results are saved to a CSV file for further analysis.
-                  The same procedure is applied for all the album in order to obtain the topics for each song and for each album.
-
+The <b>reasons</b> behind the choice of this technique rely on its <b>intuitiveness</b>: by decomposing the IDF matrix into non-negative factors, NMF ensures that each topic and its associated words have non-negative weights, making the results more interpretable. Additionally, NMF <b>works well with sparse and high-dimensional text data</b>, which is consistent with the features of song lyrics. Moreover, NMF allows for <b>flexibility</b> in the number of topics to be extracted, which is ideal for making reasonable choices for the chosen dataset, which is quite large considering it contains all the lyrics of the artist's music production. Applying NMF consistently across multiple albums ensures a <b>standardized approach</b> to thematic analysis, allowing for meaningful comparisons. In fact, using the same technique across all the albums allows us to compare thematic evolution, diversity, and commonalities. In addition to its technical advantages, in my <b>personal opinion and interpretation</b> of the artist's lyrics, NMF provided meaningful results: the topics generated by NMF aligned with the themes I perceived in the lyrics. <br> <i>However, this might create some disagreement due to subjective interpretation, but the interest lies in understanding how the machine aligns with our perception.</i>
+                 
                   <br>
                   <br>
                   <br>
 
-                  <h4>Here is the code:</h4>
+                  <h4><b>Here is the code:</b></h4>
                   <hr>
 
                   <!-- Load mathjax -->
@@ -116,7 +112,7 @@ init_mathjax();
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><b>The provided code have been designed to analyze the collection of song lyrics of the &quot;Folklore&quot; album, and categorize them into thematic topics. It utilizes Natural Language Processing (NLP) techniques and machine learning algorithms to accomplish this task. Let's delve into the steps involved:</b></p>
+<p><b>The provided code has been created to analyze the collection of song lyrics of the &quot;Folklore&quot; album, and categorize them into thematic topics. It utilizes Natural Language Processing (NLP) techniques and machine learning algorithms to accomplish this task. Let's delve into the steps involved:</b></p>
 
 </div>
 </div>
@@ -505,7 +501,7 @@ was high in the sky With Pennsylvania under me Are there still beautiful things?
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Stopword Definition: Stopwords, common words that carry little meaning like &quot;the&quot; or &quot;and,&quot; are defined both from the NLTK corpus and a custom list tailored for song lyrics.</p>
+<p><b>Stopword Definition:</b> Stopwords, common words that carry little meaning like &quot;the&quot; or &quot;and,&quot; are defined both from the NLTK corpus and a custom list tailored for song lyrics.</p>
 
 </div>
 </div>
@@ -770,7 +766,7 @@ Topic #6: single speak keep someone twenty minutes sleep make dream things
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Topic Labeling: Based on the identified themes, the script assigns descriptive labels to each topic, such as &quot;desperation&quot; or &quot;reflection.&quot;</p>
+<p><b>Topic Labeling: Based on the identified themes, the script assigns descriptive labels to each topic, such as &quot;desperation&quot; or &quot;reflection.&quot;</b></p>
 
 </div>
 </div>
@@ -1382,7 +1378,10 @@ Topic #6: single speak keep someone twenty minutes sleep make dream things
                             <div class="project-text w-100 my-auto text-center text-lg-left">
                                 <h4 class="text-white"><b>evermore</b></h4><br>
                                 <p class="mb-0 text-white-50">
-                                  The retrieved topics are: <br><br> 
+                                  Released year: <i>2020</i> <br>
+                                  Genre: <i>Alternative rock, Baroque pop, Folk pop</i> <br>
+                                  Duration: <i>60:38</i><br><br>
+                                  The retrieved topics are:<br><br>
                                   struggle<br>
                                   nostalgia<br>
                                   being emotional<br>
@@ -1408,9 +1407,10 @@ Topic #6: single speak keep someone twenty minutes sleep make dream things
                             <div class="project-text w-100 my-auto text-center text-lg-right">
                                 <h4 class="text-white"><b>Midnights</b></h4><br>
                                 <p class="mb-0 text-white-50">
+                                  Released year: <i>2022</i> <br>
+                                  Genre: <i>Chillout, Elettropop, Experimental pop, Folk pop</i> <br>
+                                  Duration: <i>44:08</i><br><br>
                                   The retrieved topics are: <br><br>
-                                
-                                  <br>
                                   memories<br>
                                   family<br>
                                   aspirations<br>
@@ -1439,7 +1439,11 @@ Topic #6: single speak keep someone twenty minutes sleep make dream things
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
                                 <h4 class="text-white"><b>THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY.</b></h4><br>
-                                <p class="mb-0 text-white-50">The retrieved topics are: <br><br>
+                                <p class="mb-0 text-white-50">
+                                  Released year: <i>2024</i> <br>
+                                  Genre: <i>Synth pop</i> <br>
+                                  Duration: <i>121:54</i><br><br>
+                                  The retrieved topics are: <br><br>
                                   turmoil<br>
                                   heartache<br>
                                   reminescence<br>
