@@ -57,130 +57,24 @@
                 The full code of the queries is available <a href="ontology/queries.html">here</a>.</p>
 
                 <ol>
-                    <h4><li><strong>Topics Covered:</strong> What topics are present in each album?</li></h4> <br>
+                    <h4><li><strong>Topics and evolution:</strong> What are the topics covered in each album? How do topics evolve over the years?</li></h4> <br>
                     <pre><code>
                         q1=   """ 
-                        SELECT ?album ?topic
+                        SELECT ?album (GROUP_CONCAT(DISTINCT ?topic; SEPARATOR=", ") AS ?topics) ?releaseYear
                         WHERE {
-                          ?album rdf:type :Album .
-                          ?album :hasTopic ?topic .
+                        ?album rdf:type :Album .
+                        ?album :hasTopic ?topic .
+                        ?album :has_release_year ?releaseYear .
                         }
+                        GROUP BY ?album ?releaseYear
+                        ORDER BY ?releaseYear
                         """
                         </code></pre>
-                        
-	<p><b>Results:</b></p>
-    <ul>
-        <b>Taylor Swift</b>
-        <li>appreciation</li>
-        <li>breakup</li>
-        <li>expression</li>
-        <li>intimacy</li>
-        <li>music</li>
-        <li>nostalgia</li>
-    </ul>
-    <br>
-    <ul>
-        <b>Fearless</b>
-        <li>conglict</li>
-        <li>decision-making</li>
-        <li>future</li>
-        <li>love</li>
-        <li>regret</li>
-        <li>uncertainty</li>
-    </ul>
-    <br>
-    <ul>
-        <b>Speak Now</b>
-        <li>adventure</li>
-        <li>future</li>
-        <li>nature</li>
-        <li>persistence</li>
-        <li>reflection</li>
-        <li>return and departure</li>
-    </ul>
-    <br>
-    <ul>
-        <b>Red</b>
-        <li>challenges</li>
-        <li>desire</li>
-        <li>loneliness</li>
-        <li>music</li>
-        <li>nostalgia</li>
-        <li>regret</li>
-    </ul>
-    <br>
-    <ul>
-        <b>1989</b>
-        <li>desire</li>
-        <li>enjoying life</li>
-        <li>moving on</li>
-        <li>relationships</li>
-        <li>romantic vibes</li>
-        <li>turmoil</li>
-    </ul>
-    <br>
-    <ul>
-        <b>reputation</b>
-        <li>being emotional</li>
-        <li>enthusiasm</li>
-        <li>expression</li>
-        <li>fantasy</li>
-        <li>persistence</li>
-        <li>reflection</li>
-    </ul>
-    <br>
-    <ul>
-        <b>Lover</b>
-        <li>anger</li>
-        <li>desire</li>
-        <li>devotion</li>
-        <li>excitement</li>
-        <li>nostalgia</li>
-        <li>relationships</li>
-    </ul>
-    <br>
-    <ul>
-        <b>folklore</b>
-        <li>desperation</li>
-        <li>discovery</li>
-        <li>frustration</li>
-        <li>pain</li>
-        <li>reflection</li>
-        <li>struggle</li>
-    </ul>
-    <br>
-    <ul>
-        <b>evermore</b>
-        <li>being emotional</li>
-        <li>frustration</li>
-        <li>nostalgia</li>
-        <li>reflection</li>
-        <li>struggle</li>
-        <li>suffering</li>
-    </ul>
-    <br>
-    <ul>
-        <b>Midnight</b>
-        <li>aspirations</li>
-        <li>companionship</li>
-        <li>family</li>
-        <li>memories</li>
-        <li>reflection</li>
-        <li>seeking understanding</li>
-    </ul>
-    <br>
-    <ul>
-        <b>The Tortured Poets Department</b>
-        <li>desire</li>
-        <li>heartache</li>
-        <li>intensity</li>
-        <li>reconciliation</li>
-        <li>reminescence</li>
-        <li>turmoil</li>
-    </ul>
+    <b>Results:</b> <br>
+	<img src="assets/img/plot.png" alt="" width="700" height="500">
     <br>
 
-                    <h4><li><strong>Frequency of Topics:</strong> How frequently do these topics appear across the albums?</li></h4><br>
+                    <h4><li><strong>Frequency of topics:</strong> How frequently do these topics appear across the albums?</li></h4><br>
                     <pre><code>
                     q2= """
                     SELECT ?topic (COUNT(?album) AS ?count)
@@ -193,70 +87,12 @@
                     """
                 </code></pre> 
                 <p>
-                <b>Results:</b>
-                <ul>
-                    <b>Frequency of the topics across albums:</b><br>
-
-                <li>Adventure: 1 album</li>
-                <li>Anger: 1 album</li>
-                <li>Appreciation: 1 album</li>
-                <li>Aspirations: 1 album</li>
-                <li>Being Emotional: 2 albums</li>
-                <li>Breakup: 1 album</li>
-                <li>Challenges: 1 album</li>
-                <li>Companionship: 1 album</li>
-                <li>Conflict: 1 album</li>
-                <li>Decision-Making: 1 album</li>
-                <li>Desire: 4 albums</li>
-                <li>Desperation: 1 album</li>
-                <li>Devotion: 1 album</li>
-                <li>Discovery: 1 album</li>
-                <li>Enjoying Life: 1 album</li>
-                <li>Enthusiasm: 1 album</li>
-                <li>Excitement: 1 album</li>
-                <li>Expression: 2 albums</li>
-                <li>Family: 1 album</li>
-                <li>Fantasy: 1 album</li>
-                <li>Frustration: 2 albums</li>
-                <li>Future: 2 albums</li>
-                <li>Heartache: 1 album</li>
-                <li>Intensity: 1 album</li>
-                <li>Intimacy: 1 album</li>
-                <li>Loneliness: 1 album</li>
-                <li>Love: 1 album</li>
-                <li>Memories: 1 album</li>
-                <li>Moving On: 1 album</li>
-                <li>Music: 2 albums</li>
-                <li>Nature: 1 album</li>
-                <li>Nostalgia: 4 albums</li>
-                <li>Pain: 1 album</li>
-                <li>Persistence: 2 albums</li>
-                <li>Reconciliation: 1 album</li>
-                <li>Reflection: 5 albums</li>
-                <li>Regret: 2 albums</li>
-                <li>Relationships: 2 albums</li>
-                <li>Reminiscence: 1 album</li>
-                <li>Return and Departure: 1 album</li>
-                <li>Romantic Vibes: 1 album</li>
-                <li>Seeking Understanding: 1 album</li>
-                <li>Struggle: 2 albums</li>
-                <li>Suffering: 1 album</li>
-                <li>Turmoil: 2 albums</li>
-                <li>Uncertainty: 1 album</li>
-
-                </ul>
+                <b>Results:</b> <br>
+                <img src="assets/img/cake2.png" alt="" width="700" height="500">
                 <br>
-                <p><b>Analysis:
-                </b></p>
-                <ol>
-                    <li><b>High frequency topics:</b></li>
-                    Reflection (5 albums): This topic appears most frequently, suggesting a recurring theme of introspection across the artist's work. <br>
-                    Desire and Nostalgia (4 albums each): Both desire and nostalgia are also prominent, indicating themes of longing and remembrance. <br>
-                    <li><b>Moderate frequency topics:</b></li>
-                    Being Emotional, Expression, Frustration, Future, Music, Persistence, Regret, Relationships, Struggle, Turmoil (2 albums each): These topics appear in a couple of albums, showing their relevance but not as dominant as the top three. <br>
-                    <li><b>Low frequency toppics:</b></li>
-                    Adventure, Anger, Appreciation, Aspirations, Breakup, Challenges, Companionship, Conflict, Decision-Making, Desperation, Devotion, Discovery, Enjoying Life, Enthusiasm, Excitement, Family, Fantasy, Heartache, Intensity, Intimacy, Loneliness, Love, Memories, Moving On, Nature, Pain, Reconciliation, Reminiscence, Return and Departure, Romantic Vibes, Seeking Understanding, Suffering, Uncertainty (1 album each): these topics appear less frequently, indicating more specialized or album-specific themes. 
-                </ol>
+                <img src="assets/img/cake1.png" alt="" width="700" height="500">
+
+             
                 <br>
 
                 <p><b>Evolution and change over time:</b><br>
@@ -267,49 +103,27 @@ Early albums might focus on foundational themes like love, relationships, and br
                     <h4><li><strong>Genre Relationships:</strong> How are topics related to different genres of music?</li> <br></h4>
                     <pre><code>
                         q3= """
-                        SELECT DISTINCT ?genre ?topic
+                        SELECT ?genre (GROUP_CONCAT(DISTINCT ?topic; SEPARATOR=", ") AS ?topics)
                         WHERE {
                         ?album rdf:type :Album .
                         ?album :hasGenre ?genre .
                         ?album :hasTopic ?topic .
                         }
-                        """
-
-                        q4= """
-                        SELECT ?genre ?topic
-                        WHERE {
-                        ?album rdf:type :Album .
-                        ?album :hasGenre ?genre .
-                        ?album :hasTopic ?topic .
-                        }
-                        GROUP BY ?genre ?topic
+                        GROUP BY ?genre
                         ORDER BY ?genre
-
-                         """
-
+                            """
 
                     </code></pre>
                     
                         <b>Results:</b> <br>
--  The topics associated with <b>dance pop</b> albums include desire, enjoying life, moving on, relationships, romantic vibes, and turmoil. Dance pop music is known for its upbeat and energetic tunes, often accompanied by themes of love, celebration, and overcoming challenges. <br>
-- <b>Pop</b> albums cover topics such as desire, enjoying life, moving on, relationships, romantic vibes, and turmoil. <br>
-- <b>Synth pop</b> albums explore topics like desire, enjoying life, moving on, relationships, romantic vibes, and turmoil.  Synth pop music typically features synthesizers prominently and often explores themes of love, longing, and introspection. <br>
-- <b>Country Pop</b> touches on various topics including appreciation, breakup, expression, intimacy, music, nostalgia, conflict, decision-making, future, love, regret, uncertainty, challenges, loneliness, adventure, nature, persistence, reflection, return and departure. Country pop often delves into personal experiences, relationships, and emotions, blending elements of country music with pop sensibilities. <br>
-- <b>Alternative Rock</b> delve into themes like being emotional, frustration, nostalgia, reflection, struggle, and suffering. Alternative rock often explores themes of introspection, societal critique, and emotional turmoil, as reflected in these topics. <br>
-- <b>Baroque pop</b> albums address topics such as being emotional, frustration, nostalgia, reflection, struggle, and suffering. <br>
-- <b>Folk pop</b> albums cover themes like being emotional, frustration, nostalgia, reflection, struggle, and suffering. <br>
-- <b>Indie Folk</b> explores themes including desperation, discovery, frustration, pain, reflection, and struggle. <br>
-- <b>Elettropop</b> albums touch on themes like anger, desire, devotion, excitement, nostalgia, relationships, aspirations, companionship, family, memories, reflection, seeking understanding, heartache, intensity, reconciliation, and reminiscence. <br>
-- <b>Pop rock</b> albums cover topics such as anger, desire, devotion, excitement, nostalgia, relationships, challenges, loneliness, music, and regret. Pop rock combines catchy melodies with rock instrumentation, often addressing a wide range of personal and societal themes. <br>
-- <b>Chillout</b> albums explore topics like aspirations, companionship, family, memories, reflection, and seeking understanding. This genre typically focuses on creating relaxed and soothing atmospheres, often exploring introspective or nostalgic themes. <br>
-- <b>Experimental Pop</b> address themes such as aspirations, companionship, family, memories, reflection, and seeking understanding. <br>
-- <b>Contemporary R&B </b>includes topics such as being emotional, enthusiasm, expression, fantasy, persistence, and reflection These topics likely represent the thematic elements explored within contemporary R&B music, ranging from emotional depth to personal reflections.
+                        <img src="assets/img/topics_across_genres.png" alt="" width="700" height="500">
+
                     <br>
                     <br>
                     <br>
-                    <h4><li><strong>Genre Distribution:</strong> How are albums distributed across different genres?</li></h4>
+                    <h4><li><strong>Genre distribution:</strong> How are albums distributed across different genres?</li></h4>
                     <pre><code>
-                        q5="""
+                        q4="""
                         SELECT ?genre (COUNT(?album) AS ?count)
                         WHERE {
                         ?album rdf:type :Album .
@@ -320,33 +134,14 @@ Early albums might focus on foundational themes like love, relationships, and br
                         ORDER BY ?genre
                         """
                     </code></pre>
-                    <p>
-                        <ul>
-                            <b>Results: </b>
-                            <li>Contemporary R&B: 1 album</li>
-                            <li>Alternative Rock: 2 albums</li>
-                            <li>Baroque Pop: 1 album</li>
-                            <li>Chillout: 1 album</li>
-                            <li>Country Pop: 4 albums</li>
-                            <li>Dance Pop: 1 album</li>
-                            <li>Electropop: 3 albums</li>
-                            <li>Experimental Pop: 1 album</li>
-                            <li>Folk Pop: 2 albums</li>
-                            <li>Folktronica: 1 album</li>
-                            <li>Indie Folk: 1 album</li>
-                            <li>Pop: 1 album</li>
-                            <li>Pop Rock: 2 albums</li>
-                            <li>Synth Pop: 3 albums</li>
-                        </ul>
-                    
+                    <b>Results</b>
+                    <img src="assets/img/genres_distribution.png" alt="" width="700" height="500">
 
-
-                    </p>
                     <br>
                     <br>
-                    <h4><li><strong>Label Transition Impact:</strong> What are the differences in themes and topics before and after Taylor Swift transitioned from Big Machine label to Republic and her own production (Taylor Swift Production)?</li></h4>
+                    <h4><li><strong>Label transition impact:</strong> What are the differences in themes and topics before and after Taylor Swift transitioned from Big Machine label to Republic and her own production (Taylor Swift Production)?</li></h4>
                     <pre><code>
-                        q6="""
+                        q5="""
                         SELECT ?label ?topic
                         WHERE {
                         { SELECT ?label ?topic
@@ -381,9 +176,9 @@ Early albums might focus on foundational themes like love, relationships, and br
                     </code></pre>
 
                     <b>Results</b>: <br>
-                    - For the label <b>"Big Machine"</b>: the albums from this label cover a wide range of topics including desire, enjoying life, moving on, relationships, romantic vibes, turmoil, appreciation, breakup, expression, intimacy, music, nostalgia, conflict, decision-making, future, love, regret, uncertainty, challenges, loneliness, being emotional, enthusiasm, fantasy, persistence, reflection, adventure, nature, return and departure. <br>
-                    - For the label <b>"Republic"</b>: the albums from this label also cover diverse topics such as being emotional, frustration, nostalgia, reflection, struggle, suffering, desperation, discovery, pain, anger, desire, devotion, excitement, relationships, aspirations, companionship, family, memories, seeking understanding, heartache, intensity, reconciliation, and reminiscence. <br>
-                    - For the label <b>“Taylor’s Swift Productions”</b>: frustration, nostalgia, reflection, struggle, suffering, desperation, discovery, pain, anger, desire, devotion, excitement, relationships, aspirations, companionship, family, memories, seeking understanding. 
+                    <img src="assets/img/labels.png" alt="" width="700" height="500">
+
+
 <br>
 <br>
 
@@ -391,117 +186,276 @@ Early albums might focus on foundational themes like love, relationships, and br
 
 
 
-                    <h4><li><strong>Aesthetic Contrast:</strong> Do "Reputation" and "Lover," representing opposite aesthetics, share any common topics?</li></h4>
+                    <h4><li><strong>Aesthetic contrast:</strong> Do "Reputation" and "Lover," representing opposite aesthetics, share any common topics?</li></h4>
                     <pre>
                         <code>
-                            q7="""
-                            SELECT ?albumTitle ?topic
+                            q6 = """
+                            SELECT ?albumTitle ?topic ?genre
                             WHERE {
-                            ?album rdf:type :Album .
-                            ?album :has_title ?albumTitle .
-                            ?album :hasTopic ?topic .
-                            FILTER (str(?albumTitle) = "reputation")
+                            {
+                                ?album rdf:type :Album .
+                                ?album :has_title ?albumTitle .
+                                OPTIONAL { ?album :hasTopic ?topic }
+                                OPTIONAL { ?album :hasGenre ?genre }
+                                FILTER (str(?albumTitle) = "reputation")
                             }
-
-                            """
-
-                            q8 = """
-                            SELECT ?albumTitle ?topic
-                            WHERE {
-                            ?album rdf:type :Album .
-                            ?album :has_title ?albumTitle .
-                            ?album :hasTopic ?topic .
-                            FILTER (str(?albumTitle) = "Lover")
+                            UNION
+                            {
+                                ?album rdf:type :Album .
+                                ?album :has_title ?albumTitle .
+                                OPTIONAL { ?album :hasTopic ?topic }
+                                OPTIONAL { ?album :hasGenre ?genre }
+                                FILTER (str(?albumTitle) = "Lover")
                             }
-
-
-                            """
-
-                            q9 = """
-                            SELECT ?albumTitle ?genre
-                            WHERE {
-                            ?album rdf:type :Album .
-                            ?album :has_title ?albumTitle .
-                            ?album :hasGenre ?genre .
-                            FILTER (str(?albumTitle) = "reputation")
+                            
+                            FILTER EXISTS {
+                                ?otherAlbum rdf:type :Album .
+                                ?otherAlbum :has_title ?otherAlbumTitle .
+                                ?otherAlbum :hasTopic ?topic .
+                                FILTER (?otherAlbumTitle != ?albumTitle)
                             }
-
-                            """
-
-                            q10 = """
-                            SELECT ?albumTitle ?genre
-                            WHERE {
-                            ?album rdf:type :Album .
-                            ?album :has_title ?albumTitle .
-                            ?album :hasGenre ?genre .
-                            FILTER (str(?albumTitle) = "Lover")
+                            
+                            FILTER EXISTS {
+                                ?otherAlbum rdf:type :Album .
+                                ?otherAlbum :has_title ?otherAlbumTitle .
+                                ?otherAlbum :hasGenre ?genre .
+                                FILTER (?otherAlbumTitle != ?albumTitle)
+                            }
                             }
                             """
                         </code>
                     </pre>
 
                     <b>Results</b>:
-                    It appears that the albums "Lover" and "reputation" share the genre of Elettropop. They do not share topics.
+                    It appears that the albums "Lover" and "reputation" share the genre of <b>Elettropop</b>. <br>
+                    They <b>do not</b> share topics.
                     <br> <br>
 
-                    <h4><li><strong>Pandemic Albums:</strong> Do <i>folklore</i> and <i>evermore</i>, written during the pandemic’s lockdown, share topics and genres, and how do they differ from other albums?</li></h4>
+                    <h4><li><strong>Pandemic albums:</strong> Do <i>folklore</i> and <i>evermore</i>, written during the pandemic’s lockdown, share topics and genres, and how do they differ from other albums?</li></h4>
 
                     <pre>
                         <code>
-                            q11="""
-                            SELECT ?albumTitle ?topic
+                            q7 = """
+                            SELECT ?albumTitle ?topic ?genre
                             WHERE {
+                            {
                                 ?album rdf:type :Album .
                                 ?album :has_title ?albumTitle .
-                                ?album :hasTopic ?topic . 
-                                 FILTER (str(?albumTitle) = "folklore")
+                                OPTIONAL { ?album :hasTopic ?topic }
+                                OPTIONAL { ?album :hasGenre ?genre }
+                                FILTER (str(?albumTitle) = "folkore")
                             }
-
-                            """
-
-                            q12="""
-                            SELECT ?albumTitle ?topic
-                            WHERE {
-                                 ?album rdf:type :Album .
-                                 ?album :has_title ?albumTitle .
-                                 ?album :hasTopic ?topic .
-                                 FILTER (str(?albumTitle) = "evermore")
-                                }
-                                """
-                                
-                            q13="""
-                            SELECT ?albumTitle ?genre
-                            WHERE {
-                            ?album rdf:type :Album .
-                            ?album :has_title ?albumTitle .
-                            ?album :hasGenre ?genre .
-                            FILTER (str(?albumTitle) = "folklore")
+                            UNION
+                            {
+                                ?album rdf:type :Album .
+                                ?album :has_title ?albumTitle .
+                                OPTIONAL { ?album :hasTopic ?topic }
+                                OPTIONAL { ?album :hasGenre ?genre }
+                                FILTER (str(?albumTitle) = "evermore")
                             }
-                            """
-                                
-                            q14="""
-                            SELECT ?albumTitle ?genre
-                            WHERE {
-                            ?album rdf:type :Album .
-                            ?album :has_title ?albumTitle .
-                            ?album :hasGenre ?genre .
-                            FILTER (str(?albumTitle) = "evermore")
+                            
+                            FILTER EXISTS {
+                                ?otherAlbum rdf:type :Album .
+                                ?otherAlbum :has_title ?otherAlbumTitle .
+                                ?otherAlbum :hasTopic ?topic .
+                                FILTER (?otherAlbumTitle != ?albumTitle)
                             }
+                            
+                            FILTER EXISTS {
+                                ?otherAlbum rdf:type :Album .
+                                ?otherAlbum :has_title ?otherAlbumTitle .
+                                ?otherAlbum :hasGenre ?genre .
+                                FILTER (?otherAlbumTitle != ?albumTitle)
+                            }
+                            } 
                             """
 
                         </code>
                     </pre>
 
                     <b>Results:</b> <br>
-                    Both albums folklore and evermore share topics: frustration, reflection, and struggle. They also share the genre Alternative rock.
+                    Both albums folklore and evermore share topics: <b>frustration, reflection, and struggle.</b>  <br>
+                    They also share the genre <b>Alternative rock</b>.
 
                     <br>
                     <br>
 
-                    <h4><li><strong>Featured Songs:</strong> What are the featured songs in her discography?</li></h4>
+                    
+                    <h4><li><strong>Album length comparison:</strong> Which album is the longest and which is the shortest?</li></h4>
                     <pre>
                         <code>
-                            q15= """
+
+                            #longest
+                            q9="""
+                            SELECT ?albumTitle ?duration
+                            WHERE {
+                            ?album rdf:type :Album .
+                            ?album :has_title ?albumTitle .
+                            ?album :has_duration ?duration .
+                            }
+                            ORDER BY DESC(?duration)
+                            LIMIT 1"""
+
+                            #shortest
+                            q10="""
+                            SELECT ?albumTitle ?duration
+                            WHERE {
+                            ?album rdf:type :Album .
+                            ?album :has_title ?albumTitle .
+                            ?album :has_duration ?duration .
+                            }
+                            ORDER BY ASC(?duration)
+                            LIMIT 1
+
+                            """
+                        </code>
+                    </pre>
+
+                    <b>Results</b>: <br>
+                    The Tortured Poets Department: <b>121:54</b> <br>
+                    Midnights <b>44.08</b> <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <h4><li><strong>Topic's sharing:</strong> What albums share topics?</li></h4>
+                    <pre><code>
+                        q10 = """
+                        SELECT ?album1 ?album2 (GROUP_CONCAT(DISTINCT ?topic; SEPARATOR=", ") AS ?sharedTopics)
+                        WHERE {
+                        ?album1 rdf:type :Album .
+                        ?album1 :hasTopic ?topic .
+                        ?album2 rdf:type :Album .
+                        ?album2 :hasTopic ?topic .
+                        FILTER (?album1 != ?album2)
+                        }
+                        GROUP BY ?album1 ?album2
+                        HAVING (COUNT(DISTINCT ?topic) > 0)
+                        ORDER BY ?album1 ?album2
+                        """
+
+                    </code></pre>
+                    <b>Results</b>: <br>
+                    <img src="assets/img/sharing1.png" alt="" width="700" height="500">
+                    
+                    <br>
+                    <br>
+
+                    <h4><li><strong>Genres's sharing</strong>: Whhat albums share genres?</li></h4>
+                    <pre>
+                        <code>
+                            q11 = """
+                            SELECT ?album1 ?album2 (GROUP_CONCAT(DISTINCT ?genre; SEPARATOR=", ") AS ?sharedGenres)
+                            WHERE {
+                            ?album1 rdf:type :Album .
+                            ?album1 :hasGenre ?genre .
+                            ?album2 rdf:type :Album .
+                            ?album2 :hasGenre ?genre .
+                            FILTER (?album1 != ?album2)
+                            }
+                            GROUP BY ?album1 ?album2
+                            ORDER BY ?album1 ?album2
+
+                            """
+                        </code>
+                    </pre>
+                    <b>Results</b>: <br> 
+                    <img src="assets/img/sharing2.png" alt="" width="700" height="500">
+                    
+                    <br>
+                    <br>
+
+                    <h4><li><strong>Retrieving a song from a topic:</strong> What are the songs that share the "reflection" topic?</li></h4>
+                    <pre>
+                        <code>
+                            q12= """
+                            SELECT ?song ?album ?topic
+                            WHERE {
+                            ?song rdf:type :Song .
+                            ?song :hasTopic :reflection .
+                            OPTIONAL { ?song :belongsToAlbum ?album }
+                            BIND(:reflection AS ?topic)
+                            }
+                            """
+                        </code>
+                    </pre>
+                        <b>Results:</b>
+                        <ul>
+                            <li>
+                                Don't Blame Me from reputation
+                            </li>
+                            <li><i>Bejeweled</i> from Midnights</li>
+                            <li><i>Better Than Revenge</i> from Speak Now</li>
+                            <li><i>Dear John</i> from Speak Now</li>
+                            <li><i>Don't Blame Me</i> from reputation</li>
+                            <li><i>Gorgeous</i> from reputation</li>
+                            <li><i>Labyrinth</i> from Midnights</li>
+                            <li><i>Last Kiss</i> from Speak Now</li>
+                            <li><i>Look What You Made Me Do</i> from reputation</li>
+                            <li><i>Speak Now</i> from Speak Now</li>
+                            <li><i>Sweet Nothing </i>from Midnights</li>
+                            <li><i>cowboy </i>like me from evermore</li>
+                            <li><i>dorothea </i> from evermore</li>
+                            <li><i>epiphany </i> from folklore</li>
+                            <li><i>illicit affairs</i> from folklore</li>
+                            <li><i>invisible string </i> from folklore</li>
+                            <li><i>willow</i> from evermore</li>
+                    </ul>
+                    <br>
+                    <br>
+
+                    <h4><li><strong>Songs that shares topics:</strong> What are the songs that share topics and what are these topics?</li></h4>
+                    <pre>
+                        <code>
+                            q13= """
+                            SELECT ?song1 ?song2 (GROUP_CONCAT(DISTINCT ?topic; SEPARATOR=", ") AS ?sharedTopics)
+                            WHERE {
+                            ?song1 rdf:type :Song .
+                            ?song1 :hasTopic ?topic .
+                            ?song2 rdf:type :Song .
+                            ?song2 :hasTopic ?topic .
+                            FILTER (?song1 != ?song2)
+                            }
+                            GROUP BY ?song1 ?song2
+                            HAVING (COUNT(DISTINCT ?topic) > 0)
+                            ORDER BY ?song1 ?song2
+                        </code>
+                    </pre>
+                    <b>Results:</b> 
+                    <embed src="assets/img/doc1.pdf" type="application/pdf" width="100%" height="600px"/>
+                    <br>
+                    <br>
+
+
+
+
+                    <h4><li><strong>Retrieve a song from the featured artist:</strong> Which is the song featured by Lana Del Rey and which is the topic?</li></h4>
+                    <pre>
+                        <code>
+                            q14= """
+                            SELECT ?song ?topic ?album
+                            WHERE {
+                              ?song rdf:type :Song .
+                              ?song :hasFeaturedArtist :Lana_Del_Rey .
+                              OPTIONAL { ?song :hasTopic ?topic }
+                              OPTIONAL { ?song :belongsToAlbum ?album }
+                            }
+                            """
+                            </code>
+                    </pre>
+                    <b>
+                        Results:
+                    </b> <br>
+                        Song: <i>Snow On The Beach</i> <br>
+                        Topic: aspirations
+                    
+                        <br>
+                        <br>
+
+                    <h4><li><strong>Featured songs:</strong> What are the featured songs in her discography?</li></h4>
+                    <pre>
+                        <code>
+                            q8= """
                             SELECT ?songTitle ?featuredArtist
                             WHERE {
                             ?song rdf:type :Song .
@@ -531,130 +485,6 @@ Early albums might focus on foundational themes like love, relationships, and br
                         no body no crime <br></i>
                    <br>
                    <br>
-                    <h4><li><strong>Album Length Comparison:</strong> Which album is the longest and which is the shortest, and how do they differ in terms of content?</li></h4>
-                    <pre>
-                        <code>
-                            q16="""
-                            SELECT ?albumTitle ?duration
-                            WHERE {
-                            ?album rdf:type :Album .
-                            ?album :has_title ?albumTitle .
-                            ?album :has_duration ?duration .
-                            }
-                            ORDER BY DESC(?duration)
-                            LIMIT 1"""
-
-                            q17="""
-                            SELECT ?albumTitle ?duration
-                            WHERE {
-                            ?album rdf:type :Album .
-                            ?album :has_title ?albumTitle .
-                            ?album :has_duration ?duration .
-                            }
-                            ORDER BY ASC(?duration)
-                            LIMIT 1
-
-                            """
-
-                            q18="""
-
-                            SELECT ?albumTitle ?topic
-                            WHERE {
-                            ?album rdf:type :Album .
-                            ?album :has_title ?albumTitle .
-                            ?album :hasTopic ?topic .
-                            FILTER (str(?albumTitle) = "Midnights")
-                            }
-
-                            """
-
-                            q19="""
-                            SELECT ?albumTitle ?topic
-                            WHERE {
-                                ?album rdf:type :Album .
-                                ?album :has_title ?albumTitle .
-                                ?album :hasTopic ?topic .
-                                FILTER (str(?albumTitle) = "The Tortured Poets Department")
-                            """
-                            
-                            q20="""
-                            SELECT ?albumTitle ?genre
-                            WHERE {
-                                ?album rdf:type :Album .
-                                ?album :has_title ?albumTitle .
-                                ?album :hasGenre ?genre .
-                                FILTER (str(?albumTitle) = "Midnights".
-                            }
-                            """
-                            
-                            q21="""
-                            SELECT ?albumTitle ?genre
-                            WHERE {
-                                ?album rdf:type :Album .
-                                ?album :has_title ?albumTitle .
-                                ?album :hasGenre ?genre .
-                                FILTER (str(?albumTitle) = "The Tortured Poets Department" .
-                            }
-                            """
-                        </code>
-                    </pre>
-
-                    <b>Results</b>: <br>
-                    The Tortured Poets Department: 121:54 <br>
-                    Midnights 44.08 <br>
-                    
-                    The albums “Midnights and “The Tortured Poets Department” share the topic of reflection and the genre Synth Pop.
-                    <br>
-                    <br>
-                    <br>
-
-                    <h4><li><strong>Debut vs. Latest:</strong> How do the genres and topics differ between Taylor Swift’s first album ("Debut") and her latest album ("The Tortured Poets Department")?</li></h4>
-                    <pre>
-                        <code>
-                        q22="""
-                        SELECT ?albumTitle ?topic
-                        WHERE {
-                            ?album rdf:type :Album .
-                            ?album :has_title ?albumTitle .
-                            ?album :hasTopic ?topic .
-                            FILTER (str(?albumTitle) = "Taylor Swift")
-                        }
-                        """
-                        q23="""
-                        SELECT ?albumTitle ?topic
-                        WHERE {
-                            ?album rdf:type :Album .
-                            ?album :has_title ?albumTitle .
-                            ?album :hasTopic ?topic .
-                            FILTER (str(?albumTitle) = "The Tortured Poets Department")
-                        }
-                        """
-
-                        q24="""
-                        SELECT ?albumTitle ?genre
-                        WHERE {
-                            ?album rdf:type :Album .
-                            ?album :has_title ?albumTitle .
-                            ?album :hasGenre ?genre .
-                            FILTER (str(?albumTitle) = "Taylor Swift")
-                        }
-                        """
-                        
-                        q25="""
-                        SELECT ?albumTitle ?genre
-                        WHERE {
-                            ?album rdf:type :Album .
-                            ?album :has_title ?albumTitle .
-                            ?album :hasGenre ?genre .
-                            FILTER (str(?albumTitle) = "The Tortured Poets Department")
-                        }
-                        """
-                        </code>
-                    </pre>
-
-                    <b>Results</b>:
-                    They do not share anything. 
-                    
                     
                     
                     
